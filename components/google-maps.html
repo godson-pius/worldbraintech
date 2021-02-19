@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Google Maps
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+    <!-- Google Map API-->
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyAACWdZfvsxk4RffdTsNZ5vXdi4Y8onJ1I"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Google Maps</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Default Map Code-->
+    <div class="modal fade" id="maps-default-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-0">To be able to use Google Maps on your website you have to <strong>register Maps Javascript API key (Make sure to enable Geocoding API as well).</strong><br>Please follow the link below for the instructions.</p><a class="d-block mb-4" href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Default Map --&gt;</strong>
+&lt;div class=&quot;google-map&quot; data-height=&quot;270&quot; data-address=&quot;New York, USA&quot; data-zoom=&quot;9&quot; data-disable-controls=&quot;true&quot; data-scrollwheel=&quot;true&quot; data-marker-title=&quot;We are here!&quot;&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Default Map</strong>
+.google-map(
+  data-height = &quot;270&quot;,
+  data-address = &quot;New York, USA&quot;,
+  data-zoom = &quot;9&quot;,
+  data-disable-controls = &quot;true&quot;,
+  data-scrollwheel = &quot;true&quot;,
+  data-marker-title = &quot;We are here!&quot;
+)</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map Custom Styling Code-->
+    <div class="modal fade" id="maps-custom-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-0">To be able to use Google Maps on your website you have to <strong>register Maps Javascript API key (Make sure to enable Geocoding API as well).</strong><br>Please follow the link below for the instructions.</p><a class="d-block mb-3" href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+            <p class="mb-4">To apply custom styles to the map pass styles in JSON format to the data attribute: <code>data-styles</code>. The best collection of Google Maps styles can be found at <a href='https://snazzymaps.com/' target='_blank'>https://snazzymaps.com/</a></p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Custom Styling --&gt;</strong>
+&lt;div class=&quot;google-map&quot; data-height=&quot;270&quot; data-address=&quot;New York, USA&quot; data-zoom=&quot;9&quot; data-disable-controls=&quot;true&quot; data-scrollwheel=&quot;false&quot; data-marker=&quot;path-to-map-marker-image&quot; data-marker-title=&quot;We are here!&quot; data-styles='[{ &quot;styles in JSON format&quot; }]'&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Custom Styling</strong>
+.google-map(
+  data-height = &quot;270&quot;,
+  data-address = &quot;New York, USA&quot;,
+  data-zoom = &quot;9&quot;,
+  data-disable-controls = &quot;true&quot;,
+  data-scrollwheel = &quot;false&quot;,
+  data-marker = &quot;path-to-map-marker-image&quot;,
+  data-marker-title = &quot;We are here!&quot;,
+  data-styles = '[{ &quot;styles in JSON format&quot; }]'
+)</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map Enable Controls Code-->
+    <div class="modal fade" id="maps-controls-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-0">To be able to use Google Maps on your website you have to <strong>register Maps Javascript API key (Make sure to enable Geocoding API as well).</strong><br>Please follow the link below for the instructions.</p><a class="d-block mb-4" href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Enable Map Controls --&gt;</strong>
+&lt;div class=&quot;google-map&quot; data-height=&quot;300&quot; data-address=&quot;New York, USA&quot; data-zoom=&quot;10&quot; data-disable-controls=&quot;false&quot; data-scrollwheel=&quot;false&quot; data-marker=&quot;path-to-map-marker-image&quot; data-marker-title=&quot;We are here!&quot; data-styles='[{ &quot;styles in JSON format&quot; }]'&gt;&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Enable Map Controls</strong>
+.google-map(
+  data-height = &quot;300&quot;,
+  data-address = &quot;New York, USA&quot;,
+  data-zoom = &quot;10&quot;,
+  data-disable-controls = &quot;false&quot;,
+  data-scrollwheel = &quot;false&quot;,
+  data-marker = &quot;path-to-map-marker-image&quot;,
+  data-marker-title = &quot;We are here!&quot;,
+  data-styles = '[{ &quot;styles in JSON format&quot; }]'
+)</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Map inside Card Code-->
+    <div class="modal fade" id="maps-card-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-0">To be able to use Google Maps on your website you have to <strong>register Maps Javascript API key (Make sure to enable Geocoding API as well).</strong><br>Please follow the link below for the instructions.</p><a class="d-block mb-4" href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Map Inside Card --&gt;</strong>
+&lt;div class=&quot;card&quot;&gt;
+  &lt;div class=&quot;google-map&quot; data-height=&quot;270&quot; data-address=&quot;89 Clinton Dr. Holbrook, NY 11741, USA&quot; data-zoom=&quot;9&quot; data-disable-controls=&quot;true&quot; data-scrollwheel=&quot;true&quot; data-marker=&quot;path-to-map-marker-image&quot; data-marker-title=&quot;We are here!&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;card-body&quot;&gt;
+    &lt;ul class=&quot;list-icon mb-2&quot;&gt;
+      &lt;li&gt;&lt;i class=&quot;fe-icon-map-pin text-muted&quot;&gt;&lt;/i&gt;89 Clinton Dr. Holbrook, NY 11741, USA&lt;/li&gt;
+      &lt;li&gt;&lt;i class=&quot;fe-icon-phone text-muted&quot;&gt;&lt;/i&gt;+1 (212) 477 690 000&lt;/li&gt;
+      &lt;li&gt;&lt;i class=&quot;fe-icon-mail text-muted&quot;&gt;&lt;/i&gt;email@example.com&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Map Inside Card</strong>
+.card
+  .google-map(
+    data-height = &quot;270&quot;,
+    data-address = &quot;89 Clinton Dr. Holbrook, NY 11741, USA&quot;,
+    data-zoom = &quot;9&quot;,
+    data-disable-controls = &quot;true&quot;,
+    data-scrollwheel = &quot;true&quot;,
+    data-marker = &quot;path-to-map-marker-image&quot;,
+    data-marker-title = &quot;We are here!&quot;
+  )
+  .card-body
+    ul.list-icon.mb-2
+      li 
+        i.fe-icon-map-pin.text-muted
+        | 89 Clinton Dr. Holbrook, NY 11741, USA
+      li 
+        i.fe-icon-phone.text-muted
+        | +1 (212) 477 690 000
+      li 
+        i.fe-icon-mail.text-muted
+        | email@example.com</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action active" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4">
+        <div class="row">
+          <!-- Default map-->
+          <div class="col-md-6 pb-5 mb-2">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Default map</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#maps-default-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="google-map" data-height="270" data-address="New York, USA" data-zoom="9" data-disable-controls="true" data-scrollwheel="true" data-marker-title="We are here!"></div>
+          </div>
+          <!-- Custom styling-->
+          <div class="col-md-6 pb-5 mb-2">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Custom styling</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#maps-custom-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="google-map" data-height="270" data-address="New York, USA" data-zoom="9" data-disable-controls="true" data-scrollwheel="false" data-marker="../img/map-marker.png" data-marker-title="We are here!" data-styles="[{&quot;featureType&quot;:&quot;road&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#5e00ff&quot;},{&quot;saturation&quot;:-79}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-78},{&quot;hue&quot;:&quot;#6600ff&quot;},{&quot;lightness&quot;:-47},{&quot;visibility&quot;:&quot;off&quot;}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;lightness&quot;:22}]},{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#6600ff&quot;},{&quot;saturation&quot;:-11}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-65},{&quot;hue&quot;:&quot;#1900ff&quot;},{&quot;lightness&quot;:8}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;weight&quot;:1.3},{&quot;lightness&quot;:30}]},{&quot;featureType&quot;:&quot;transit&quot;,&quot;stylers&quot;:[{&quot;visibility&quot;:&quot;simplified&quot;},{&quot;hue&quot;:&quot;#5e00ff&quot;},{&quot;saturation&quot;:-16}]},{&quot;featureType&quot;:&quot;transit.line&quot;,&quot;stylers&quot;:[{&quot;saturation&quot;:-72}]}]"></div>
+          </div>
+        </div>
+        <!-- Enable map controls-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Enable map controls</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#maps-controls-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="google-map" data-height="300" data-address="New York, USA" data-zoom="10" data-disable-controls="false" data-scrollwheel="false" data-marker="../img/map-marker-alt.png" data-marker-title="We are here!" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]"></div>
+        <!-- Inside card-->
+        <div class="py-5 my-2">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Inside card</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#maps-card-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-6 mb-3">
+              <div class="card">
+                <div class="google-map" data-height="270" data-address="89 Clinton Dr. Holbrook, NY 11741, USA" data-zoom="9" data-disable-controls="true" data-scrollwheel="true" data-marker="../img/map-marker.png" data-marker-title="We are here!"></div>
+                <div class="card-body">
+                  <ul class="list-icon mb-2">
+                    <li> <i class="fe-icon-map-pin text-muted"></i>89 Clinton Dr. Holbrook, NY 11741, USA</li>
+                    <li> <i class="fe-icon-phone text-muted"></i>+1 (212) 477 690 000</li>
+                    <li> <i class="fe-icon-mail text-muted"></i>email@example.com</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

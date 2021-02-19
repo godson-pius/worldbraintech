@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Browser Support (Autoprefixer)
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left" aria-label="Page title" style="background-image: url(../img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Documentation</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">Browser Support (Autoprefixer)</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-accent py-1 px-2 text-white text-sm"><strong>Docs</strong></div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 105px; height: calc(100% - 105px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="dev-setup.html">Dev Environment Setup</a><a class="list-group-item list-group-item-action" href="working-with-gulp.html">Working With Gulp</a><a class="list-group-item list-group-item-action" href="project-structure.html">Project Structure</a><a class="list-group-item list-group-item-action" href="using-preprocessors.html">Using Preprocessors (Pug &amp; Sass)</a><a class="list-group-item list-group-item-action active" href="autoprefixer.html">Browser Support (Autoprefixer)</a><a class="list-group-item list-group-item-action" href="global-colors.html">Global Colors</a><a class="list-group-item list-group-item-action" href="components.html">Components</a><a class="list-group-item list-group-item-action" href="utilities.html">Utility Classes</a><a class="list-group-item list-group-item-action" href="font-icons.html">Font Icons</a><a class="list-group-item list-group-item-action" href="google-maps.html">Google Maps API</a><a class="list-group-item list-group-item-action" href="credits.html">Sources and Credits</a><a class="list-group-item list-group-item-action" href="changelog.html">Changelog</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5 mb-2">
+        <p>Vendor prefixes are not used inside SCSS instead we use <a href='https://github.com/postcss/autoprefixer' class='font-weight-medium' target='_blank'>Autoprefixer</a> to handle intended browser support via CSS prefixes. After compilation CSS styles are passed through Autoprefixer to add necessary vendor prefixes. As you know vendor prefixes are important to ensure cross-browser compatibility of latets CSS3 features.</p>
+        <h2 class="h5 pt-3">Customize browser support via Autoprefixer settings</h2>
+        <p>Autoprefixer is integral part of Gulp building process. So to customize its settings you need to go to <code>gulpfile.js</code> and find all instances of <code>.pipe(autoprefixer({{ ... })</code>. You will see <code>browsers</code> setting. It's currently set to <code>['last 2 versions', 'ie 11']</code> which reflects the browser set we retrieved from our Google analytics. Generally it's a good practice to collect some analytics about what Browsers/OSs your visitors use. And then customize Autoprefixer settings based on this data.</p>
+        <p>For more information about available Browserlist options visit <a href='https://github.com/browserslist/browserslist' class='font-weight-medium' target='_blank'>https://github.com/browserslist/browserslist</a>.</p><img class="d-block img-thumbnail mt-4" src="../img/docs/autoprefixer.png" alt="Autoprefixer">
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

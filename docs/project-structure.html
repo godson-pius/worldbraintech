@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Project Structure
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left" aria-label="Page title" style="background-image: url(../img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Documentation</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">Project Structure</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-accent py-1 px-2 text-white text-sm"><strong>Docs</strong></div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 105px; height: calc(100% - 105px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="dev-setup.html">Dev Environment Setup</a><a class="list-group-item list-group-item-action" href="working-with-gulp.html">Working With Gulp</a><a class="list-group-item list-group-item-action active" href="project-structure.html">Project Structure</a><a class="list-group-item list-group-item-action" href="using-preprocessors.html">Using Preprocessors (Pug &amp; Sass)</a><a class="list-group-item list-group-item-action" href="autoprefixer.html">Browser Support (Autoprefixer)</a><a class="list-group-item list-group-item-action" href="global-colors.html">Global Colors</a><a class="list-group-item list-group-item-action" href="components.html">Components</a><a class="list-group-item list-group-item-action" href="utilities.html">Utility Classes</a><a class="list-group-item list-group-item-action" href="font-icons.html">Font Icons</a><a class="list-group-item list-group-item-action" href="google-maps.html">Google Maps API</a><a class="list-group-item list-group-item-action" href="credits.html">Sources and Credits</a><a class="list-group-item list-group-item-action" href="changelog.html">Changelog</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5 mb-2">
+        <div class="table-responsive">
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th class="w-25">Folder / File name</th>
+                <th class="w-75">Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Documentation</span></td>
+                <td class="w-75">Folder contains file with link to this documentation.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx</span></td>
+                <td class="w-75">Folder contains all template source and production files.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / src</span></td>
+                <td class="w-75">This folder holds all template source files like .pug, .scss, .js that are then processed (compiled / minified) to <code>dist</code> folder.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / dist</span></td>
+                <td class="w-75">Folder contains all template distribution files like .html, .css, .js that have been processed (compiled / minified) from <code>src</code> folder using Node.js and Gulp.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / package.json</span></td>
+                <td class="w-75">File contains meta data about your app or module. Most importantly, it includes the list of dependencies to install from npm when running <kbd>npm install</kbd>.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / gulpfile.js</span></td>
+                <td class="w-75">Configuration file for Gulp library. It contains all tasks you want to perform with Gulp. Learn more about it from <a href='working-with-gulp.html'>Working with Gulp</a> section or <a href='https://github.com/gulpjs/gulp/blob/v3.9.1/docs/API.md' target='_blank'>official Gulp documentation</a>.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / src / js</span></td>
+                <td class="w-75">This folder contains main <code>theme.js</code> that is processed (compiled / minified) to <code>dist/js/theme.min.js</code>.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / src / scss</span></td>
+                <td class="w-75">This folder contains all project <code>sass</code> files that are compiled and minified to styles in <code>dist/css/</code> folder.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / src / templates</span></td>
+                <td class="w-75">This folder contains all <code>pug</code> files that are compiled into HTML in <code>dist</code>, <code>dist/components</code> and <code>dist/docs</code> folders.</td>
+              </tr>
+              <tr>
+                <td class="w-25"><span class="font-weight-medium">Createx / src / vendor</span></td>
+                <td class="w-75">This folder contains all vendor (plugins, font icons, libraries) <code>.js / .css</code> files that are compressed and concatinated into single <code>vendor.min.js</code> and <code>vendor.min.css</code> files respectively and put into <code>dist</code> folder.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="alert alert-info mt-3 mb-4"><strong>Note:</strong> if you do not use Pro Front-End setup with Node.js and Gulp and want directly edit html / css / js files you should be looking into <strong>dist</strong> folder.</div>
+        <p>Whether you work with Node.js and Gulp or not you can still take advantage of preprocessors for HTML and CSS.<br>In this case you might want to learn <a href='using-preprocessors.html' class='font-weight-medium'>how to use Pug and Sass</a>.</p>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

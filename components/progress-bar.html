@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Progress Bar
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Progress Bar</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Progress Style 1 (Default) Code-->
+    <div class="modal fade" id="progress-style1-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-4">Use background utility classes to change the appearance of individual progress bars. For example, to dispaly Info (blue) color progress bar add <code>bg-info</code> class to individual <code>progress-bar</code>.</p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Progress Primary (Style 1) --&gt;</strong>
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;
+    &lt;span&gt;&lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;Web Development - 60%&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Progress Multiple Bars (Style 1) --&gt;</strong>
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar bg-success&quot; role=&quot;progressbar&quot; style=&quot;width: 20%;&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;progress-bar bg-info&quot; role=&quot;progressbar&quot; style=&quot;width: 30%;&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;progress-bar bg-warning&quot; role=&quot;progressbar&quot; style=&quot;width: 25%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Progress Striped Animated (Style 1) --&gt;</strong>
+&lt;div class=&quot;progress&quot;&gt;
+  &lt;div class=&quot;progress-bar progress-bar-striped progress-bar-animated&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Progress Light Skin (Style 1) --&gt;</strong>
+&lt;div class=&quot;progress progress-light-skin&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;
+    &lt;span&gt;&lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;Web Development - 60%&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Progress Primary (Style 1)</strong>
+.progress
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+    span
+      i.fe-icon-globe
+      | Web Development - 60%
+
+<strong>//- Progress Multiple Bars (Style 1)</strong>
+.progress
+  .progress-bar.bg-success(role=&quot;progressbar&quot; style=&quot;width: 20%;&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+  .progress-bar.bg-info(role=&quot;progressbar&quot; style=&quot;width: 30%;&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+  .progress-bar.bg-warning(role=&quot;progressbar&quot; style=&quot;width: 25%;&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+
+<strong>//- Progress Striped Animated (Style 1)</strong>
+.progress
+  .progress-bar.progress-bar-striped.progress-bar-animated((role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+
+<strong>//- Progress Light Skin (Style 1)</strong>
+.progress.progress-light-skin
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+    span
+      i.fe-icon-globe
+      | Web Development - 60%</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Progress Style 2 Code-->
+    <div class="modal fade" id="progress-style2-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-4">Use background utility classes to change the appearance of individual progress bars. For example, to dispaly Info (blue) color progress bar add <code>bg-info</code> class to individual <code>progress-bar</code>.</p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Progress Primary (Style 2) --&gt;</strong>
+&lt;span class=&quot;progress-label&quot;&gt;
+  &lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;
+  Web Development
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-2&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right&quot;&gt;60%&lt;/span&gt;
+
+<strong>&lt;!-- Progress Light Skin (Style 2) --&gt;</strong>
+&lt;span class=&quot;progress-label text-white&quot;&gt;
+  &lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;
+  Web Development
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-2 progress-light-skin&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right text-white&quot;&gt;60%&lt;/span&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Progress Primary (Style 1)</strong>
+span.progress-label
+  i.fe-icon-globe
+  | Web Development
+.progress.progress-style-2
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right 60%
+
+<strong>//- Progress Light Skin (Style 1)</strong>
+span.progress-label.text-white
+  i.fe-icon-globe
+  | Web Development
+.progress.progress-style-2.progress-light-skin
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right.text-white 60%</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Progress Style 3 Code-->
+    <div class="modal fade" id="progress-style3-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-4">Use background utility classes to change the appearance of individual progress bars. For example, to dispaly Info (blue) color progress bar add <code>bg-info</code> class to individual <code>progress-bar</code>.</p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Progress Primary (Style 3) --&gt;</strong>
+&lt;span class=&quot;progress-label&quot;&gt;
+  &lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;
+  Web Development
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-3&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right&quot;&gt;60%&lt;/span&gt;
+
+<strong>&lt;!-- Progress Light Skin (Style 3) --&gt;</strong>
+&lt;span class=&quot;progress-label text-white&quot;&gt;
+  &lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;
+  Web Development
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-3 progress-light-skin&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right text-white&quot;&gt;60%&lt;/span&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Progress Primary (Style 3)</strong>
+span.progress-label
+  i.fe-icon-globe
+  | Web Development
+.progress.progress-style-3
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right 60%
+
+<strong>//- Progress Light Skin (Style 3)</strong>
+span.progress-label.text-white
+  i.fe-icon-globe
+  | Web Development
+.progress.progress-style-3.progress-light-skin
+  .progress-bar(role=&quot;progressbar&quot; style=&quot;width: 60%;&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right.text-white 60%</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Progress Animated When in View Code-->
+    <div class="modal fade" id="progress-animated-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-4">Use background utility classes to change the appearance of individual progress bars. For example, to dispaly Info (blue) color progress bar add <code>bg-info</code> class to individual <code>progress-bar</code>.</p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Progress Primary Animated (Style 2) --&gt;</strong>
+&lt;span class=&quot;progress-label&quot;&gt;
+  &lt;i class=&quot;fe-icon-globe&quot;&gt;&lt;/i&gt;
+  Web Development
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-2 progress-animate-fill&quot;&gt;
+  &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right&quot;&gt;60%&lt;/span&gt;
+
+<strong>&lt;!-- Progress Warning Animated (Style 3) --&gt;</strong>
+&lt;span class=&quot;progress-label&quot;&gt;
+  &lt;i class=&quot;fe-icon-database&quot;&gt;&lt;/i&gt;
+  Back-End Dev
+&lt;/span&gt;
+&lt;div class=&quot;progress progress-style-3 progress-animate-fill&quot;&gt;
+  &lt;div class=&quot;progress-bar bg-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;75&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;span class=&quot;progress-label text-right&quot;&gt;75%&lt;/span&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Progress Primary Animated (Style 2)</strong>
+span.progress-label
+  i.fe-icon-globe
+  | Web Development
+.progress.progress-style-2.progress-animate-fill
+  .progress-bar(role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right 60%
+
+<strong>//- Progress Warning Animated (Style 3)</strong>
+span.progress-label
+  i.fe-icon-database
+  | Back-End Dev
+.progress.progress-style-3.progress-animate-fill
+  .progress-bar.bg-warning(role=&quot;progressbar&quot; aria-valuenow=&quot;75&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;)
+span.progress-label.text-right 75%</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action active" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4">
+        <!-- Style 1-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 1 (Default)</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#progress-style1-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-md-6 mb-4 pb-2">
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-globe"></i>Web Development - 60%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-monitor"></i>UX/UI Design - 50%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-edit"></i>Illustration - 45%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-feather"></i>Iconography - 55%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-database"></i>Back-End Dev - 75%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-settings"></i>Front-End Dev - 65%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-instagram"></i>Photography - 70%</span></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress mb-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-info" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <!-- Progress-->
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <!-- Light Skin-->
+          <div class="col-md-6 mb-4 pb-2">
+            <div class="bg-dark p-4">
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-globe"></i>Web Development - 60%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-monitor"></i>UX/UI Design - 50%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-edit"></i>Illustration - 45%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-feather"></i>Iconography - 55%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-database"></i>Back-End Dev - 75%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-settings"></i>Front-End Dev - 65%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-instagram"></i>Photography - 70%</span></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin mb-3">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 20%;" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-info" role="progressbar" style="width: 30%;" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+              <!-- Progress-->
+              <div class="progress progress-light-skin">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Style 2-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 2</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#progress-style2-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-md-6 mb-4 pb-2">
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-globe"></i>Web Development</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">60%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-monitor"></i>UX/UI Design</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">50%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-edit"></i>Illustration </span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">45%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-feather"></i>Iconography</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">55%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-database"></i>Back-End Dev</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">75%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-settings"></i>Front-End Dev</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">65%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-instagram"></i>Photography</span>
+            <div class="progress progress-style-2">
+              <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">70%</span>
+          </div>
+          <div class="col-md-6 mb-4 pb-2">
+            <div class="bg-dark p-4">
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-globe"></i>Web Development</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">60%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-monitor"></i>UX/UI Design</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">50%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-edit"></i>Illustration </span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">45%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-feather"></i>Iconography</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">55%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-database"></i>Back-End Dev</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">75%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-settings"></i>Front-End Dev</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">65%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-instagram"></i>Photography</span>
+              <div class="progress progress-style-2 progress-light-skin">
+                <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">70%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Style 3-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 3</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#progress-style3-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-md-6 mb-4 pb-2">
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-globe"></i>Web Development</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">60%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-monitor"></i>UX/UI Design</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">50%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-edit"></i>Illustration </span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">45%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-feather"></i>Iconography</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">55%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-database"></i>Back-End Dev</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">75%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-settings"></i>Front-End Dev</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">65%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-instagram"></i>Photography</span>
+            <div class="progress progress-style-3">
+              <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">70%</span>
+          </div>
+          <div class="col-md-6 mb-4 pb-2">
+            <div class="bg-dark p-4">
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-globe"></i>Web Development</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">60%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-monitor"></i>UX/UI Design</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-accent" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">50%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-edit"></i>Illustration </span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">45%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-feather"></i>Iconography</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">55%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-database"></i>Back-End Dev</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">75%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-settings"></i>Front-End Dev</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-danger" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">65%</span>
+              <!-- Progress--><span class="progress-label text-white"><i class="fe-icon-instagram"></i>Photography</span>
+              <div class="progress progress-style-3 progress-light-skin">
+                <div class="progress-bar bg-gradient" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div><span class="progress-label text-right text-white">70%</span>
+            </div>
+          </div>
+        </div>
+        <!-- Animate when in view-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Animate when in view &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Works only with Style 2 and 3</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#progress-animated-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-md-6 mb-4 pb-2">
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-globe"></i>Web Development</span>
+            <div class="progress progress-style-2 progress-animate-fill">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">60%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-monitor"></i>UX/UI Design</span>
+            <div class="progress progress-style-2 progress-animate-fill">
+              <div class="progress-bar bg-accent" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">50%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-edit"></i>Illustration </span>
+            <div class="progress progress-style-2 progress-animate-fill">
+              <div class="progress-bar bg-info" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">45%</span>
+          </div>
+          <div class="col-md-6 mb-4 pb-2">
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-database"></i>Back-End Dev</span>
+            <div class="progress progress-style-3 progress-animate-fill">
+              <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">75%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-settings"></i>Front-End Dev</span>
+            <div class="progress progress-style-3 progress-animate-fill">
+              <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">65%</span>
+            <!-- Progress--><span class="progress-label"><i class="fe-icon-instagram"></i>Photography</span>
+            <div class="progress progress-style-3 progress-animate-fill">
+              <div class="progress-bar bg-gradient" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+            </div><span class="progress-label text-right">70%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

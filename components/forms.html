@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Forms
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Forms</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Forms Supported Types Code-->
+    <div class="modal fade" id="forms-supported-types-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Text Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;text-input&quot;&gt;Text&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;text-input&quot; value=&quot;Artisanal kale&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Search Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;search-input&quot;&gt;Search&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;search&quot; id=&quot;search-input&quot; value=&quot;How do I shoot web&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Email Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;email-input&quot;&gt;Email&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;email&quot; id=&quot;email-input&quot; value=&quot;email@example.com&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- URL Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;url-input&quot;&gt;URL&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;url&quot; id=&quot;url-input&quot; value=&quot;https://getbootstrap.com&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Phone Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;tel-input&quot;&gt;Phone&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;tel&quot; id=&quot;tel-input&quot; value=&quot;1-(770)-334-2518&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Password Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;pass-input&quot;&gt;Password&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;pass-input&quot; value=&quot;mypasswordexample&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Textarea --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;textarea-input&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea class=&quot;form-control&quot; id=&quot;textarea-input&quot; rows=&quot;5&quot;&gt;Hello World!&lt;/textarea&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Select --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;select-input&quot;&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;form-control&quot; id=&quot;select-input&quot;&gt;
+    &lt;option&gt;Choose option...&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Multiselect --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;multiselect-input&quot;&gt;Multiselect&lt;/label&gt;
+  &lt;select class=&quot;form-control&quot; id=&quot;multiselect-input&quot; size=&quot;3&quot; multiple&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+    &lt;option&gt;Option item 4&lt;/option&gt;
+    &lt;option&gt;Option item 5&lt;/option&gt;
+    &lt;option&gt;Option item 6&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- File Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;file-input&quot;&gt;File&lt;/label&gt;
+  &lt;div class=&quot;custom-file&quot;&gt;
+    &lt;input class=&quot;custom-file-input&quot; type=&quot;file&quot; id=&quot;file-input&quot;&gt;
+    &lt;label class=&quot;custom-file-label&quot; for=&quot;file-input&quot;&gt;Choose file...&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Number Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;number-input&quot;&gt;Number&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;number&quot; id=&quot;number-input&quot; value=&quot;37&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Date Time Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;date-time-input&quot;&gt;Date and time&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;datetime-local&quot; id=&quot;date-time-input&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Date Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;date-input&quot;&gt;Date&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;date&quot; id=&quot;date-input&quot; value=&quot;2018-06-13&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Month Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;month-input&quot;&gt;Month&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;month&quot; id=&quot;month-input&quot; value=&quot;2018-06&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Week Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;week-input&quot;&gt;Week&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;week&quot; id=&quot;week-input&quot; value=&quot;2018-W33&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Time Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;time-input&quot;&gt;Time&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;time&quot; id=&quot;time-input&quot; value=&quot;14:45:00&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Color Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-muted&quot; for=&quot;color-input&quot;&gt;Color&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;color&quot; id=&quot;color-input&quot; value=&quot;#f5f5f5&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Text Input</strong>
+.form-group
+  label(for=&quot;text-input&quot;).text-muted Text
+  input(type=&quot;text&quot; id=&quot;text-input&quot; value=&quot;Artisanal kale&quot;).form-control
+
+<strong>//- Search Input</strong>
+.form-group
+  label(for=&quot;search-input&quot;).text-muted Search
+  input(type=&quot;search&quot; id=&quot;search-input&quot; value=&quot;How do I shoot web&quot;).form-control
+
+<strong>//- Email Input</strong>
+.form-group
+  label(for=&quot;email-input&quot;).text-muted Email
+  input(type=&quot;email&quot; id=&quot;email-input&quot; value=&quot;email@example.com&quot;).form-control
+
+<strong>//- URL Input</strong>
+.form-group
+  label(for=&quot;url-input&quot;).text-muted URL
+  input(type=&quot;url&quot; id=&quot;url-input&quot; value=&quot;https://getbootstrap.com&quot;).form-control
+
+<strong>//- Phone Input</strong>
+.form-group
+  label(for=&quot;tel-input&quot;).text-muted Phone
+  input(type=&quot;tel&quot; id=&quot;tel-input&quot; value=&quot;1-(770)-334-2518&quot;).form-control
+
+<strong>//- Password Input</strong>
+.form-group
+  label(for=&quot;pass-input&quot;).text-muted Password
+  input(type=&quot;password&quot; id=&quot;pass-input&quot; value=&quot;mypasswordexample&quot;).form-control
+
+<strong>//- Textarea</strong>
+.form-group
+  label(for=&quot;textarea-input&quot;).text-muted Textarea
+  textarea(id=&quot;textarea-input&quot; rows=&quot;5&quot;).form-control Hello World!
+
+<strong>//- Select</strong>
+.form-group
+  label(for=&quot;select-input&quot;).text-muted Select
+  select(id=&quot;select-input&quot;).form-control
+    option Choose option...
+    option Option item 1
+    option Option item 2
+    option Option item 3
+
+<strong>//- Multiselect</strong>
+.form-group
+  label(for=&quot;multiselect-input&quot;).text-muted Multiselect
+  select(id=&quot;multiselect-input&quot; size=&quot;3&quot; multiple).form-control
+    option Option item 1
+    option Option item 2
+    option Option item 3
+    option Option item 4
+    option Option item 5
+    option Option item 6
+
+<strong>//- File Input</strong>
+.form-group
+  label(for=&quot;file-input&quot;).text-muted File
+  .custom-file
+    input(type=&quot;file&quot; id=&quot;file-input&quot;).custom-file-input
+    label(for=&quot;file-input&quot;).custom-file-label Choose file...
+
+<strong>//- Number Input</strong>
+.form-group
+  label(for=&quot;number-input&quot;).text-muted Number
+  input(type=&quot;number&quot; id=&quot;number-input&quot; value=&quot;37&quot;).form-control
+
+<strong>//- Date Time Input</strong>
+.form-group
+  label(for=&quot;date-time-input&quot;).text-muted Date and time
+  input(type=&quot;datetime-local&quot; id=&quot;date-time-input&quot;).form-control
+
+<strong>//- Date Input</strong>
+.form-group
+  label(for=&quot;date-input&quot;).text-muted Date
+  input(type=&quot;date&quot; id=&quot;date-input&quot; value=&quot;2017-06-13&quot;).form-control
+
+<strong>//- Month Input</strong>
+.form-group
+  label(for=&quot;month-input&quot;).text-muted Month
+  input(type=&quot;month&quot; id=&quot;month-input&quot; value=&quot;2017-06&quot;).form-control
+
+<strong>//- Week Input</strong>
+.form-group
+  label(for=&quot;week-input&quot;).text-muted Week
+  input(type=&quot;week&quot; id=&quot;week-input&quot; value=&quot;2017-W33&quot;).form-control
+
+<strong>//- Time Input</strong>
+.form-group
+  label(for=&quot;time-input&quot;).text-muted Time
+  input(type=&quot;time&quot; id=&quot;time-input&quot; value=&quot;14:45:00&quot;).form-control
+
+<strong>//- Color Input</strong>
+.form-group
+  label(for=&quot;color-input&quot;).text-muted Color
+  input(type=&quot;color&quot; id=&quot;color-input&quot; value=&quot;#f5f5f5&quot;).form-control</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Checkboxes and Radios Code-->
+    <div class="modal fade" id="forms-checkboxes-radios-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Checkboxes --&gt;</strong>
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-1&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-1&quot;&gt;Check this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-2&quot; checked&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-2&quot;&gt;Uncheck this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-3&quot; disabled&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-3&quot;&gt;Disabled checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Radio Buttons --&gt;</strong>
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-1&quot; name=&quot;radio&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-1&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-2&quot; name=&quot;radio&quot; checked&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-2&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-3&quot; name=&quot;radio&quot; disabled&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-3&quot;&gt;Disabled radio&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Inline Checkboxes --&gt;</strong>
+&lt;div class=&quot;custom-control custom-checkbox custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-4&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-4&quot;&gt;Check this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-5&quot; checked&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-5&quot;&gt;Uncheck this checkbox&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-checkbox custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-6&quot; disabled&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-6&quot;&gt;Disabled checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Inline Radio Buttons --&gt;</strong>
+&lt;div class=&quot;custom-control custom-radio custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-4&quot; name=&quot;radio2&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-4&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-5&quot; name=&quot;radio2&quot; checked&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-5&quot;&gt;Toggle this radio&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;custom-control custom-radio custom-control-inline&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-6&quot; name=&quot;radio2&quot; disabled&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-6&quot;&gt;Disabled radio&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Checkboxes</strong>
+.custom-control.custom-checkbox
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-1&quot;).custom-control-input
+  label(for=&quot;ex-check-1&quot;).custom-control-label Check this checkbox
+.custom-control.custom-checkbox
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-2&quot; checked).custom-control-input
+  label(for=&quot;ex-check-2&quot;).custom-control-label Uncheck this checkbox
+.custom-control.custom-checkbox
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-3&quot; disabled).custom-control-input
+  label(for=&quot;ex-check-3&quot;).custom-control-label Disabled checkbox
+
+<strong>//- Radio Buttons</strong>
+.custom-control.custom-radio
+  input(type=&quot;radio&quot; id=&quot;ex-radio-1&quot; name=&quot;radio&quot;).custom-control-input
+  label(for=&quot;ex-radio-1&quot;).custom-control-label Toggle this radio
+.custom-control.custom-radio
+  input(type=&quot;radio&quot; id=&quot;ex-radio-2&quot; name=&quot;radio&quot; checked).custom-control-input
+  label(for=&quot;ex-radio-2&quot;).custom-control-label Toggle this radio
+.custom-control.custom-radio
+  input(type=&quot;radio&quot; id=&quot;ex-radio-3&quot; name=&quot;radio&quot; disabled).custom-control-input
+  label(for=&quot;ex-radio-3&quot;).custom-control-label Disabled radio
+
+<strong>//- Inline Checkboxes</strong>
+.custom-control.custom-checkbox.custom-control-inline
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-4&quot;).custom-control-input
+  label(for=&quot;ex-check-4&quot;).custom-control-label Check this checkbox
+.custom-control.custom-checkbox.custom-control-inline
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-5&quot; checked).custom-control-input
+  label(for=&quot;ex-check-5&quot;).custom-control-label Uncheck this checkbox
+.custom-control.custom-checkbox.custom-control-inline
+  input(type=&quot;checkbox&quot; id=&quot;ex-check-6&quot; disabled).custom-control-input
+  label(for=&quot;ex-check-6&quot;).custom-control-label Disabled checkbox
+
+<strong>//- Inline Radio Buttons</strong>
+.custom-control.custom-radio.custom-control-inline
+  input(type=&quot;radio&quot; id=&quot;ex-radio-4&quot; name=&quot;radio2&quot;).custom-control-input
+  label(for=&quot;ex-radio-4&quot;).custom-control-label Toggle this radio
+.custom-control.custom-radio.custom-control-inline
+  input(type=&quot;radio&quot; id=&quot;ex-radio-5&quot; name=&quot;radio2&quot; checked).custom-control-input
+  label(for=&quot;ex-radio-5&quot;).custom-control-label Toggle this radio
+.custom-control.custom-radio.custom-control-inline
+  input(type=&quot;radio&quot; id=&quot;ex-radio-6&quot; name=&quot;radio2&quot; disabled).custom-control-input
+  label(for=&quot;ex-radio-6&quot;).custom-control-label Disabled radio</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Switch Code-->
+    <div class="modal fade" id="forms-switch-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html10" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug10" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html10" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Switch --&gt;</strong>
+&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; id=&quot;customSwitch1&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Disabled switch --&gt;</strong>
+&lt;div class=&quot;custom-control custom-switch&quot;&gt;
+  &lt;input type=&quot;checkbox&quot; class=&quot;custom-control-input&quot; disabled id=&quot;customSwitch2&quot;&gt;
+  &lt;label class=&quot;custom-control-label&quot; for=&quot;customSwitch2&quot;&gt;Disabled switch element&lt;/label&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug10" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Switch</strong>
+.custom-control.custom-switch
+  input(type=&quot;checkbox&quot; id=&quot;customSwitch1&quot;).custom-control-input
+  label(for=&quot;customSwitch1&quot;).custom-control-label Toggle this switch element
+
+<strong>//- Disabled switch</strong>
+.custom-control.custom-switch
+  input(type=&quot;checkbox&quot; id=&quot;customSwitch2&quot; disabled).custom-control-input
+  label(for=&quot;customSwitch2&quot;).custom-control-label Disabled switch element</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Sizing Code-->
+    <div class="modal fade" id="forms-sizing-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Large Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;large-input&quot;&gt;Large input&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-lg&quot; type=&quot;text&quot; id=&quot;large-input&quot; placeholder=&quot;Large input placeholder&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Normal Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;normal-input&quot;&gt;Normal input&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;normal-input&quot; placeholder=&quot;Normal input placeholder&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Small Input --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;small-input&quot;&gt;Small input&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-sm&quot; type=&quot;text&quot; id=&quot;small-input&quot; placeholder=&quot;Small input placeholder&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Large Input</strong>
+.form-group
+  label(for=&quot;large-input&quot;) Large input
+  input(type=&quot;text&quot; id=&quot;large-input&quot; placeholder=&quot;Large input placeholder&quot;).form-control.form-control-lg
+
+<strong>//- Normal Input</strong>
+.form-group
+  label(for=&quot;normal-input&quot;) Normal input
+  input(type=&quot;text&quot; id=&quot;normal-input&quot; placeholder=&quot;Normal input placeholder&quot;).form-control
+
+<strong>//- Small Input</strong>
+.form-group
+  label(for=&quot;small-input&quot;) Small input
+  input(type=&quot;text&quot; id=&quot;small-input&quot; placeholder=&quot;Small input placeholder&quot;).form-control.form-control-sm</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Disabled Code-->
+    <div class="modal fade" id="forms-disabled-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Readonly Input --&gt;</strong>
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Readonly input here...&quot; readonly&gt;
+
+<strong>&lt;!-- Disabled Input --&gt;</strong>
+&lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled&gt;
+
+<strong>&lt;!-- Disabled Select --&gt;</strong>
+&lt;select class=&quot;form-control&quot; disabled&gt;
+  &lt;option&gt;Disabled select here...&lt;/option&gt;
+  &lt;option&gt;Option item 1&lt;/option&gt;
+  &lt;option&gt;Option item 2&lt;/option&gt;
+  &lt;option&gt;Option item 3&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Readonly Input</strong>
+input(type=&quot;text&quot; placeholder=&quot;Readonly input here...&quot; readonly).form-control
+
+<strong>//- Disabled Input</strong>
+input(type=&quot;text&quot; placeholder=&quot;Disabled input here...&quot; disabled).form-control
+
+<strong>//- Disabled Select</strong>
+select(disabled).form-control
+  option Disabled select here...
+  option Option item 1
+  option Option item 2
+  option Option item 3</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Inline Code-->
+    <div class="modal fade" id="forms-inline-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html5" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html5" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Inline Form --&gt;</strong>
+&lt;form class=&quot;form-inline&quot;&gt;
+  &lt;label class=&quot;sr-only&quot;&gt;Name&lt;/label&gt;
+  &lt;input class=&quot;form-control mb-3 mr-sm-4&quot; type=&quot;text&quot; placeholder=&quot;John Doe&quot;&gt;
+  &lt;label class=&quot;sr-only&quot;&gt;Username&lt;/label&gt;
+  &lt;input class=&quot;form-control mb-3 mr-sm-4&quot; type=&quot;text&quot; placeholder=&quot;Username&quot;&gt;
+  &lt;div class=&quot;custom-control custom-checkbox mb-3 mr-4&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;inline-form-check-1&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;inline-form-check-1&quot;&gt;Remember me&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary mb-3&quot; type=&quot;submit&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug5" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Inline Form</strong>
+form.form-inline
+  label.sr-only Name
+  input(type=&quot;text&quot; placeholder=&quot;John Doe&quot;).form-control.mb-3.mr-sm-4
+  label.sr-only Username
+  input(type=&quot;text&quot; placeholder=&quot;Username&quot;).form-control.mb-3.mr-sm-4
+  .custom-control.custom-checkbox.mb-3.mr-4
+    input(type=&quot;checkbox&quot; id=&quot;inline-form-check-1&quot;).custom-control-input
+    label(for=&quot;inline-form-check-1&quot;).custom-control-label Remember me
+  button(type=&quot;submit&quot;).btn.btn-primary.mb-3 Submit</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Help Text Code-->
+    <div class="modal fade" id="forms-help-text-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html6" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html6" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Form Help Text --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;help-text-input&quot;&gt;Password&lt;/label&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; id=&quot;help-text-input&quot; placeholder=&quot;Your password here&quot;&gt;
+  &lt;small class=&quot;form-text text-muted&quot;&gt;Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug6" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Form Help Text</strong>
+.form-group
+  label(for=&quot;help-text-input&quot;) Password
+  input(type=&quot;password&quot; id=&quot;help-text-input&quot; placeholder=&quot;Your password here&quot;).form-control
+  small.form-text.text-muted Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Validation: Status Text Code-->
+    <div class="modal fade" id="forms-validation-text-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html7" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug7" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html7" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Forms Validation: Status Text --&gt;</strong>
+&lt;form class=&quot;container needs-validation pb-5&quot; novalidate&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustom01&quot;&gt;First name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustom02&quot;&gt;Last name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustomUsername&quot;&gt;Username&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustomUsername&quot; placeholder=&quot;Username&quot; required&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please choose a username.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustom03&quot;&gt;City&lt;/label&gt;
+      &lt;select class=&quot;form-control&quot; id=&quot;validationCustom03&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose city...&lt;/option&gt;
+        &lt;option value=&quot;Dallas&quot;&gt;Dallas&lt;/option&gt;
+        &lt;option value=&quot;Houston&quot;&gt;Houston&lt;/option&gt;
+        &lt;option value=&quot;Los Angeles&quot;&gt;Los Angeles&lt;/option&gt;
+        &lt;option value=&quot;Miami&quot;&gt;Miami&lt;/option&gt;
+        &lt;option value=&quot;New York&quot;&gt;New York&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid city.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustom04&quot;&gt;State&lt;/label&gt;
+      &lt;select class=&quot;form-control&quot; id=&quot;validationCustom04&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose state...&lt;/option&gt;
+        &lt;option value=&quot;Arizona&quot;&gt;Arizona&lt;/option&gt;
+        &lt;option value=&quot;Colorado&quot;&gt;Colorado&lt;/option&gt;
+        &lt;option value=&quot;Florida&quot;&gt;Florida&lt;/option&gt;
+        &lt;option value=&quot;Indiana&quot;&gt;Indiana&lt;/option&gt;
+        &lt;option value=&quot;Kentucky&quot;&gt;Kentucky&lt;/option&gt;
+        &lt;option value=&quot;Texas&quot;&gt;Texas&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid state.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 form-group&quot;&gt;
+      &lt;label for=&quot;validationCustom05&quot;&gt;Zip&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationCustom05&quot; placeholder=&quot;Zip&quot; required&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;Please provide a valid zip.&lt;/div&gt;
+      &lt;div class=&quot;valid-feedback&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+      &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;invalidCheck&quot; required&gt;
+      &lt;label class=&quot;custom-control-label&quot; for=&quot;invalidCheck&quot;&gt;Agree to terms and conditions&lt;/label&gt;
+      &lt;div class=&quot;invalid-feedback&quot;&gt;You must agree before submitting.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug7" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Forms Validation: Status Text</strong>
+form(novalidate).container.needs-validation.pb-5
+  .row
+    .col-md-4.form-group
+      label(for=&quot;validationCustom01&quot;) First name
+      input(type=&quot;text&quot; id=&quot;validationCustom01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required).form-control
+      .valid-feedback Looks good!
+    .col-md-4.form-group
+      label(for=&quot;validationCustom02&quot;) Last name
+      input(type=&quot;text&quot; id=&quot;validationCustom02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required).form-control
+      .valid-feedback Looks good!
+    .col-md-4.form-group
+      label(for=&quot;validationCustomUsername&quot;) Username
+      input(type=&quot;text&quot; id=&quot;validationCustomUsername&quot; placeholder=&quot;Username&quot; required).form-control
+      .invalid-feedback Please choose a username.
+      .valid-feedback Looks good!
+  .row
+    .col-md-6.form-group
+      label(for=&quot;validationCustom03&quot;) City
+      select(id=&quot;validationCustom03&quot; required).form-control
+        option(value=&quot;&quot;) Choose city...
+        option(value=&quot;Dallas&quot;) Dallas
+        option(value=&quot;Houston&quot;) Houston
+        option(value=&quot;Los Angeles&quot;) Los Angeles
+        option(value=&quot;Miami&quot;) Miami
+        option(value=&quot;New York&quot;) New York
+      .invalid-feedback Please provide a valid city.
+      .valid-feedback Looks good!
+    .col-md-3.form-group
+      label(for=&quot;validationCustom04&quot;) State
+      select(id=&quot;validationCustom04&quot; required).form-control
+        option(value=&quot;&quot;) Choose state...
+        option(value=&quot;Arizona&quot;) Arizona
+        option(value=&quot;Colorado&quot;) Colorado
+        option(value=&quot;Florida&quot;) Florida
+        option(value=&quot;Indiana&quot;) Indiana
+        option(value=&quot;Kentucky&quot;) Kentucky
+        option(value=&quot;Texas&quot;) Texas
+      .invalid-feedback Please provide a valid state.
+      .valid-feedback Looks good!
+    .col-md-3.form-group
+      label(for=&quot;validationCustom05&quot;) Zip
+      input(type=&quot;text&quot; id=&quot;validationCustom05&quot; placeholder=&quot;Zip&quot; required).form-control
+      .invalid-feedback Please provide a valid zip.
+      .valid-feedback Looks good!
+  .form-group
+    .custom-control.custom-checkbox
+      input(type=&quot;checkbox&quot; id=&quot;invalidCheck&quot; required).custom-control-input
+      label(for=&quot;invalidCheck&quot;).custom-control-label Agree to terms and conditions
+      .invalid-feedback You must agree before submitting.
+  button(type=&quot;submit&quot;).btn.btn-primary Submit Form</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Validation: Tooltips Code-->
+    <div class="modal fade" id="forms-validation-tooltips-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html8" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug8" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html8" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Forms Validation: Status Tooltips --&gt;</strong>
+&lt;form class=&quot;container needs-validation&quot; novalidate&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltip01&quot;&gt;First name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltip02&quot;&gt;Last name&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-4 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltipUsername&quot;&gt;Username&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltipUsername&quot; placeholder=&quot;Username&quot; required&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please choose a username.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltip03&quot;&gt;City&lt;/label&gt;
+      &lt;select class=&quot;form-control&quot; id=&quot;validationTooltip03&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose city...&lt;/option&gt;
+        &lt;option value=&quot;Dallas&quot;&gt;Dallas&lt;/option&gt;
+        &lt;option value=&quot;Houston&quot;&gt;Houston&lt;/option&gt;
+        &lt;option value=&quot;Los Angeles&quot;&gt;Los Angeles&lt;/option&gt;
+        &lt;option value=&quot;Miami&quot;&gt;Miami&lt;/option&gt;
+        &lt;option value=&quot;New York&quot;&gt;New York&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid city.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltip04&quot;&gt;State&lt;/label&gt;
+      &lt;select class=&quot;form-control&quot; id=&quot;validationTooltip04&quot; required&gt;
+        &lt;option value=&quot;&quot;&gt;Choose state...&lt;/option&gt;
+        &lt;option value=&quot;Arizona&quot;&gt;Arizona&lt;/option&gt;
+        &lt;option value=&quot;Colorado&quot;&gt;Colorado&lt;/option&gt;
+        &lt;option value=&quot;Florida&quot;&gt;Florida&lt;/option&gt;
+        &lt;option value=&quot;Indiana&quot;&gt;Indiana&lt;/option&gt;
+        &lt;option value=&quot;Kentucky&quot;&gt;Kentucky&lt;/option&gt;
+        &lt;option value=&quot;Texas&quot;&gt;Texas&lt;/option&gt;
+      &lt;/select&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid state.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-3 form-group&quot;&gt;
+      &lt;label for=&quot;validationTooltip05&quot;&gt;Zip&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;text&quot; id=&quot;validationTooltip05&quot; placeholder=&quot;Zip&quot; required&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;Please provide a valid zip.&lt;/div&gt;
+      &lt;div class=&quot;valid-tooltip&quot;&gt;Looks good!&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+      &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;invalidCheck01&quot; required&gt;
+      &lt;label class=&quot;custom-control-label&quot; for=&quot;invalidCheck01&quot;&gt;Agree to terms and conditions&lt;/label&gt;
+      &lt;div class=&quot;invalid-tooltip&quot;&gt;You must agree before submitting.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit Form&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug8" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Forms Validation: Status Tooltips</strong>
+form(novalidate).container.needs-validation
+  .row
+    .col-md-4.form-group
+      label(for=&quot;validationTooltip01&quot;) First name
+      input(type=&quot;text&quot; id=&quot;validationTooltip01&quot; placeholder=&quot;First name&quot; value=&quot;John&quot; required).form-control
+      .valid-tooltip Looks good!
+    .col-md-4.form-group
+      label(for=&quot;validationTooltip02&quot;) Last name
+      input(type=&quot;text&quot; id=&quot;validationTooltip02&quot; placeholder=&quot;Last name&quot; value=&quot;Doe&quot; required).form-control
+      .valid-tooltip Looks good!
+    .col-md-4.form-group
+      label(for=&quot;validationTooltipUsername&quot;) Username
+      input(type=&quot;text&quot; id=&quot;validationTooltipUsername&quot; placeholder=&quot;Username&quot; required).form-control
+      .invalid-tooltip Please choose a username.
+      .valid-tooltip Looks good!
+  .row
+    .col-md-6.form-group
+      label(for=&quot;validationTooltip03&quot;) City
+      select(id=&quot;validationTooltip03&quot; required).form-control
+        option(value=&quot;&quot;) Choose city...
+        option(value=&quot;Dallas&quot;) Dallas
+        option(value=&quot;Houston&quot;) Houston
+        option(value=&quot;Los Angeles&quot;) Los Angeles
+        option(value=&quot;Miami&quot;) Miami
+        option(value=&quot;New York&quot;) New York
+      .invalid-tooltip Please provide a valid city.
+      .valid-tooltip Looks good!
+    .col-md-3.form-group
+      label(for=&quot;validationTooltip04&quot;) State
+      select(id=&quot;validationTooltip04&quot; required).form-control
+        option(value=&quot;&quot;) Choose state...
+        option(value=&quot;Arizona&quot;) Arizona
+        option(value=&quot;Colorado&quot;) Colorado
+        option(value=&quot;Florida&quot;) Florida
+        option(value=&quot;Indiana&quot;) Indiana
+        option(value=&quot;Kentucky&quot;) Kentucky
+        option(value=&quot;Texas&quot;) Texas
+      .invalid-tooltip Please provide a valid state.
+      .valid-tooltip Looks good!
+    .col-md-3.form-group
+      label(for=&quot;validationTooltip05&quot;) Zip
+      input(type=&quot;text&quot; id=&quot;validationTooltip05&quot; placeholder=&quot;Zip&quot; required).form-control
+      .invalid-tooltip Please provide a valid zip.
+      .valid-tooltip Looks good!
+  .form-group
+    .custom-control.custom-checkbox
+      input(type=&quot;checkbox&quot; id=&quot;invalidCheck01&quot; required).custom-control-input
+      label(for=&quot;invalidCheck01&quot;).custom-control-label Agree to terms and conditions
+      .invalid-tooltip You must agree before submitting.
+  button(type=&quot;submit&quot;).btn.btn-primary Submit Form</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Forms Light Skin Code-->
+    <div class="modal fade" id="forms-light-skin-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html9" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug9" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html9" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Input Text Light Skin --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-white opacity-60&quot; for=&quot;text-input-light&quot;&gt;Text&lt;/label&gt;
+  &lt;input class=&quot;form-control form-control-light-skin&quot; type=&quot;text&quot; id=&quot;text-input-light&quot; value=&quot;Artisanal kale&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Textarea Light Skin --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-white opacity-60&quot; for=&quot;textarea-input-light&quot;&gt;Textarea&lt;/label&gt;
+  &lt;textarea class=&quot;form-control form-control-light-skin&quot; id=&quot;textarea-input-light&quot; rows=&quot;5&quot;&gt;Hello World!&lt;/textarea&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Select Light Skin --&gt;</strong>
+&lt;div class=&quot;form-group&quot;&gt;
+  &lt;label class=&quot;text-white opacity-60&quot; for=&quot;select-input-light&quot;&gt;Select&lt;/label&gt;
+  &lt;select class=&quot;form-control form-control-light-skin&quot; id=&quot;select-input-light&quot;&gt;
+    &lt;option&gt;Choose option...&lt;/option&gt;
+    &lt;option&gt;Option item 1&lt;/option&gt;
+    &lt;option&gt;Option item 2&lt;/option&gt;
+    &lt;option&gt;Option item 3&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- File Input Light Skin --&gt;</strong>
+&lt;div class=&quot;custom-file form-control-light-skin&quot;&gt;
+  &lt;input class=&quot;custom-file-input&quot; type=&quot;file&quot; id=&quot;file-input-light&quot;&gt;
+  &lt;label class=&quot;custom-file-label&quot; for=&quot;file-input-light&quot;&gt;Choose file...&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Checkbox Light Skin --&gt;</strong>
+&lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;check-light&quot;&gt;
+  &lt;label class=&quot;custom-control-label text-white&quot; for=&quot;check-light&quot;&gt;Check this checkbox&lt;/label&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Radio Button Light Skin --&gt;</strong>
+&lt;div class=&quot;custom-control custom-radio&quot;&gt;
+  &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;radio-light&quot; name=&quot;radio-light&quot;&gt;
+  &lt;label class=&quot;custom-control-label text-white&quot; for=&quot;radio-light&quot;&gt;Check this radio&lt;/label&gt;
+&lt;/div&gt;
+</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug9" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Input Text Light Skin</strong>
+.form-group
+  label(for=&quot;text-input-light&quot;).text-white.opacity-60 Text
+  input(type=&quot;text&quot; id=&quot;text-input-light&quot; value=&quot;Artisanal kale&quot;).form-control.form-control-light-skin
+
+<strong>//- Textarea Light Skin</strong>
+.form-group
+  label(for=&quot;textarea-input-light&quot;).text-white.opacity-60 Textarea
+  textarea(id=&quot;textarea-input-light&quot; rows=&quot;5&quot;).form-control.form-control-light-skin Hello World!
+
+<strong>//- Select Light Skin</strong>
+.form-group
+  label(for=&quot;select-input-light&quot;).text-white.opacity-60 Select
+  select(id=&quot;select-input-light&quot;).form-control.form-control-light-skin
+    option Choose option...
+    option Option item 1
+    option Option item 2
+    option Option item 3
+
+<strong>//- File Input Light Skin</strong>
+.custom-file.form-control-light-skin
+  input(type=&quot;file&quot; id=&quot;file-input-light&quot;).custom-file-input
+  label(for=&quot;file-input-light&quot;).custom-file-label Choose file...
+
+<strong>//- Checkbox Light Skin</strong>
+.custom-control.custom-checkbox
+  input(type=&quot;checkbox&quot; id=&quot;check-light&quot;).custom-control-input
+  label(for=&quot;check-light&quot;).custom-control-label.text-white Check this checkbox
+
+<strong>//- Radio Button Light Skin</strong>
+.custom-control.custom-radio
+  input(type=&quot;radio&quot; id=&quot;radio-light-2&quot; name=&quot;radio-light&quot;).custom-control-input
+  label(for=&quot;radio-light-2&quot;).custom-control-label.text-white Check this radio</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action active" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container">
+        <!-- Supported input types-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Supported input types</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-supported-types-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-5">
+          <div class="col-lg-10">
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="text-input">Text</label>
+              <div class="col-10">
+                <input class="form-control" type="text" id="text-input" value="Artisanal kale">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="search-input">Search</label>
+              <div class="col-10">
+                <input class="form-control" type="search" id="search-input" value="How do I shoot web">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="email-input">Email</label>
+              <div class="col-10">
+                <input class="form-control" type="email" id="email-input" value="email@example.com">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="url-input">URL</label>
+              <div class="col-10">
+                <input class="form-control" type="url" id="url-input" value="https://getbootstrap.com">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="tel-input">Phone</label>
+              <div class="col-10">
+                <input class="form-control" type="tel" id="tel-input" value="1-(770)-334-2518">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="pass-input">Password</label>
+              <div class="col-10">
+                <input class="form-control" type="password" id="pass-input" value="mypasswordexample">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="col-2 col-form-label text-muted" for="textarea-input">Textarea</label>
+              <div class="col-10">
+                <textarea class="form-control" id="textarea-input" rows="5">Hello World!</textarea>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="select-input">Select</label>
+              <div class="col-10">
+                <select class="form-control" id="select-input">
+                  <option>Choose option...</option>
+                  <option>Option item 1</option>
+                  <option>Option item 2</option>
+                  <option>Option item 3</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="multiselect-input">Multiselect</label>
+              <div class="col-10">
+                <select class="form-control" id="multiselect-input" size="3" multiple>
+                  <option>Option item 1</option>
+                  <option>Option item 2</option>
+                  <option>Option item 3</option>
+                  <option>Option item 4</option>
+                  <option>Option item 5</option>
+                  <option>Option item 6</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="file-input">File</label>
+              <div class="col-10">
+                <div class="custom-file">
+                  <input class="custom-file-input" type="file" id="file-input">
+                  <label class="custom-file-label" for="file-input">Choose file...</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="number-input">Number</label>
+              <div class="col-10">
+                <input class="form-control" type="number" id="number-input" value="37">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="date-time-input">Date and time</label>
+              <div class="col-10">
+                <input class="form-control" type="datetime-local" id="date-time-input">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="date-input">Date</label>
+              <div class="col-10">
+                <input class="form-control" type="date" id="date-input" value="2018-06-13">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="month-input">Month</label>
+              <div class="col-10">
+                <input class="form-control" type="month" id="month-input" value="2018-06">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="week-input">Week</label>
+              <div class="col-10">
+                <input class="form-control" type="week" id="week-input" value="2018-W33">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="time-input">Time</label>
+              <div class="col-10">
+                <input class="form-control" type="time" id="time-input" value="14:45:00">
+              </div>
+            </div>
+            <div class="form-group row align-items-center">
+              <label class="col-2 col-form-label text-muted" for="color-input">Color</label>
+              <div class="col-10">
+                <input class="form-control" type="color" id="color-input" value="#f5f5f5">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Checkboxes & radio buttons-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Checkboxes &amp; radio buttons</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-checkboxes-radios-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-4">
+          <div class="col-md-6 form-group">
+            <div class="d-inline-block mr-5">
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="ex-check-1">
+                <label class="custom-control-label" for="ex-check-1">Check this checkbox</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="ex-check-2" checked>
+                <label class="custom-control-label" for="ex-check-2">Uncheck this checkbox</label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="ex-check-3" disabled>
+                <label class="custom-control-label" for="ex-check-3">Disabled checkbox</label>
+              </div>
+            </div>
+            <div class="d-inline-block">
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="ex-radio-1" name="radio">
+                <label class="custom-control-label" for="ex-radio-1">Toggle this radio</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="ex-radio-2" name="radio" checked>
+                <label class="custom-control-label" for="ex-radio-2">Toggle this radio</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="ex-radio-3" name="radio" disabled>
+                <label class="custom-control-label" for="ex-radio-3">Disabled radio</label>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 form-group">
+            <div class="form-group">
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="ex-check-4">
+                <label class="custom-control-label" for="ex-check-4">Check this checkbox</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="ex-check-5" checked>
+                <label class="custom-control-label" for="ex-check-5">Uncheck this checkbox</label>
+              </div>
+              <div class="custom-control custom-checkbox custom-control-inline">
+                <input class="custom-control-input" type="checkbox" id="ex-check-6" disabled>
+                <label class="custom-control-label" for="ex-check-6">Disabled checkbox</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" type="radio" id="ex-radio-4" name="radio2">
+                <label class="custom-control-label" for="ex-radio-4">Toggle this radio</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" type="radio" id="ex-radio-5" name="radio2" checked>
+                <label class="custom-control-label" for="ex-radio-5">Toggle this radio</label>
+              </div>
+              <div class="custom-control custom-radio custom-control-inline">
+                <input class="custom-control-input" type="radio" id="ex-radio-6" name="radio2" disabled>
+                <label class="custom-control-label" for="ex-radio-6">Disabled radio</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Switches</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-switch-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="custom-control custom-switch">
+          <input class="custom-control-input" type="checkbox" id="customSwitch1">
+          <label class="custom-control-label" for="customSwitch1">Toggle this switch element</label>
+        </div>
+        <div class="custom-control custom-switch">
+          <input class="custom-control-input" type="checkbox" id="customSwitch2" disabled>
+          <label class="custom-control-label" for="customSwitch2">Disabled switch element</label>
+        </div>
+        <div class="row mt-3 pt-5">
+          <!-- Sizing-->
+          <div class="col-md-6 form-group pb-4">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Sizing</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-sizing-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="form-group">
+              <label for="large-input">Large input</label>
+              <input class="form-control form-control-lg" type="text" id="large-input" placeholder="Large input placeholder">
+            </div>
+            <div class="form-group">
+              <label for="normal-input">Normal input</label>
+              <input class="form-control" type="text" id="normal-input" placeholder="Normal input placeholder">
+            </div>
+            <div class="form-group">
+              <label for="small-input">Small input</label>
+              <input class="form-control form-control-sm" type="text" id="small-input" placeholder="Small input placeholder">
+            </div>
+          </div>
+          <!-- Readonly & disabled-->
+          <div class="col-md-6 form-group pb-4">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Readonly &amp; disabled</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-disabled-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="form-group">
+              <input class="form-control" type="text" placeholder="Readonly input here..." readonly>
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" id="disabled-input" placeholder="Disabled input here..." disabled>
+            </div>
+            <div class="form-group">
+              <select class="form-control" id="disabled-select-input" disabled>
+                <option>Disabled select here...</option>
+                <option>Option item 1</option>
+                <option>Option item 2</option>
+                <option>Option item 3</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- Inline form-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Inline form</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-inline-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <form class="form-inline pb-4">
+          <label class="sr-only">Name</label>
+          <input class="form-control mb-3 mr-sm-4" type="text" id="nline-form-input-name" placeholder="John Doe">
+          <label class="sr-only">Username</label>
+          <input class="form-control mb-3 mr-sm-4" type="text" id="inline-form-input-username" placeholder="Username">
+          <div class="custom-control custom-checkbox mb-3 mr-4">
+            <input class="custom-control-input" type="checkbox" id="inline-form-check-1">
+            <label class="custom-control-label" for="inline-form-check-1">Remember me</label>
+          </div>
+          <button class="btn btn-primary mb-3" type="submit">Submit</button>
+        </form>
+        <form class="form-inline pb-4">
+          <label class="text-muted mr-3" for="inline-form-select">Preference</label>
+          <select class="form-control mb-3 mr-sm-4" id="inline-form-select">
+            <option>Choose...</option>
+            <option>One</option>
+            <option>Two</option>
+            <option>Three</option>
+          </select>
+          <div class="custom-control custom-checkbox mb-3 mr-4">
+            <input class="custom-control-input" type="checkbox" id="inline-form-check-2">
+            <label class="custom-control-label" for="inline-form-check-2">Remember my preference</label>
+          </div>
+          <button class="btn btn-accent mb-3" type="submit">Submit</button>
+        </form>
+        <!-- Help text-->
+        <div class="d-flex flex-wrap justify-content-between pt-4">
+          <h4 class="mr-3">Help text</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-help-text-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-5">
+          <div class="col-lg-9">
+            <div class="form-group">
+              <label for="help-text-input">Password</label>
+              <input class="form-control" type="password" id="help-text-input" placeholder="Your password here"><small class="form-text text-muted">Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.</small>
+            </div>
+          </div>
+        </div>
+        <!-- Validation: Status text-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Validation: Status text</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-validation-text-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+      </div>
+      <form class="container needs-validation pb-5" novalidate>
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <label for="validationCustom01">First name</label>
+            <input class="form-control" type="text" id="validationCustom01" placeholder="First name" value="John" required>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-4 form-group">
+            <label for="validationCustom02">Last name</label>
+            <input class="form-control" type="text" id="validationCustom02" placeholder="Last name" value="Doe" required>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-4 form-group">
+            <label for="validationCustomUsername">Username</label>
+            <input class="form-control" type="text" id="validationCustomUsername" placeholder="Username" required>
+            <div class="invalid-feedback">Please choose a username.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="validationCustom03">City</label>
+            <select class="form-control" id="validationCustom03" required>
+              <option value="">Choose city...</option>
+              <option value="Dallas">Dallas</option>
+              <option value="Houston">Houston</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Miami">Miami</option>
+              <option value="New York">New York</option>
+            </select>
+            <div class="invalid-feedback">Please provide a valid city.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="validationCustom04">State</label>
+            <select class="form-control" id="validationCustom04" required>
+              <option value="">Choose state...</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Florida">Florida</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Texas">Texas</option>
+            </select>
+            <div class="invalid-feedback">Please provide a valid state.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="validationCustom05">Zip</label>
+            <input class="form-control" type="text" id="validationCustom05" placeholder="Zip" required>
+            <div class="invalid-feedback">Please provide a valid zip.</div>
+            <div class="valid-feedback">Looks good!</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="invalidCheck" required>
+            <label class="custom-control-label" for="invalidCheck">Agree to terms and conditions</label>
+            <div class="invalid-feedback">You must agree before submitting.</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+      </form>
+      <div class="container pt-4 pb-2">
+        <!-- Validation: Status tooltips-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Validation: Status tooltips</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#forms-validation-tooltips-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+      </div>
+      <form class="container needs-validation pb-5 mb-4" novalidate>
+        <div class="row">
+          <div class="col-md-4 form-group">
+            <label for="validationTooltip01">First name</label>
+            <input class="form-control" type="text" id="validationTooltip01" placeholder="First name" value="John" required>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 form-group">
+            <label for="validationTooltip02">Last name</label>
+            <input class="form-control" type="text" id="validationTooltip02" placeholder="Last name" value="Doe" required>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-4 form-group">
+            <label for="validationTooltipUsername">Username</label>
+            <input class="form-control" type="text" id="validationTooltipUsername" placeholder="Username" required>
+            <div class="invalid-tooltip">Please choose a username.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="validationTooltip03">City</label>
+            <select class="form-control" id="validationTooltip03" required>
+              <option value="">Choose city...</option>
+              <option value="Dallas">Dallas</option>
+              <option value="Houston">Houston</option>
+              <option value="Los Angeles">Los Angeles</option>
+              <option value="Miami">Miami</option>
+              <option value="New York">New York</option>
+            </select>
+            <div class="invalid-tooltip">Please provide a valid city.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="validationTooltip04">State</label>
+            <select class="form-control" id="validationTooltip04" required>
+              <option value="">Choose state...</option>
+              <option value="Arizona">Arizona</option>
+              <option value="Colorado">Colorado</option>
+              <option value="Florida">Florida</option>
+              <option value="Indiana">Indiana</option>
+              <option value="Kentucky">Kentucky</option>
+              <option value="Texas">Texas</option>
+            </select>
+            <div class="invalid-tooltip">Please provide a valid state.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+          <div class="col-md-3 form-group">
+            <label for="validationTooltip05">Zip</label>
+            <input class="form-control" type="text" id="validationTooltip05" placeholder="Zip" required>
+            <div class="invalid-tooltip">Please provide a valid zip.</div>
+            <div class="valid-tooltip">Looks good!</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input class="custom-control-input" type="checkbox" id="invalidCheck01" required>
+            <label class="custom-control-label" for="invalidCheck01">Agree to terms and conditions</label>
+            <div class="invalid-tooltip">You must agree before submitting.</div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit Form</button>
+      </form>
+      <!-- Light Skin-->
+      <div class="bg-dark py-5">
+        <div class="container py-2">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="text-white mr-3">Forms light version</h4><a class="navi-link text-white font-weight-bold text-sm text-uppercase py-2" href="#forms-light-skin-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="hr-light pb-4 mb-1">
+          <div class="row pb-2">
+            <div class="col-lg-10">
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60" for="text-input-light">Text</label>
+                <div class="col-10">
+                  <input class="form-control form-control-light-skin" type="text" id="text-input-light" value="Artisanal kale">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-2 col-form-label text-white opacity-60" for="textarea-input-light">Textarea</label>
+                <div class="col-10">
+                  <textarea class="form-control form-control-light-skin" id="textarea-input-light" rows="5">Hello World!</textarea>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60" for="select-input-light">Select</label>
+                <div class="col-10">
+                  <select class="form-control form-control-light-skin" id="select-input-light">
+                    <option>Choose option...</option>
+                    <option>Option item 1</option>
+                    <option>Option item 2</option>
+                    <option>Option item 3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">File</label>
+                <div class="col-10">
+                  <div class="custom-file form-control-light-skin">
+                    <input class="custom-file-input" type="file" id="file-input-light">
+                    <label class="custom-file-label" for="file-input-light">Choose file...</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Checkbox</label>
+                <div class="col-10">
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input class="custom-control-input" type="checkbox" id="check-light">
+                    <label class="custom-control-label text-white" for="check-light">Check this checkbox</label>
+                  </div>
+                  <div class="custom-control custom-checkbox custom-control-inline">
+                    <input class="custom-control-input" type="checkbox" id="check-light-2" checked>
+                    <label class="custom-control-label text-white" for="check-light-2">Uncheck this checkbox</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Radio button</label>
+                <div class="col-10">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" id="radio-light" name="radio-light" checked>
+                    <label class="custom-control-label text-white" for="radio-light">Uncheck this radio</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input class="custom-control-input" type="radio" id="radio-light-2" name="radio-light">
+                    <label class="custom-control-label text-white" for="radio-light-2">Check this radio</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

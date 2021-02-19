@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Working With Gulp
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left" aria-label="Page title" style="background-image: url(../img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Documentation</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">Working With Gulp</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-accent py-1 px-2 text-white text-sm"><strong>Docs</strong></div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 105px; height: calc(100% - 105px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="dev-setup.html">Dev Environment Setup</a><a class="list-group-item list-group-item-action active" href="working-with-gulp.html">Working With Gulp</a><a class="list-group-item list-group-item-action" href="project-structure.html">Project Structure</a><a class="list-group-item list-group-item-action" href="using-preprocessors.html">Using Preprocessors (Pug &amp; Sass)</a><a class="list-group-item list-group-item-action" href="autoprefixer.html">Browser Support (Autoprefixer)</a><a class="list-group-item list-group-item-action" href="global-colors.html">Global Colors</a><a class="list-group-item list-group-item-action" href="components.html">Components</a><a class="list-group-item list-group-item-action" href="utilities.html">Utility Classes</a><a class="list-group-item list-group-item-action" href="font-icons.html">Font Icons</a><a class="list-group-item list-group-item-action" href="google-maps.html">Google Maps API</a><a class="list-group-item list-group-item-action" href="credits.html">Sources and Credits</a><a class="list-group-item list-group-item-action" href="changelog.html">Changelog</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5 mb-2">
+        <p>As has been mentioned in previous section, <strong>Gulp</strong> is a JavaScript task runner. It helps with performing repetitive tasks like minification, compilation, unit testing, linting, etc. This is possible thanks to extensive Gulp Plugins library.</p>
+        <p>Gulp tasks are already set up for you. They are stored inside <code>Createx/gulpfile.js</code>. But in order to have access to them via you Command Line tool you will need to install <strong>gulp-cli node package</strong>. Gulp CLI stands for Gulp Command Line Interface. 
+          <u class="d-block">To do that type following line in your terminal:</u>
+        </p><kbd class="d-inline-block mb-3">npm install -g gulp-cli</kbd><span class="d-block text-info mb-4">* if you are on Mac make sure to use <strong>sudo</strong> to install packages globally otherwise you may runt into error.</span>
+        <h2 class="h5 pt-3">Gulp CLI commands</h2>
+        <ul class="list-icon">
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp</kbd> - this main command will fire default gulp task which includes: launching BrowserSync, vendor files concatination, javascript minification, sass compilation and lanching watch task. BrowserSync will create dev server and sync your browser with your code editor. Note: to use other separate tasks explained below you will need to open other Terminal window and leave this one with running server intact.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp concat:js</kbd> - concatination vendor <code>.js</code> files found inside <code>vendor</code> folder in one <code>vendor.min.js</code> file which are linked to your HTML document.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp concat:css</kbd> - concatination vendor <code>.css</code> files found inside <code>vendor</code> folder in one <code>vendor.min.css</code> file which are linked to your HTML document.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp uglify</kbd> - minify and uglify main <code>theme.js</code> file from <code>src</code> folder to <code>dist/js/theme.min.js</code> file which linked to your HTML document.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp pug</kbd> - compiles <code>.pug</code> template files into HTML. Again from <code>src</code> to <code>dist</code> folder.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp sass:expanded</kbd> - compiles <code>.scss</code> files into non-minified CSS (css/theme.css). From <code>src</code> to <code>dist</code> folder.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp sass:minified</kbd> - compiles <code>.scss</code> files into minified CSS (css/theme.min.css). From <code>src</code> to <code>dist</code> folder.</li>
+          <li class="pb-3"> <i class="fe-icon-arrow-right text-muted"></i><kbd>gulp watch</kbd> - launches <code>watch</code> task. It will watch changes of your .scss / .js / .pug files and automatically compile them into .css / .js / .html.</li>
+        </ul>
+        <h2 class="h5 pt-3">Next steps</h2>
+        <p>Now you when you are equiped with all necessary tools and dev invironment is all set you are ready to dive into CreateX customization.</p>
+        <p>Take some time to familiarize yourself with <a href='project-structure.html' class='font-weight-medium'>Project structure</a>.</p>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

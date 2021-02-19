@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Buttons
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Buttons</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Buttons Style 1 Code-->
+    <div class="modal fade" id="buttons-style1-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-success Success
+
+<strong>//- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons Style 3 Code-->
+    <div class="modal fade" id="buttons-style2-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-2 btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-success Success
+
+<strong>//- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-2.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons Style 3 Code-->
+    <div class="modal fade" id="buttons-style3-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-3 btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-success Success
+
+<strong>//- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-3.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons Style 4 Code-->
+    <div class="modal fade" id="buttons-style4-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html6" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html6" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-4 btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug6" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-success Success
+
+<strong>//- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-4.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons Style 5 Code-->
+    <div class="modal fade" id="buttons-style5-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html7" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug7" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html7" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-5 btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug7" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-success Success
+
+<strong>//- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-5.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Buttons Style 6 Code-->
+    <div class="modal fade" id="buttons-style6-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html9" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug9" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html9" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Primary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-primary&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-edit mr-1&quot;&gt;&lt;/i&gt;
+  Primary
+&lt;/a&gt;
+
+<strong>&lt;!-- Secondary Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-secondary&quot; href=&quot;#&quot;&gt;
+  Secondary
+  &lt;i class=&quot;fe-icon-sliders ml-1&quot;&gt;&lt;/i&gt;
+&lt;/a&gt;
+
+<strong>&lt;!-- Accent Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-accent&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-camera mr-1&quot;&gt;&lt;/i&gt;
+  Secondary
+&lt;/a&gt;
+
+<strong>&lt;!-- Info Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-info&quot; href=&quot;#&quot;&gt;
+  Info
+&lt;/a&gt;
+
+<strong>&lt;!-- Success Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-success&quot; href=&quot;#&quot;&gt;
+  Success
+&lt;/a&gt;
+
+<strong>&lt;!-- Warning Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-warning&quot; href=&quot;#&quot;&gt;
+  Warning
+&lt;/a&gt;
+
+<strong>&lt;!-- Danger Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-danger&quot; href=&quot;#&quot;&gt;
+  Danger
+&lt;/a&gt;
+
+<strong>&lt;!-- Gradient Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-gradient&quot; href=&quot;#&quot;&gt;
+  Gradient
+&lt;/a&gt;
+
+<strong>&lt;!-- Light Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-light&quot; href=&quot;#&quot;&gt;
+  &lt;i class=&quot;fe-icon-settings mr-1&quot;&gt;&lt;/i&gt;
+  Light Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Dark Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-dark&quot; href=&quot;#&quot;&gt;
+  Dark Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Large Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-secondary btn-lg&quot; href=&quot;#&quot;&gt;
+  Large Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Small Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-secondary btn-sm&quot; href=&quot;#&quot;&gt;
+  Small Button
+&lt;/a&gt;
+
+<strong>&lt;!-- Block Button --&gt;</strong>
+&lt;a class=&quot;btn btn-style-6 btn-secondary btn-block&quot; href=&quot;#&quot;&gt;
+  Block Button
+&lt;/a&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug9" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Primary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-primary
+  i.fe-icon-edit.mr-1
+  | Primary
+
+<strong>//- Secondary Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-secondary
+  | Secondary
+  i.fe-icon-sliders.ml-1
+
+<strong>//- Accent Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-accent
+  i.fe-icon-camera.mr-1
+  | Accent
+
+<strong>//- Info Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-info Info
+
+<strong>//- Success Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-success Success
+
+<strong>/- Warning Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-warning Warning
+
+<strong>//- Danger Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-danger Danger
+
+<strong>//- Gradient Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-gradient Gradient
+
+<strong>//- Light Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-light
+  i.fe-icon-settings.mr-1
+  | Light Button
+
+<strong>//- Dark Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-dark Dark Button
+
+<strong>//- Large Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-secondary.btn-lg Large Button
+
+<strong>//- Small Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-secondary.btn-sm Small Button
+
+<strong>//- Block Button</strong>
+a(href=&quot;#&quot;).btn.btn-style-6.btn-secondary.btn-block Block Button</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action active" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4 mb-2">
+        <!-- Style 1 (Default)-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 1 (Default)</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style1-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-primary mr-3 mb-3" href="#"><i class="fe-icon-edit mr-1"></i>Primary</a><a class="btn btn-secondary mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders ml-1"></i></a><a class="btn btn-accent mr-3 mb-3" href="#"><i class="fe-icon-camera mr-1"></i>Accent</a><a class="btn btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-gradient mr-3 mb-3" href="#">Gradient</a>
+          <div class="bg-dark d-inline-block p-4 mr-3 mb-3 align-middle"><a class="btn btn-light" href="#"> <i class="fe-icon-settings mr-1"></i>Light Button</a></div><a class="btn btn-dark mr-3 mb-3" href="#">Dark Button</a><a class="btn btn-secondary btn-lg mr-3 mb-3" href="#">Large Button</a><a class="btn btn-secondary mr-3 mb-3" href="#">Normal Button</a><a class="btn btn-secondary btn-sm mr-3 mb-3" href="#">Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+        <!-- Style 2-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 2</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style2-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-style-2 btn-primary mr-3 mb-3" href="#"><i class="fe-icon-edit mr-1"></i>Primary</a><a class="btn btn-style-2 btn-secondary mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders ml-1"></i></a><a class="btn btn-style-2 btn-accent mr-3 mb-3" href="#"><i class="fe-icon-camera mr-1"></i>Accent</a><a class="btn btn-style-2 btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-style-2 btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-style-2 btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-style-2 btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-style-2 btn-gradient mr-3 mb-3" href="#">Gradient</a>
+          <div class="bg-dark d-inline-block p-4 mr-3 mb-3 align-middle"><a class="btn btn-style-2 btn-light" href="#"> <i class="fe-icon-settings mr-1"></i>Light Button</a></div><a class="btn btn-style-2 btn-dark mr-3 mb-3" href="#">Dark Button</a><a class="btn btn-style-2 btn-secondary btn-lg mr-3 mb-3" href="#">Large Button</a><a class="btn btn-style-2 btn-secondary mr-3 mb-3" href="#">Normal Button</a><a class="btn btn-style-2 btn-secondary btn-sm mr-3 mb-3" href="#">Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-style-2 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-2 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-2 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+        <!-- Style 3-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 3</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style3-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-style-3 btn-primary mr-3 mb-3" href="#"><i class="fe-icon-edit mr-1"></i>Primary</a><a class="btn btn-style-3 btn-secondary mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders ml-1"></i></a><a class="btn btn-style-3 btn-accent mr-3 mb-3" href="#"><i class="fe-icon-camera mr-1"></i>Accent</a><a class="btn btn-style-3 btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-style-3 btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-style-3 btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-style-3 btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-style-3 btn-gradient mr-3 mb-3" href="#">Gradient</a><a class="btn btn-style-3 btn-dark mr-3 mb-3" href="#">Dark Button</a><a class="btn btn-style-3 btn-secondary btn-lg mr-3 mb-3" href="#">Large Button</a><a class="btn btn-style-3 btn-secondary mr-3 mb-3" href="#">Normal Button</a><a class="btn btn-style-3 btn-secondary btn-sm mr-3 mb-3" href="#">Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-style-3 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-3 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-3 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+        <!-- Style 4-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 4</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style4-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-style-4 btn-primary btn-icon-left mr-3 mb-3" href="#"><i class="fe-icon-edit"></i>Primary</a><a class="btn btn-style-4 btn-secondary btn-icon-right mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders"></i></a><a class="btn btn-style-4 btn-accent btn-icon-left mr-3 mb-3" href="#"><i class="fe-icon-camera"></i>Accent</a><a class="btn btn-style-4 btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-style-4 btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-style-4 btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-style-4 btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-style-4 btn-gradient btn-icon-right mr-3 mb-3" href="#"><i class="fe-icon-download"></i>Gradient</a>
+          <div class="bg-dark d-inline-block p-4 mr-3 mb-3 align-middle"><a class="btn btn-style-4 btn-light btn-icon-left" href="#"><i class="fe-icon-settings"></i>Light Button</a></div><a class="btn btn-style-4 btn-dark btn-icon-right mr-3 mb-3" href="#"><i class="fe-icon-download"></i>Dark Button</a><a class="btn btn-style-4 btn-secondary btn-icon-left btn-lg mr-3 mb-3" href="#"><i class="fe-icon-heart"></i>Large Button</a><a class="btn btn-style-4 btn-secondary btn-icon-left mr-3 mb-3" href="#"><i class="fe-icon-check-circle"></i>Normal Button</a><a class="btn btn-style-4 btn-secondary btn-icon-right btn-sm mr-3 mb-3" href="#"><i class="fe-icon-eye"></i>Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-style-4 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-4 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-4 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+        <!-- Style 5-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 5</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style5-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-style-5 btn-primary mr-3 mb-3" href="#"><i class="fe-icon-edit mr-1"></i>Primary</a><a class="btn btn-style-5 btn-secondary mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders ml-1"></i></a><a class="btn btn-style-5 btn-accent mr-3 mb-3" href="#"><i class="fe-icon-camera mr-1"></i>Accent</a><a class="btn btn-style-5 btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-style-5 btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-style-5 btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-style-5 btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-style-5 btn-gradient mr-3 mb-3" href="#">Gradient</a>
+          <div class="bg-dark d-inline-block p-4 mr-3 mb-3 align-middle"><a class="btn btn-style-5 btn-light" href="#"> <i class="fe-icon-settings mr-1"></i>Light Button</a></div><a class="btn btn-style-5 btn-dark mr-3 mb-3" href="#">Dark Button</a><a class="btn btn-style-5 btn-secondary btn-lg mr-3 mb-3" href="#">Large Button</a><a class="btn btn-style-5 btn-secondary mr-3 mb-3" href="#">Normal Button</a><a class="btn btn-style-5 btn-secondary btn-sm mr-3 mb-3" href="#">Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-style-5 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-5 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-5 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+        <!-- Style 6-->
+        <section class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Style 6</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#buttons-style6-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4"><a class="btn btn-style-6 btn-primary mr-3 mb-3" href="#"><i class="fe-icon-edit mr-1"></i>Primary</a><a class="btn btn-style-6 btn-secondary mr-3 mb-3" href="#">Secondary<i class="fe-icon-sliders ml-1"></i></a><a class="btn btn-style-6 btn-accent mr-3 mb-3" href="#"><i class="fe-icon-camera mr-1"></i>Accent</a><a class="btn btn-style-6 btn-info mr-3 mb-3" href="#">Info</a><a class="btn btn-style-6 btn-success mr-3 mb-3" href="#">Success</a><a class="btn btn-style-6 btn-warning mr-3 mb-3" href="#">Warning</a><a class="btn btn-style-6 btn-danger mr-3 mb-3" href="#">Danger</a><a class="btn btn-style-6 btn-gradient mr-3 mb-3" href="#">Gradient</a><a class="btn btn-style-6 btn-dark mr-3 mb-3" href="#">Dark Button</a><a class="btn btn-style-6 btn-secondary btn-lg mr-3 mb-3" href="#">Large Button</a><a class="btn btn-style-6 btn-secondary mr-3 mb-3" href="#">Normal Button</a><a class="btn btn-style-6 btn-secondary btn-sm mr-3 mb-3" href="#">Small Button</a>
+          <div class="row">
+            <div class="col-sm-4"><a class="btn btn-style-6 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-6 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+            <div class="col-sm-4"><a class="btn btn-style-6 btn-secondary btn-block mb-3" href="#">Block Button</a></div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

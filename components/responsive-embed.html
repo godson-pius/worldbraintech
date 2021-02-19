@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Responsive Embed
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Responsive Embed</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Responsive Embed: YouTube Video Code-->
+    <div class="modal fade" id="embed-youtube-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Responsive Embed: YouTube Video --&gt;</strong>
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://www.youtube.com/embed/VideoIDA&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Responsive Embed: YouTube Video</strong>
+.embed-responsive.embed-responsive-16by9
+  iframe(src=&quot;https://www.youtube.com/embed/VideoID&quot; allowfullscreen).embed-responsive-item</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Responsive Embed: Vimeo Video Code-->
+    <div class="modal fade" id="embed-vimeo-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Responsive Embed: Vimeo Video --&gt;</strong>
+&lt;div class=&quot;embed-responsive embed-responsive-16by9&quot;&gt;
+  &lt;iframe class=&quot;embed-responsive-item&quot; src=&quot;https://player.vimeo.com/video/VideoID?color=ac32e4&amp;amp;title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Responsive Embed: Vimeo Video</strong>
+.embed-responsive.embed-responsive-16by9
+  iframe(src=&quot;https://player.vimeo.com/video/VideoID?color=ac32e4&title=0&byline=0&portrait=0&quot; allowfullscreen).embed-responsive-item</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Responsive Embed: SoundCloud Audio Code-->
+    <div class="modal fade" id="embed-soundcloud-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Responsive Embed: SoundCloud Audio --&gt;</strong>
+&lt;iframe src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/AudioID&amp;amp;color=%23ac32e4&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&amp;amp;show_teaser=true&quot; allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Responsive Embed: SoundCloud Audio</strong>
+iframe(src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/AudioID&color=%23ac32e4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&quot; allowfullscreen)</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action active" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4">
+        <!-- YouTube video-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">YouTube video</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#embed-youtube-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="pb-5 mb-3">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/DFn042hPZMA" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- Vimeo video-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Vimeo video</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#embed-vimeo-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="pb-5 mb-3">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/93641234?color=ac32e4&amp;title=0&amp;byline=0&amp;portrait=0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- Soundcloud audio-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Soundcloud audio</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#embed-soundcloud-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="pb-5 mb-2">
+          <iframe src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/149243221&amp;color=%23ac32e4&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

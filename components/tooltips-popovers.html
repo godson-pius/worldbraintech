@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tooltips &amp; Popovers
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Tooltips & Popovers</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Tooltips Static Example Code-->
+    <div class="modal fade" id="tooltips-static-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tooltips Static Examples --&gt;</strong>
+&lt;div class=&quot;example-tooltip&quot;&gt;
+
+  <strong>&lt;!-- Tooltip Static (On the Top) --&gt;</strong>
+  &lt;div class=&quot;tooltip bs-tooltip-top&quot; role=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tooltip-inner&quot;&gt;Tooltip on the top&lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Tooltip Static (On the Right) --&gt;</strong>
+  &lt;div class=&quot;tooltip bs-tooltip-right&quot; role=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tooltip-inner&quot;&gt;Tooltip on the right&lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Tooltip Static (On the Bottom) --&gt;</strong>
+  &lt;div class=&quot;tooltip bs-tooltip-bottom&quot; role=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tooltip-inner&quot;&gt;Tooltip on the bottom&lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Tooltip Static (On the Left) --&gt;</strong>
+  &lt;div class=&quot;tooltip bs-tooltip-left&quot; role=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tooltip-inner&quot;&gt;Tooltip on the left&lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Tooltip Static (with HTML) --&gt;</strong>
+  &lt;div class=&quot;tooltip bs-tooltip-top&quot; role=&quot;tooltip&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tooltip-inner&quot;&gt;&lt;i&gt;Tooltip&lt;/i&gt; &lt;u&gt;with&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tooltips Static Examples</strong>
+.example-tooltip
+
+  <strong>//- Tooltip Static (On the Top)</strong>
+  .tooltip.bs-tooltip-top(role=&quot;tooltip&quot;)
+    .arrow
+    .tooltip-inner Tooltip on the top
+  
+  <strong>//- Tooltip Static (On the Right)</strong>
+  .tooltip.bs-tooltip-right(role=&quot;tooltip&quot;)
+    .arrow
+    .tooltip-inner Tooltip on the right
+
+  <strong>//- Tooltip Static (On the Bottom)</strong>
+  .tooltip.bs-tooltip-bottom(role=&quot;tooltip&quot;)
+    .arrow
+    .tooltip-inner Tooltip on the bottom
+
+  <strong>//- Tooltip Static (On the Left)</strong>
+  .tooltip.bs-tooltip-left(role=&quot;tooltip&quot;)
+    .arrow
+    .tooltip-inner Tooltip on the left
+
+  <strong>//- Tooltip Static (with HTML)</strong>
+  .tooltip.bs-tooltip-top(role=&quot;tooltip&quot;)
+    .arrow
+    .tooltip-inner &lt;i&gt;Tooltip&lt;/i&gt; &lt;u&gt;with&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tooltips Live Demo Code-->
+    <div class="modal fade" id="tooltips-demo-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tooltip Demo (On the Top) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;&gt;Tooltip on top&lt;/button&gt;
+
+<strong>&lt;!-- Tooltip Demo (On the Right) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;&gt;Tooltip on right&lt;/button&gt;
+
+<strong>&lt;!-- Tooltip Demo (On the Bottom) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;Tooltip on bottom&lt;/button&gt;
+
+<strong>&lt;!-- Tooltip Demo (On the Left) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;&gt;Tooltip on left&lt;/button&gt;
+
+<strong>&lt;!-- Tooltip Demo (with HTML) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; data-html=&quot;true&quot; title=&quot;&lt;i&gt;Tooltip&lt;/i&gt; &lt;u&gt;with&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;&quot;&gt;Tooltip with HTML&lt;/button&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tooltip Demo (On the Top)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Tooltip on top&quot;) Tooltip on top
+
+<strong>//- Tooltip Demo (On the Right)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Tooltip on right&quot;) Tooltip on right
+
+<strong>//- Tooltip Demo (On the Bottom)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;) Tooltip on bottom
+
+<strong>//- Tooltip Demo (On the Left)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Tooltip on left&quot;) Tooltip on left
+
+<strong>//- Tooltip Demo (with HTML)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; data-html=&quot;true&quot; title='&lt;i&gt;Tooltip&lt;/i&gt; &lt;u&gt;with&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;') Tooltip with HTML</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popovers Static Example Code-->
+    <div class="modal fade" id="popovers-static-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Popovers Static Examples --&gt;</strong>
+&lt;div class=&quot;example-popover clearfix&quot;&gt;
+
+  <strong>&lt;!-- Popover Static (On the Top) --&gt;</strong>
+  &lt;div class=&quot;popover bs-popover-top bs-popover-top-demo&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;h3 class=&quot;popover-header&quot;&gt;Popover top&lt;/h3&gt;
+    &lt;div class=&quot;popover-body&quot;&gt;
+      &lt;p&gt;Sed posuere consectetur est at lobortis...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Popover Static (On the Right) --&gt;</strong>
+  &lt;div class=&quot;popover bs-popover-right bs-popover-right-demo&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;h3 class=&quot;popover-header&quot;&gt;Popover right&lt;/h3&gt;
+    &lt;div class=&quot;popover-body&quot;&gt;
+      &lt;p&gt;Sed posuere consectetur est at lobortis...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Popover Static (On the Bottom) --&gt;</strong>
+  &lt;div class=&quot;popover bs-popover-bottom bs-popover-bottom-demo&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;h3 class=&quot;popover-header&quot;&gt;Popover bottom&lt;/h3&gt;
+    &lt;div class=&quot;popover-body&quot;&gt;
+      &lt;p&gt;Sed posuere consectetur est at lobortis...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  <strong>&lt;!-- Popover Static (On the Left) --&gt;</strong>
+  &lt;div class=&quot;popover bs-popover-left bs-popover-left-demo&quot;&gt;
+    &lt;div class=&quot;arrow&quot;&gt;&lt;/div&gt;
+    &lt;h3 class=&quot;popover-header&quot;&gt;Popover left&lt;/h3&gt;
+    &lt;div class=&quot;popover-body&quot;&gt;
+      &lt;p&gt;Sed posuere consectetur est at lobortis...&lt;/p&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Popovers Static Examples</strong>
+.example-popover.clearfix
+
+  <strong>//- Popover Static (On the Top)</strong>
+  .popover.bs-popover-top.bs-popover-top-demo
+    .arrow
+    h3.popover-header Popover top
+    .popover-body
+      p Sed posuere consectetur est at lobortis...
+
+  <strong>//- Popover Static (On the Right)</strong>
+  .popover.bs-popover-right.bs-popover-right-demo
+    .arrow
+    h3.popover-header Popover right
+    .popover-body
+      p Sed posuere consectetur est at lobortis...
+
+  <strong>//- Popover Static (On the Bottom)</strong>
+  .popover.bs-popover-bottom.bs-popover-bottom-demo
+    .arrow
+    h3.popover-header Popover bottom
+    .popover-body
+      p Sed posuere consectetur est at lobortis...
+
+  <strong>//- Popover Static (On the Left)</strong>
+  .popover.bs-popover-left.bs-popover-left-demo
+    .arrow
+    h3.popover-header Popover left
+    .popover-body
+      p Sed posuere consectetur est at lobortis...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popovers Live Demo Code-->
+    <div class="modal fade" id="popovers-demo-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Popover Demo (On the Top) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on top&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Popover on top&lt;/button&gt;
+
+<strong>&lt;!-- Popover Demo (On the Right) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on right&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Popover on right&lt;/button&gt;
+
+<strong>&lt;!-- Popover Demo (On the Bottom) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on bottom&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Popover on bottom&lt;/button&gt;
+
+<strong>&lt;!-- Popover Demo (On the Left) --&gt;</strong>
+&lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on left&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Popover on left&lt;/button&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Popover Demo (On the Top)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on top&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Popover on top
+
+<strong>//- Popover Demo (On the Right)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on right&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Popover on right
+
+<strong>//- Popover Demo (On the Bottom)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on bottom&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Popover on bottom
+
+<strong>//- Popover Demo (On the Left)</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-secondary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on left&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Popover on left</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Popovers Toggle on Click/Hover Code-->
+    <div class="modal fade" id="popovers-toggle-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html5" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html5" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Popover Toggle on Click --&gt;</strong>
+&lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Popover on click&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Toggle popover on click&lt;/button&gt;
+
+<strong>&lt;!-- Popovers Toggle on Hover --&gt;</strong>
+&lt;button class=&quot;btn btn-accent&quot; type=&quot;button&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on hover&quot; data-content=&quot;Vivamus sagittis lacus...&quot;&gt;Toggle popover on hover&lt;/button&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug5" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Popover Toggle on Click</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-primary&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; title=&quot;Popover on click&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Toggle popover on click
+
+<strong>//- Popovers Toggle on Hover</strong>
+button(type=&quot;button&quot; class=&quot;btn btn-accent&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-trigger=&quot;hover&quot; title=&quot;Popover on hover&quot; data-content=&quot;Vivamus sagittis lacus...&quot;) Toggle popover on hover</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action active" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4">
+        <!-- Static tooltips-->
+        <style>
+          .example-tooltip .tooltip {
+            display: inline-block;
+            position: relative;
+            margin: .625rem 1.25rem;
+            opacity: 1;
+          }
+          .example-tooltip .tooltip.bs-tooltip-top .arrow,
+          .example-tooltip .tooltip.bs-tooltip-bottom .arrow {
+            left: 50%;
+            margin-left: -.375rem;
+          }
+          .example-tooltip .tooltip.bs-tooltip-right .arrow,
+          .example-tooltip .tooltip.bs-tooltip-left .arrow {
+            top: 50%;
+            margin-top: -.375rem;
+          }
+        </style>
+        <div class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Static tooltips</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tooltips-static-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <div class="example-tooltip">
+            <div class="tooltip bs-tooltip-top" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner">Tooltip on the top</div>
+            </div>
+            <div class="tooltip bs-tooltip-right" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner">Tooltip on the right</div>
+            </div>
+            <div class="tooltip bs-tooltip-bottom" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner">Tooltip on the bottom</div>
+            </div>
+            <div class="tooltip bs-tooltip-left" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner">Tooltip on the left</div>
+            </div>
+            <div class="tooltip bs-tooltip-top" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner"><i>Tooltip</i> <u>with</u> <strong>HTML</strong></div>
+            </div>
+          </div>
+        </div>
+        <!-- Live demo-->
+        <div class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Live demo</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tooltips-demo-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</button>
+          <button class="btn btn-secondary mb-3" type="button" data-toggle="tooltip" data-placement="top" data-html="true" title="&lt;i&gt;Tooltip&lt;/i&gt; &lt;u&gt;with&lt;/u&gt; &lt;strong&gt;HTML&lt;/strong&gt;">Tooltip with HTML</button>
+        </div>
+        <!-- Static popovers-->
+        <style>
+          .example-popover .popover {
+            display: block;
+            position: relative;
+            width: 16.25rem;
+            margin: 1.25rem;
+            float: left;
+          }
+          .bs-tooltip-bottom-demo .arrow,
+          .bs-tooltip-top-demo .arrow {
+            left: 50% !important;
+            margin-left: -.126rem !important;
+          }
+          .bs-tooltip-left-demo .arrow,
+          .bs-tooltip-right-demo .arrow {
+            top: 50%;
+            margin-top: -.375rem;
+          }
+          .bs-popover-bottom-demo .arrow,
+          .bs-popover-top-demo .arrow {
+            left: 50%;
+            margin-left: -.6875rem;
+          }
+          .bs-popover-left-demo .arrow,
+          .bs-popover-right-demo .arrow {
+            top: 50%;
+            margin-top: -.5rem;
+          }
+        </style>
+        <div class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Static popovers</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#popovers-static-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <div class="example-popover clearfix">
+            <div class="popover bs-popover-top bs-popover-top-demo">
+              <div class="arrow"></div>
+              <h3 class="popover-header">Popover top</h3>
+              <div class="popover-body">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+            <div class="popover bs-popover-right bs-popover-right-demo">
+              <div class="arrow"></div>
+              <h3 class="popover-header">Popover right</h3>
+              <div class="popover-body">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+            <div class="popover bs-popover-bottom bs-popover-bottom-demo">
+              <div class="arrow"></div>
+              <h3 class="popover-header">Popover bottom</h3>
+              <div class="popover-body">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+            <div class="popover bs-popover-left bs-popover-left-demo">
+              <div class="arrow"></div>
+              <h3 class="popover-header">Popover left</h3>
+              <div class="popover-body">
+                <p>Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Live demo-->
+        <div class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Live demo</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#popovers-demo-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" title="Popover on top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Popover on top</button>
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-container="body" data-toggle="popover" data-placement="right" data-trigger="hover" title="Popover on right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Popover on right</button>
+          <button class="btn btn-secondary mr-3 mb-3" type="button" data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" title="Popover on bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Popover on bottom</button>
+          <button class="btn btn-secondary mb-3" type="button" data-container="body" data-toggle="popover" data-placement="left" data-trigger="hover" title="Popover on left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Popover on left</button>
+        </div>
+        <!-- Toggle on click / focus-->
+        <div class="pb-5">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="mr-3">Toggle on click / hover</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#popovers-toggle-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="pb-4 mb-1">
+          <button class="btn btn-primary mr-3 mb-3" type="button" data-container="body" data-toggle="popover" data-placement="top" title="Popover on click" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Toggle popover on click</button>
+          <button class="btn btn-accent mr-3 mb-3" type="button" data-container="body" data-toggle="popover" data-placement="top" data-trigger="hover" title="Popover on hover" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus ornare sem.">Toggle popover on hover</button>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

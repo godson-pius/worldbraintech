@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Widgets
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+    <!-- Google Map API-->
+    <script async defer src="//maps.googleapis.com/maps/api/js?key=AIzaSyAACWdZfvsxk4RffdTsNZ5vXdi4Y8onJ1I"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Widgets</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Widgets: General Code-->
+    <div class="modal fade" id="widgets-general-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Search Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Search&lt;/h4&gt;
+  &lt;div class=&quot;input-group&quot;&gt;
+    &lt;div class=&quot;input-group-prepend&quot;&gt;
+      &lt;div class=&quot;input-group-text&quot;&gt;
+        &lt;i class=&quot;fe-icon-search&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Search site...&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Custom Menu Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-custom-menu&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Custom menu&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href=&quot;#about&quot; data-toggle=&quot;collapse&quot;&gt;About Us&lt;/a&gt;
+      &lt;div class=&quot;collapse show&quot; id=&quot;about&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Our mission&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Our team&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;We are hiring&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Privacy Policy&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class=&quot;collapsed&quot; href=&quot;#help&quot; data-toggle=&quot;collapse&quot;&gt;Help &amp;amp; Info&lt;/a&gt;
+      &lt;div class=&quot;collapse&quot; id=&quot;help&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Help center&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Support&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Terms &amp;amp; Conditions&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Gallery V.1 Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-gallery&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Gallery v.1&lt;/h4&gt;
+  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+    &lt;a class=&quot;gallery-item mb-2 mr-2&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item mb-2 mr-2&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item type-video mb-2&quot; href=&quot;https://www.youtube.com/watch?v=VideoID&amp;amp;amp;autoplay=1&amp;amp;amp;rel=0&amp;amp;amp;controls=0&amp;amp;amp;showinfo=0&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+    &lt;a class=&quot;gallery-item mb-2 mr-2&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item type-video mb-2 mr-2&quot; href=&quot;https://vimeo.com/VideoID?color=ac32e4&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item mb-2&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pt-1&quot;&gt;
+    &lt;a class=&quot;btn btn-gradient btn-block&quot; href=&quot;#&quot;&gt;
+      &lt;i class=&quot;fe-icon-instagram&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;View our Instagram
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Gallery V.2 Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-gallery&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Gallery v.1&lt;/h4&gt;
+  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+    &lt;a class=&quot;gallery-item&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery2&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery2&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item type-video&quot; href=&quot;https://www.youtube.com/watch?v=VideoID&amp;amp;amp;autoplay=1&amp;amp;amp;rel=0&amp;amp;amp;controls=0&amp;amp;amp;showinfo=0&quot; data-fancybox=&quot;gallery2&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;d-flex justify-content-between&quot;&gt;
+    &lt;a class=&quot;gallery-item&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery2&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item type-video&quot; href=&quot;https://vimeo.com/VideoID?color=ac32e4&quot; data-fancybox=&quot;gallery2&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;gallery-item&quot; href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery2&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}'&gt;
+      &lt;img src=&quot;path-to-thumbnail-image&quot; alt=&quot;Gallery Image&quot;/&gt;
+    &lt;/a&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;pt-2&quot;&gt;
+    &lt;a class=&quot;btn btn-gradient btn-block&quot; href=&quot;#&quot;&gt;
+      &lt;i class=&quot;fe-icon-instagram&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;View our Instagram
+    &lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Contacts V.1 Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-contacts&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Contacts v.1&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-map-pin&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Find us&lt;/span&gt;
+      &lt;a href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;&gt;1260 Broadway, New York&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-phone&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Call us&lt;/span&gt;
+      &lt;a href=&quot;tel:00180039025&quot;&gt;001 800 390 25&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-mail&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Write us&lt;/span&gt;
+      &lt;a href=&quot;mailto:info@example.com&quot;&gt;info@example.com&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Contacts V.2 Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-contacts&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Contacts v.1&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-map-pin icon-style-2&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Find us&lt;/span&gt;
+      &lt;a href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;&gt;1260 Broadway, New York&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-phone icon-style-2&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Call us&lt;/span&gt;
+      &lt;a href=&quot;tel:00180039025&quot;&gt;001 800 390 25&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-mail icon-style-2&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Write us&lt;/span&gt;
+      &lt;a href=&quot;mailto:info@example.com&quot;&gt;info@example.com&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Subscription (MailChimp) Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-subscribe&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Subscription&lt;/h4&gt;
+  &lt;form action=&quot;link-to-your-mailchimp-subscription-list&quot; method=&quot;post&quot; target=&quot;_blank&quot; novalidate&gt;
+    &lt;div class=&quot;input-group&quot;&gt;
+      &lt;input class=&quot;form-control&quot; type=&quot;email&quot; name=&quot;EMAIL&quot; placeholder=&quot;Email address&quot;&gt;
+      &lt;div class=&quot;input-group-append&quot;&gt;
+        &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Sign Up&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;small class=&quot;form-text text-muted pt-1&quot;&gt;Enter email to receive a newsletter about new products and updates&lt;/small&gt;
+    &lt;!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--&gt;
+    &lt;div style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;b_c7103e2c981361a6639545bd5_1194bb7544&quot; tabindex=&quot;-1&quot;&gt;
+    &lt;/div&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Google Map Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Google map&lt;/h4&gt;
+  &lt;div class=&quot;google-map&quot; data-height=&quot;200&quot; data-address=&quot;New York, USA&quot; data-zoom=&quot;9&quot; data-disable-controls=&quot;true&quot; data-scrollwheel=&quot;true&quot; data-marker=&quot;path-to-image&quot; data-marker-title=&quot;We are here!&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Image Carousel Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Image carousel&lt;/h4&gt;
+  &lt;div class=&quot;owl-carousel&quot; data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true }'&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;/&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;/&gt;
+    &lt;img src=&quot;path-to-image&quot; alt=&quot;Image&quot;/&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Testimonials Carousel Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-testimonials-carousel&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Testimonials carousel&lt;/h4&gt;
+  &lt;div class=&quot;owl-carousel&quot; data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true }'&gt;
+    &lt;div class=&quot;blockquote testimonial&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;blockquote testimonial&quot;&gt;...&lt;/div&gt;
+    &lt;div class=&quot;blockquote testimonial&quot;&gt;...&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Social Networks Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Social networks&lt;/h4&gt;
+  &lt;a class=&quot;social-btn sb-style-6 sb-facebook&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Facebook&quot;&gt;
+    &lt;i class=&quot;socicon-facebook&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;social-btn sb-style-6 sb-dribbble&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Dribbble&quot;&gt;
+    &lt;i class=&quot;socicon-dribbble&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;social-btn sb-style-6 sb-twitter&quot; href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Twitter&quot;&gt;
+    &lt;i class=&quot;socicon-twitter&quot;&gt;&lt;/i&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- CTA Button Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;CTA Button&lt;/h4&gt;
+  &lt;a class=&quot;btn btn-style-2 btn-primary btn-block&quot; href=&quot;#&quot;&gt;Call to Action&lt;/a&gt;
+  &lt;small class=&quot;form-text text-muted pt-2&quot;&gt;Some description goes here to convince the user to click this button.&lt;/small&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Search Widget</strong>
+.widget
+  h4.widget-title Search
+  .input-group
+    .input-group-prepend
+      .input-group-text
+        i.fe-icon-search
+    input(type=&quot;text&quot; placeholder=&quot;Search site...&quot;).form-control
+
+<strong>//- Custom Menu Widget</strong>
+.widget.widget-custom-menu
+  h4.widget-title Custom menu
+  ul
+    li
+      a(href=&quot;#about&quot; data-toggle=&quot;collapse&quot;) About Us
+      #about.collapse.show
+        ul
+          li: a(href=&quot;#&quot;) Our mission
+          li: a(href=&quot;#&quot;) Our team
+          li: a(href=&quot;#&quot;) We are hiring
+    li: a(href=&quot;#&quot;) Privacy Policy
+    li
+      a(href=&quot;#help&quot; data-toggle=&quot;collapse&quot;).collapsed Help &amp; Info
+      #help.collapse
+        ul
+          li: a(href=&quot;#&quot;) Help center
+          li: a(href=&quot;#&quot;) Support
+    li: a(href=&quot;#&quot;) Terms &amp; Conditions
+
+<strong>//- Gallery V.1 Widget</strong>
+.widget.widget-gallery
+  h4.widget-title Gallery v.1
+  .d-flex.justify-content-between
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item.mb-2.mr-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item.mb-2.mr-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;https://www.youtube.com/watch?v=VideoID&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;).gallery-item.type-video.mb-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+  .d-flex.justify-content-between
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item.mb-2.mr-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;https://vimeo.com/VideoID?color=ac32e4&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;).gallery-item.type-video.mb-2.mr-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item.mb-2
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+  .pt-1
+    a(href=&quot;#&quot;).btn.btn-gradient.btn-block
+      i.fe-icon-instagram
+      | &amp;nbsp;View our Instagram
+
+<strong>//- Gallery V.2 Widget</strong>
+.widget.widget-gallery
+  h4.widget-title Gallery v.1
+  .d-flex.justify-content-between
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;https://www.youtube.com/watch?v=VideoID&amp;autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;).gallery-item.type-video
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+  .d-flex.justify-content-between
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;https://vimeo.com/VideoID?color=ac32e4&quot; data-fancybox=&quot;gallery1&quot; data-width=&quot;1000&quot; data-height=&quot;563&quot;).gallery-item.type-video
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+    a(href=&quot;path-to-big-image&quot; data-fancybox=&quot;gallery1&quot; data-options='{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}').gallery-item
+      +image(&quot;path-to-thumbnail-image&quot;, &quot;Gallery Image&quot;)
+  .pt-2
+    a(href=&quot;#&quot;).btn.btn-gradient.btn-block
+      i.fe-icon-instagram
+      | &amp;nbsp;View our Instagram
+
+<strong>//- Contacts V.1 Widget</strong>
+.widget.widget-contacts
+  h4.widget-title Contacts v.1
+  ul
+    li
+      i.fe-icon-map-pin
+      span Find us
+      a(href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;) 1260 Broadway, New York
+    li
+      i.fe-icon-phone
+      span Call us
+      a(href=&quot;tel:00180039025&quot;) 001 800 390 25
+    li
+      i.fe-icon-mail
+      span Write us
+      a(href=&quot;mailto:info@example.com&quot;) info@example.com
+
+<strong>//- Contacts V.2 Widget</strong>
+.widget.widget-contacts
+  h4.widget-title Contacts v.1
+  ul
+    li
+      i.fe-icon-map-pin.icon-style-2
+      span Find us
+      a(href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;) 1260 Broadway, New York
+    li
+      i.fe-icon-phone.icon-style-2
+      span Call us
+      a(href=&quot;tel:00180039025&quot;) 001 800 390 25
+    li
+      i.fe-icon-mail.icon-style-2
+      span Write us
+      a(href=&quot;mailto:info@example.com&quot;) info@example.com
+
+<strong>//- Subscription (MailChimp) Widget</strong>
+.widget.widget-subscribe
+  h4.widget-title Subscription
+  form(action=&quot;link-to-your-mailchimp-subscription-list&quot; method=&quot;post&quot; target=&quot;_blank&quot; novalidate)
+    .input-group
+      input(type=&quot;email&quot; name=&quot;EMAIL&quot; placeholder=&quot;Email address&quot;).form-control
+      .input-group-append
+        button(type=&quot;submit&quot;).btn.btn-primary Sign Up
+    small.form-text.text-muted.pt-1 Enter email to receive a newsletter about new products and updates
+    // real people should not fill this in and expect good things - do not remove this or risk form bot signups
+    div(style=&quot;position: absolute; left: -5000px;&quot; aria-hidden=&quot;true&quot;)
+      input(type=&quot;text&quot; name=&quot;b_c7103e2c981361a6639545bd5_1194bb7544&quot; tabindex=&quot;-1&quot;)
+
+<strong>//- Google Map Widget</strong>
+.widget
+  h4.widget-title Google map
+  .google-map(
+    data-height = &quot;200&quot;,
+    data-address = &quot;New York, USA&quot;,
+    data-zoom = &quot;9&quot;,
+    data-disable-controls = &quot;true&quot;,
+    data-scrollwheel = &quot;true&quot;,
+    data-marker = &quot;path-to-image&quot;,
+    data-marker-title = &quot;We are here!&quot;
+  )
+
+<strong>//- Image Carousel Widget</strong>
+.widget
+  h4.widget-title Image carousel
+  .owl-carousel(data-owl-carousel='{  &quot;nav &quot;: false,  &quot;dots &quot;: true }')
+    +image( &quot;path-to-image&quot;, &quot;Image &quot;)
+    +image( &quot;path-to-image&quot;, &quot;Image &quot;)
+    +image( &quot;path-to-image&quot;, &quot;Image &quot;)
+
+<strong>//- Testimonials Carousel Widget</strong>
+.widget.widget-testimonials-carousel
+  h4.widget-title Testimonials carousel
+  .owl-carousel(data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true }')
+    .blockquote.testimonial ...
+    .blockquote.testimonial ...
+    .blockquote.testimonial ...
+
+<strong>//- Social Networks Widget</strong>
+.widget
+  h4.widget-title Social networks
+  a(href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Facebook&quot;).social-btn.sb-style-6.sb-facebook
+    i.socicon-facebook
+  a(href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Dribbble&quot;).social-btn.sb-style-6.sb-dribbble
+    i.socicon-dribbble
+  a(href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Twitter&quot;).social-btn.sb-style-6.sb-twitter
+    i.socicon-twitter
+
+<strong>//- CTA Button Widget</strong>
+.widget
+  h4.widget-title CTA Button
+  a(href=&quot;#&quot;).btn.btn-style-2.btn-primary.btn-block Call to Action
+  small.form-text.text-muted.pt-2 Some description goes here to convince the user to click this button. </code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Widgets: Blog Code-->
+    <div class="modal fade" id="widgets-blog-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Author Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-author&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;About author&lt;/h4&gt;
+  &lt;div class=&quot;author-card&quot;&gt;
+    &lt;div class=&quot;author-card-cover&quot; style=&quot;background-image: url(path-to-cover-image);&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;author-card-profile&quot;&gt;
+      &lt;div class=&quot;author-card-avatar&quot;&gt;
+        &lt;img src=&quot;path-to-author-image&quot; alt=&quot;Post Author&quot;/&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;author-card-details&quot;&gt;
+        &lt;h5 class=&quot;author-card-name&quot;&gt;Sara Palson&lt;/h5&gt;
+        &lt;span class=&quot;author-card-position&quot;&gt;Marketing Director&lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;p class=&quot;author-card-info&quot;&gt;Sed ut perspiciatis unde omnis...&lt;/p&gt;
+    &lt;div class=&quot;author-card-social-bar-wrap&quot;&gt;
+      &lt;div class=&quot;author-card-social-bar&quot;&gt;
+        &lt;a class=&quot;social-btn sb-style-1 sb-facebook&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;socicon-facebook&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;social-btn sb-style-1 sb-pinterest&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;socicon-pinterest&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;social-btn sb-style-1 sb-twitter&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;socicon-twitter&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+        &lt;a class=&quot;social-btn sb-style-1 sb-linkedin&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;socicon-linkedin&quot;&gt;&lt;/i&gt;&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Blog Categories Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-categories&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Blog categories&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#technology&quot; data-toggle=&quot;collapse&quot;&gt;Software &amp;amp; Technology&lt;span&gt;&amp;nbsp;(45)&lt;/span&gt;&lt;/a&gt;
+      &lt;div class=&quot;collapse show&quot; id=&quot;technology&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Gadgets reviews&lt;span&gt;&amp;nbsp;(22)&lt;/span&gt;&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Robotics &amp;amp; AI&lt;span&gt;&amp;nbsp;(10)&lt;/span&gt;&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;a href=&quot;#&quot;&gt;Technological trends&lt;span&gt;&amp;nbsp;(13)&lt;/span&gt;&lt;/a&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Marketing &amp;amp; Management&lt;span&gt;&amp;nbsp;(24)&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;Hobby &amp;amp; Lifestyle&lt;span&gt;&amp;nbsp;(18)&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Archives Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-categories&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Archives&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;i class=&quot;fe-icon-book text-muted&quot;&gt;&lt;/i&gt;
+        August 2018
+        &lt;span&gt;&amp;nbsp;(34)&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;i class=&quot;fe-icon-book text-muted&quot;&gt;&lt;/i&gt;
+        July 2018
+        &lt;span&gt;&amp;nbsp;(28)&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#&quot;&gt;
+        &lt;i class=&quot;fe-icon-book text-muted&quot;&gt;&lt;/i&gt;
+        June 2018
+        &lt;span&gt;&amp;nbsp;(47)&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Recent Posts. List Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-featured-posts&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt; Recent posts. List&lt;/h4&gt;
+  &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;
+    &lt;div class=&quot;featured-post-thumb&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Post Thumbnail&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;featured-post-info&quot;&gt;
+      &lt;div class=&quot;featured-post-meta&quot;&gt;
+        &lt;span class=&quot;text-primary opacity-70&quot;&gt;
+          &lt;i class=&quot;fe-icon-clock&quot;&gt;&lt;/i&gt;
+          22/04/2018
+        &lt;/span&gt;
+        &lt;span class=&quot;ml-3&quot;&gt;
+          &lt;i class=&quot;fe-icon-message-square&quot;&gt;&lt;/i&gt;
+          21
+        &lt;/span&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;featured-post-title&quot;&gt;Getting to another level of design and functionality.&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+  &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Recent Posts. Carousel Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-featured-posts-carousel&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Recent posts. Carousel&lt;/h4&gt;
+  &lt;div class=&quot;owl-carousel&quot; data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 10, &quot;loop&quot;: true }'&gt;
+    &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;
+      &lt;div class=&quot;featured-post-thumb&quot;&gt;
+        &lt;img src=&quot;path-to-image&quot; alt=&quot;Post Thumbnail&quot;/&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;featured-post-info&quot;&gt;
+        &lt;div class=&quot;featured-post-meta&quot;&gt;
+          &lt;span class=&quot;text-primary opacity-70&quot;&gt;
+            &lt;i class=&quot;fe-icon-clock&quot;&gt;&lt;/i&gt;
+            22/04/2018
+          &lt;/span&gt;
+          &lt;span class=&quot;ml-3&quot;&gt;
+            &lt;i class=&quot;fe-icon-message-square&quot;&gt;&lt;/i&gt;
+            21
+          &lt;/span&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;featured-post-title&quot;&gt;Getting to another level of design and functionality.&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+    &lt;a class=&quot;featured-post&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Recent Comments Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-recent-comments&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Recent comments&lt;/h4&gt;
+  &lt;a class=&quot;recent-comment&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;recent-comment-meta&quot;&gt;Jane Portman on&lt;/span&gt;
+    &lt;div class=&quot;recent-comment-title&quot;&gt;The App of The Future&lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;recent-comment&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;recent-comment-meta&quot;&gt;William Smith on&lt;/span&gt;
+    &lt;div class=&quot;recent-comment-title&quot;&gt;Cherry 5 WordPress Framework&lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;recent-comment&quot; href=&quot;#&quot;&gt;
+    &lt;span class=&quot;recent-comment-meta&quot;&gt;Emma Johnson on&lt;/span&gt;
+    &lt;div class=&quot;recent-comment-title&quot;&gt;Another Level of Design&lt;/div&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Tag Cloud Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Tag cloud&lt;/h4&gt;
+  &lt;a class=&quot;tag-link&quot; href=&quot;#&quot;&gt;Technology&lt;/a&gt;
+  &lt;a class=&quot;tag-link&quot; href=&quot;#&quot;&gt;Software&lt;/a&gt;
+  &lt;a class=&quot;tag-link&quot; href=&quot;#&quot;&gt;Croudfunding&lt;/a&gt;
+  &lt;a class=&quot;tag-link&quot; href=&quot;#&quot;&gt;Social&lt;/a&gt;
+  &lt;a class=&quot;tag-link active&quot; href=&quot;#&quot;&gt;Freelance&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Author Widget</strong>
+.widget.widget-author
+  h4.widget-title About author
+  .author-card
+    .author-card-cover(style=&quot;background-image: url(path-to-cover-image);&quot;)
+    .author-card-profile
+      .author-card-avatar
+        +image(&quot;path-to-author-image&quot;, &quot;Post Author&quot;)
+      .author-card-details
+        h5.author-card-name Sara Palson
+        span.author-card-position Marketing Director
+    p.author-card-info Sed ut perspiciatis unde omnis...
+    .author-card-social-bar-wrap
+      .author-card-social-bar
+        a(href=&quot;#&quot;).social-btn.sb-style-1.sb-facebook
+          i.socicon-facebook
+        a(href=&quot;#&quot;).social-btn.sb-style-1.sb-pinterest
+          i.socicon-pinterest
+        a(href=&quot;#&quot;).social-btn.sb-style-1.sb-twitter
+          i.socicon-twitter
+        a(href=&quot;#&quot;).social-btn.sb-style-1.sb-linkedin
+          i.socicon-linkedin
+
+<strong>//- Blog Categories Widget</strong>
+.widget.widget-categories
+  h4.widget-title Blog categories
+  ul
+    li
+      a(href=&quot;#technology&quot; data-toggle=&quot;collapse&quot;)
+        | Software &amp; Technology
+        span &amp;nbsp;(45)
+      #technology.collapse.show
+        ul
+          li
+            a(href=&quot;#&quot;)
+              | Gadgets reviews
+              span &amp;nbsp;(22)
+          li
+            a(href=&quot;#&quot;)
+              | Robotics &amp; AI
+              span &amp;nbsp;(10)
+          li
+            a(href=&quot;#&quot;)
+              | Technological trends
+              span &amp;nbsp;(13)
+    li
+      a(href=&quot;#&quot;)
+        | Marketing &amp; Management
+        span &amp;nbsp;(24)
+    li
+      a(href=&quot;#&quot;)
+        | Hobby &amp; Lifestyle
+        span &amp;nbsp;(18)
+
+<strong>//- Archives Widget</strong>
+.widget.widget-categories
+  h4.widget-title Archives
+  ul
+    li
+      a(href=&quot;#&quot;)
+        i.fe-icon-book.text-muted
+        | August 2018
+        span &amp;nbsp;(34)
+    li
+      a(href=&quot;#&quot;)
+        i.fe-icon-book.text-muted
+        | July 2018
+        span &amp;nbsp;(28)
+    li
+      a(href=&quot;#&quot;)
+        i.fe-icon-book.text-muted
+        | June 2018
+        span &amp;nbsp;(47)
+
+<strong>//- Recent Posts. List Widget</strong>
+.widget.widget-featured-posts
+  h4.widget-title Recent posts. List
+  a(href=&quot;#&quot;).featured-post
+    .featured-post-thumb
+      +image(&quot;path-to-image&quot;, &quot;Post Thumbnail&quot;)
+    .featured-post-info
+      .featured-post-meta
+        span.text-primary.opacity-70
+          i.fe-icon-clock
+          | 22/04/2018
+        span.ml-3
+          i.fe-icon-message-square
+          | 21
+      .featured-post-title Getting to another level of design and functionality.
+  a(href=&quot;#&quot;).featured-post ...
+  a(href=&quot;#&quot;).featured-post ...
+
+<strong>//- Recent Posts. Carousel Widget</strong>
+.widget.widget-featured-posts-carousel
+  h4.widget-title Recent posts. Carousel
+  .owl-carousel(data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 10, &quot;loop&quot;: true }')
+    a(href=&quot;#&quot;).featured-post
+      .featured-post-thumb
+        +image(&quot;path-to-image&quot;, &quot;Post Thumbnail&quot;)
+      .featured-post-info
+        .featured-post-meta
+          span.text-primary.opacity-70
+            i.fe-icon-clock
+            | 22/04/2018
+          span.ml-3
+            i.fe-icon-message-square
+            | 21
+        .featured-post-title Getting to another level of design and functionality.
+    a(href=&quot;#&quot;).featured-post ...
+    a(href=&quot;#&quot;).featured-post ...
+
+<strong>//- Recent Comments Widget</strong>
+.widget.widget-recent-comments
+  h4.widget-title Recent comments
+  a(href=&quot;#&quot;).recent-comment
+    span.recent-comment-meta Jane Portman on
+    .recent-comment-title The App of The Future
+  a(href=&quot;#&quot;).recent-comment
+    span.recent-comment-meta William Smith on
+    .recent-comment-title Cherry 5 WordPress Framework
+  a(href=&quot;#&quot;).recent-comment
+    span.recent-comment-meta Emma Johnson on
+    .recent-comment-title Another Level of Design
+
+<strong>//- Tag Cloud Widget</strong>
+.widget
+  h4.widget-title Tag cloud
+  a(href=&quot;#&quot;).tag-link Technology
+  a(href=&quot;#&quot;).tag-link Software
+  a(href=&quot;#&quot;).tag-link Croudfunding
+  a(href=&quot;#&quot;).tag-link Social
+  a(href=&quot;#&quot;).tag-link.active Freelance</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Widgets: Shop Code-->
+    <div class="modal fade" id="widgets-shop-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Range Slider Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Range slider&lt;/h4&gt;
+  &lt;form class=&quot;range-slider&quot; method=&quot;post&quot; data-start-min=&quot;250&quot; data-start-max=&quot;650&quot; data-min=&quot;0&quot; data-max=&quot;1000&quot; data-step=&quot;1&quot;&gt;
+    &lt;div class=&quot;ui-range-slider&quot;&gt;&lt;/div&gt;
+    &lt;footer class=&quot;ui-range-slider-footer&quot;&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;button class=&quot;btn btn-primary btn-xs&quot; type=&quot;submit&quot;&gt;Filter&lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;column&quot;&gt;
+        &lt;div class=&quot;ui-range-values&quot;&gt;
+          &lt;div class=&quot;ui-range-label&quot;&gt;Price:&lt;/div&gt;
+          &lt;div class=&quot;ui-range-value-min&quot;&gt;$&lt;span&gt;&lt;/span&gt;
+            &lt;input type=&quot;hidden&quot;&gt;
+          &lt;/div&gt;&amp;nbsp;&amp;ndash;&amp;nbsp;
+          &lt;div class=&quot;ui-range-value-max&quot;&gt;$&lt;span&gt;&lt;/span&gt;
+            &lt;input type=&quot;hidden&quot;&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/footer&gt;
+  &lt;/form&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Shop Categories Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-categories&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Shop categories&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;a href=&quot;#tv&quot; data-toggle=&quot;collapse&quot;&gt;TV, Video &amp;amp; Audio&lt;span&gt;&amp;nbsp;(420)&lt;/span&gt;
+      &lt;/a&gt;
+      &lt;div class=&quot;collapse show&quot; id=&quot;tv&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Smart TV Sets&lt;span&gt;&amp;nbsp;(180)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Blue-Ray Players&lt;span&gt;&amp;nbsp;(132)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sound Systems&lt;span&gt;&amp;nbsp;(47)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home Theaters&lt;span&gt;&amp;nbsp;(61)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;a class=&quot;collapsed&quot; href=&quot;#headphones&quot; data-toggle=&quot;collapse&quot;&gt;Headphones&lt;span&gt;&amp;nbsp;(1239)&lt;/span&gt;&lt;/a&gt;
+      &lt;div class=&quot;collapse&quot; id=&quot;headphones&quot;&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Earbuds Headphones&lt;span&gt;&amp;nbsp;(752)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Over-Ear Headphones&lt;span&gt;&amp;nbsp;(487)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Bluetooth Headphones&lt;span&gt;&amp;nbsp;(205)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Sport &amp;amp; Fitness&lt;span&gt;&amp;nbsp;(96)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Noise-Cancelling&lt;span&gt;&amp;nbsp;(113)&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Featured Products. List Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-featured-products&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Featured products. List&lt;/h4&gt;
+  &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;
+    &lt;div class=&quot;featured-product-thumb&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Product Image&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;featured-product-info&quot;&gt;
+      &lt;h5 class=&quot;featured-product-title&quot;&gt;Amazon Echo Dot 2&lt;/h5&gt;
+      &lt;div class=&quot;rating-stars&quot;&gt;
+      &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+      &lt;i class=&quot;fe-icon-star&quot;&gt;&lt;/i&gt;
+      &lt;/div&gt;
+      &lt;span class=&quot;featured-product-price&quot;&gt;
+        &lt;del&gt;$62.00&lt;/del&gt;&amp;nbsp;$49.99
+      &lt;/span&gt;
+    &lt;/div&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+  &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Featured Products. Carousel Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-featured-products-carousel&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Featured products. Carousel&lt;/h4&gt;
+  &lt;div class=&quot;owl-carousel&quot; data-owl-carousel=&quot;{ &amp;quot;nav&amp;quot;: false, &amp;quot;dots&amp;quot;: true, &amp;quot;margin&amp;quot;: 10, &amp;quot;loop&amp;quot;: true }&quot;&gt;
+    &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;
+      &lt;div class=&quot;featured-product-thumb&quot;&gt;
+        &lt;img src=&quot;path-to-image&quot; alt=&quot;Product Image&quot;/&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;featured-product-info&quot;&gt;
+        &lt;h5 class=&quot;featured-product-title&quot;&gt;Amazon Echo Dot 2&lt;/h5&gt;
+        &lt;div class=&quot;rating-stars&quot;&gt;
+          &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fe-icon-star active&quot;&gt;&lt;/i&gt;
+          &lt;i class=&quot;fe-icon-star&quot;&gt;&lt;/i&gt;
+        &lt;/div&gt;
+        &lt;span class=&quot;featured-product-price&quot;&gt;
+          &lt;del&gt;$62.00&lt;/del&gt;&amp;nbsp;$49.99
+        &lt;/span&gt;
+      &lt;/div&gt;
+    &lt;/a&gt;
+    &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+    &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;...&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Shopping Cart Widget --&gt;</strong>
+&lt;div class=&quot;widget widget-cart&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Shopping cart&lt;/h4&gt;
+  &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;
+    &lt;div class=&quot;featured-product-thumb&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Product Image&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;featured-product-info&quot;&gt;
+      &lt;h5 class=&quot;featured-product-title&quot;&gt;Samsung Galaxy S9 Plus&lt;/h5&gt;
+      &lt;span class=&quot;featured-product-price&quot;&gt;1x $839.99&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;remove-product&quot;&gt;&lt;i class=&quot;fe-icon-x&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;featured-product&quot; href=&quot;#&quot;&gt;
+    &lt;div class=&quot;featured-product-thumb&quot;&gt;
+      &lt;img src=&quot;path-to-image&quot; alt=&quot;Product Image&quot;/&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;featured-product-info&quot;&gt;
+      &lt;h5 class=&quot;featured-product-title&quot;&gt;Samsung Gear 360 Camera&lt;/h5&gt;
+      &lt;span class=&quot;featured-product-price&quot;&gt;1 x $68.00&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;span class=&quot;remove-product&quot;&gt;&lt;i class=&quot;fe-icon-x&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;hr class=&quot;mt-3 mb-3&quot;&gt;
+  &lt;span class=&quot;text-sm text-muted&quot;&gt;Subtotal:&amp;nbsp;&lt;/span&gt;
+  &lt;strong&gt;$907.99&lt;/strong&gt;
+  &lt;div class=&quot;d-flex justify-content-between pt-3&quot;&gt;
+    &lt;a class=&quot;btn btn-primary btn-block btn-sm mr-2&quot; href=&quot;#&quot;&gt;View Cart&lt;/a&gt;
+    &lt;a class=&quot;btn btn-accent btn-block btn-sm mr-2&quot; href=&quot;#&quot;&gt;Checkout&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Filter. Checkboxes Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Filter. Checkboxes&lt;/h4&gt;
+  &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;apple&quot; checked&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;apple&quot;&gt;Apple&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(254)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;bosh&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;bosh&quot;&gt;Bosh&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(39)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;canon&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;canon&quot;&gt;Canon Inc.&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(128)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Filter. Radio Buttons Widget --&gt;</strong>
+&lt;div class=&quot;widget&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Filter. Radio buttons&lt;/h4&gt;
+  &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;p100&quot; name=&quot;price&quot; checked&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;p100&quot;&gt;$0 - $100&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(254)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;p300&quot; name=&quot;price&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;p300&quot;&gt;$101 - $300&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(39)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+    &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;p500&quot; name=&quot;price&quot;&gt;
+    &lt;label class=&quot;custom-control-label&quot; for=&quot;p500&quot;&gt;$301 - $500&amp;nbsp;&lt;span class=&quot;text-muted&quot;&gt;(128)&lt;/span&gt;&lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Range Slider Widget</strong>
+.widget
+  h4.widget-title Range slider
+  form(method=&quot;post&quot; data-start-min=&quot;250&quot; data-start-max=&quot;650&quot; data-min=&quot;0&quot; data-max=&quot;1000&quot; data-step=&quot;1&quot;).range-slider
+    .ui-range-slider
+    footer.ui-range-slider-footer
+      .column
+        button(type=&quot;submit&quot;).btn.btn-primary.btn-xs Filter
+      .column
+        .ui-range-values
+          .ui-range-label Price:
+          .ui-range-value-min
+            | $<span></span>
+            input(type=&quot;hidden&quot;)
+          | &amp;nbsp;&ndash;&amp;nbsp;
+          .ui-range-value-max
+            | $<span></span>
+            input(type=&quot;hidden&quot;)
+
+<strong>//- Shop Categories Widget</strong>
+.widget.widget-categories
+  h4.widget-title Shop categories
+  ul
+    li
+      a(href=&quot;#tv&quot; data-toggle=&quot;collapse&quot;)
+        | TV, Video &amp; Audio
+        span &amp;nbsp;(420)
+      #tv.collapse.show
+        ul
+          li
+            a(href=&quot;#&quot;)
+              | Smart TV Sets
+              span &amp;nbsp;(180)
+          li
+            a(href=&quot;#&quot;)
+              | Blue-Ray Players
+              span &amp;nbsp;(132)
+          li
+            a(href=&quot;#&quot;)
+              | Sound Systems
+              span &amp;nbsp;(47)
+          li
+            a(href=&quot;#&quot;)
+              | Home Theaters
+              span &amp;nbsp;(61)
+    li
+      a(href=&quot;#headphones&quot; data-toggle=&quot;collapse&quot;).collapsed
+        | Headphones
+        span &amp;nbsp;(1239)
+      #headphones.collapse
+        ul
+          li
+            a(href=&quot;#&quot;)
+              | Earbuds Headphones
+              span &amp;nbsp;(752)
+          li
+            a(href=&quot;#&quot;)
+              | Over-Ear Headphones
+              span &amp;nbsp;(487)
+          li
+            a(href=&quot;#&quot;)
+              | Bluetooth Headphones
+              span &amp;nbsp;(205)
+          li
+            a(href=&quot;#&quot;)
+              | Sport &amp; Fitness
+              span &amp;nbsp;(96)
+          li
+            a(href=&quot;#&quot;)
+              | Noise-Cancelling
+              span &amp;nbsp;(113)
+
+<strong>//- Featured Products. List Widget</strong>
+.widget.widget-featured-products
+  h4.widget-title Featured products. List
+  a(href=&quot;#&quot;).featured-product
+    .featured-product-thumb
+      +image(&quot;path-to-image&quot;, &quot;Product Image&quot;)
+    .featured-product-info
+      h5.featured-product-title Amazon Echo Dot 2
+      +rating-stars(4)
+      span.featured-product-price
+        del $62.00
+        | &amp;nbsp;$49.99
+  a(href=&quot;#&quot;).featured-product ...
+  a(href=&quot;#&quot;).featured-product ...
+
+<strong>//- Featured Products. Carousel Widget</strong>
+.widget.widget-featured-products-carousel
+  h4.widget-title Featured products. Carousel
+  .owl-carousel(data-owl-carousel='{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 10, &quot;loop&quot;: true }')
+    a(href=&quot;#&quot;).featured-product
+      .featured-product-thumb
+        +image(&quot;path-to-image&quot;, &quot;Product Image&quot;)
+      .featured-product-info
+        h5.featured-product-title Amazon Echo Dot 2
+        +rating-stars(4)
+        span.featured-product-price
+          del $62.00
+          | &nbsp;$49.99
+    a(href=&quot;#&quot;).featured-product ...
+    a(href=&quot;#&quot;).featured-product ...
+
+<strong>//- Shopping Cart Widget</strong>
+.widget.widget-cart
+  h4.widget-title Shopping cart
+  a(href=&quot;#&quot;).featured-product
+    .featured-product-thumb
+      +image(&quot;path-to-image&quot;, &quot;Product Image&quot;)
+    .featured-product-info
+      h5.featured-product-title Samsung Galaxy S9 Plus
+      span.featured-product-price 1x $839.99
+    span.remove-product: i.fe-icon-x
+  a(href=&quot;#&quot;).featured-product
+    .featured-product-thumb
+      +image(&quot;path-to-image&quot;, &quot;Product Image&quot;)
+    .featured-product-info
+      h5.featured-product-title Samsung Gear 360 Camera
+      span.featured-product-price 1 x $68.00
+    span.remove-product: i.fe-icon-x
+  hr.mt-3.mb-3
+  span.text-sm.text-muted Subtotal:&amp;nbsp;
+  strong $907.99
+  .d-flex.justify-content-between.pt-3
+    a(href=&quot;#&quot;).btn.btn-primary.btn-block.btn-sm.mr-2 View Cart
+    a(href=&quot;#&quot;).btn.btn-accent.btn-block.btn-sm.mr-2 Checkout
+
+<strong>//- Filter. Checkboxes Widget</strong>
+.widget
+  h4.widget-title Filter. Checkboxes
+  .custom-control.custom-checkbox
+    input(type=&quot;checkbox&quot; id=&quot;apple&quot; checked).custom-control-input
+    label(for=&quot;apple&quot;).custom-control-label
+      | Apple&amp;nbsp;
+      span.text-muted (254)
+  .custom-control.custom-checkbox
+    input(type=&quot;checkbox&quot; id=&quot;bosh&quot;).custom-control-input
+    label(for=&quot;bosh&quot;).custom-control-label
+      | Bosh&amp;nbsp;
+      span.text-muted (39)
+  .custom-control.custom-checkbox
+    input(type=&quot;checkbox&quot; id=&quot;canon&quot;).custom-control-input
+    label(for=&quot;canon&quot;).custom-control-label
+      | Canon Inc.&amp;nbsp;
+      span.text-muted (128)
+
+<strong>//- Filter. Radio Buttons Widget</strong>
+.widget
+  h4.widget-title Filter. Radio buttons
+  .custom-control.custom-radio
+    input(type=&quot;radio&quot; id=&quot;p100&quot; name=&quot;price&quot; checked).custom-control-input
+    label(for=&quot;p100&quot;).custom-control-label
+      | $0 - $100&amp;nbsp;
+      span.text-muted (254)
+  .custom-control.custom-radio
+    input(type=&quot;radio&quot; id=&quot;p300&quot; name=&quot;price&quot;).custom-control-input
+    label(for=&quot;p300&quot;).custom-control-label
+      | $101 - $300&amp;nbsp;
+      span.text-muted (39)
+  .custom-control.custom-radio
+    input(type=&quot;radio&quot; id=&quot;p500&quot; name=&quot;price&quot;).custom-control-input
+    label(for=&quot;p500&quot;).custom-control-label
+      | $301 - $500&amp;nbsp;
+      span.text-muted (128)</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Widgets: Light Skin Code-->
+    <div class="modal fade" id="widgets-light-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <p class="mb-4">You can apply light skin to any above widget (General, Blog, Shop) by adding <code>widget-light-skin</code> class to <code>widget</code>.<br>See Contacts widget example below:</p>
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Contacts Widget Light Skin --&gt;</strong>
+&lt;div class=&quot;widget widget-contacts widget-light-skin&quot;&gt;
+  &lt;h4 class=&quot;widget-title&quot;&gt;Contacts&lt;/h4&gt;
+  &lt;ul&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-map-pin&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Find us&lt;/span&gt;
+      &lt;a href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;&gt;1260 Broadway, New York&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-phone&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Call us&lt;/span&gt;
+      &lt;a href=&quot;tel:00180039025&quot;&gt;001 800 390 25&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+      &lt;i class=&quot;fe-icon-mail&quot;&gt;&lt;/i&gt;
+      &lt;span&gt;Write us&lt;/span&gt;
+      &lt;a href=&quot;mailto:info@example.com&quot;&gt;info@example.com&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Contacts Widget Light Skin</strong>
+.widget.widget-contacts.widget-light-skin
+  h4.widget-title Contacts
+  ul
+    li
+      i.fe-icon-map-pin
+      span Find us
+      a(href=&quot;https://www.google.com/maps/place/1260+Broadway,+New+York,+NY+10001,+USA/@40.7483811,-73.9898009,17z/data=!3m1!4b1!4m5!3m4!1s0x89c259a920a0a5fb:0xa4329a8e21872659!8m2!3d40.7483811!4d-73.9876122&quot; target=&quot;_blank&quot;) 1260 Broadway, New York
+    li
+      i.fe-icon-phone
+      span Call us
+      a(href=&quot;tel:00180039025&quot;) 001 800 390 25
+    li
+      i.fe-icon-mail
+      span Write us
+      a(href=&quot;mailto:info@example.com&quot;) info@example.com</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action active" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4 mb-2">
+        <!-- General widgets-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">General widgets</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#widgets-general-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row">
+          <!-- Search-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Search</h4>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text"><i class="fe-icon-search"></i></div>
+                </div>
+                <input class="form-control" type="text" placeholder="Search site...">
+              </div>
+            </div>
+          </div>
+          <!-- Custom menu-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-custom-menu">
+              <h4 class="widget-title">Custom menu</h4>
+              <ul>
+                <li><a href="#about" data-toggle="collapse">About Us</a>
+                  <div class="collapse show" id="about">
+                    <ul>
+                      <li><a href="#">Our mission</a></li>
+                      <li><a href="#">Our team</a></li>
+                      <li><a href="#">We are hiring</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a class="collapsed" href="#help" data-toggle="collapse">Help &amp; Info</a>
+                  <div class="collapse" id="help">
+                    <ul>
+                      <li><a href="#">Help center</a></li>
+                      <li><a href="#">Support</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Gallery v.1-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-gallery">
+              <h4 class="widget-title">Gallery v.1</h4>
+              <div class="d-flex justify-content-between"><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/01.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th01.jpg" alt="Gallery Image"/></a><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/02.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th02.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video mb-2" href="https://www.youtube.com/watch?v=VE30ntVVfvAk&amp;amp;autoplay=1&amp;amp;rel=0&amp;amp;controls=0&amp;amp;showinfo=0" data-fancybox="gallery1" data-width="1000" data-height="563"><img src="../img/widgets/gallery/th03.jpg" alt="Gallery Image"/></a></div>
+              <div class="d-flex justify-content-between"><a class="gallery-item mb-2 mr-2" href="../img/components/gallery/04.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th04.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video mb-2 mr-2" href="https://vimeo.com/25141497?color=ac32e4" data-fancybox="gallery1" data-width="1000" data-height="563"><img src="../img/widgets/gallery/th05.jpg" alt="Gallery Image"/></a><a class="gallery-item mb-2" href="../img/components/gallery/06.jpg" data-fancybox="gallery1" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th06.jpg" alt="Gallery Image"/></a></div>
+              <div class="pt-1"><a class="btn btn-gradient btn-block" href="#"><i class="fe-icon-instagram"></i>&nbsp;View our Instagram</a></div>
+            </div>
+          </div>
+          <!-- Gallery v.2-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-gallery">
+              <h4 class="widget-title">Gallery v.2</h4>
+              <div class="d-flex justify-content-between"><a class="gallery-item" href="../img/components/gallery/01.jpg" data-fancybox="gallery2" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th01.jpg" alt="Gallery Image"/></a><a class="gallery-item" href="../img/components/gallery/02.jpg" data-fancybox="gallery2" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th02.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video" href="https://www.youtube.com/watch?v=VE30ntVVfvAk&amp;amp;autoplay=1&amp;amp;rel=0&amp;amp;controls=0&amp;amp;showinfo=0" data-fancybox="gallery2" data-width="1000" data-height="563"><img src="../img/widgets/gallery/th03.jpg" alt="Gallery Image"/></a></div>
+              <div class="d-flex justify-content-between"><a class="gallery-item" href="../img/components/gallery/04.jpg" data-fancybox="gallery2" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th04.jpg" alt="Gallery Image"/></a><a class="gallery-item type-video" href="https://vimeo.com/25141497?color=ac32e4" data-fancybox="gallery2" data-width="1000" data-height="563"><img src="../img/widgets/gallery/th05.jpg" alt="Gallery Image"/></a><a class="gallery-item" href="../img/components/gallery/06.jpg" data-fancybox="gallery2" data-options="{&quot;caption&quot;: &quot;Gallery Image Caption&quot;}"><img src="../img/widgets/gallery/th06.jpg" alt="Gallery Image"/></a></div>
+              <div class="pt-2"><a class="btn btn-gradient btn-block" href="#"><i class="fe-icon-instagram"></i>&nbsp;View our Instagram</a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-5">
+        <div class="row">
+          <!-- Contacts v.1-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-contacts">
+              <h4 class="widget-title">Contacts v.1</h4>
+              <ul>
+                <li><i class="fe-icon-map-pin"></i><span>Find us</span><a href="#">1260 Broadway, New York</a></li>
+                <li><i class="fe-icon-phone"></i><span>Call us</span><a href="tel:00180039025">001 800 390 25</a></li>
+                <li><i class="fe-icon-mail"></i><span>Write us</span><a href="mailto:info@example.com">info@example.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Contacts v.2-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-contacts">
+              <h4 class="widget-title">Contacts v.2</h4>
+              <ul>
+                <li><i class="fe-icon-map-pin icon-style-2"></i><span>Find us</span><a href="#">1260 Broadway, New York</a></li>
+                <li><i class="fe-icon-phone icon-style-2"></i><span>Call us</span><a href="tel:00180039025">001 800 390 25</a></li>
+                <li><i class="fe-icon-mail icon-style-2"></i><span>Write us</span><a href="mailto:info@example.com">info@example.com</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Subscription-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-subscribe">
+              <h4 class="widget-title">Subscription</h4>
+              <form action="#" method="post" novalidate>
+                <div class="input-group">
+                  <input class="form-control" type="email" name="EMAIL" placeholder="Email address">
+                  <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Sign Up</button>
+                  </div>
+                </div><small class="form-text text-muted pt-1">Enter email to receive a newsletter about new products and updates</small>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- Google map-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Google map</h4>
+              <div class="google-map" data-height="200" data-address="New York, USA" data-zoom="9" data-disable-controls="true" data-scrollwheel="true" data-marker="../img/map-marker.png" data-marker-title="We are here!" data-styles="[{&quot;featureType&quot;:&quot;landscape&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFBB00&quot;},{&quot;saturation&quot;:43.400000000000006},{&quot;lightness&quot;:37.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.highway&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FFC200&quot;},{&quot;saturation&quot;:-61.8},{&quot;lightness&quot;:45.599999999999994},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.arterial&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:51.19999999999999},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;road.local&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#FF0300&quot;},{&quot;saturation&quot;:-100},{&quot;lightness&quot;:52},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;water&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#0078FF&quot;},{&quot;saturation&quot;:-13.200000000000003},{&quot;lightness&quot;:2.4000000000000057},{&quot;gamma&quot;:1}]},{&quot;featureType&quot;:&quot;poi&quot;,&quot;stylers&quot;:[{&quot;hue&quot;:&quot;#00FF6A&quot;},{&quot;saturation&quot;:-1.0989010989011234},{&quot;lightness&quot;:11.200000000000017},{&quot;gamma&quot;:1}]}]"></div>
+            </div>
+          </div>
+        </div>
+        <hr class="mb-5">
+        <div class="row">
+          <!-- Image carousel-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Image carousel</h4>
+              <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true }"><img src="../img/widgets/carousel/01.jpg" alt="Image"/><img src="../img/widgets/carousel/02.jpg" alt="Image"/><img src="../img/widgets/carousel/03.jpg" alt="Image"/>
+              </div>
+            </div>
+          </div>
+          <!-- Testimonials carousel-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-testimonials-carousel">
+              <h4 class="widget-title">Testimonials carousel</h4>
+              <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true }">
+                <div class="blockquote testimonial">
+                  <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <footer class="testimonial-footer">
+                    <div class="testimonial-avatar"><img src="../img/testimonials/01.jpg" alt="Testimonial Author Avatar"/>
+                    </div>
+                    <div class="d-table-cell align-middle pl-2">
+                      <div class="blockquote-footer">Barbara Palson
+                        <cite>Graphic Designer</cite>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+                <div class="blockquote testimonial">
+                  <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <footer class="testimonial-footer">
+                    <div class="testimonial-avatar"><img src="../img/testimonials/02.jpg" alt="Testimonial Author Avatar"/>
+                    </div>
+                    <div class="d-table-cell align-middle pl-2">
+                      <div class="blockquote-footer">Hinata Nakamura
+                        <cite>Financial Director</cite>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+                <div class="blockquote testimonial">
+                  <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                  <footer class="testimonial-footer">
+                    <div class="testimonial-avatar"><img src="../img/testimonials/03.jpg" alt="Testimonial Author Avatar"/>
+                    </div>
+                    <div class="d-table-cell align-middle pl-2">
+                      <div class="blockquote-footer">Michael Davis
+                        <cite>Co-Founder, CEO</cite>
+                      </div>
+                    </div>
+                  </footer>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Social networks-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Social networks</h4><a class="social-btn sb-style-6 sb-facebook" href="#" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-6 sb-dribbble" href="#" data-toggle="tooltip" data-placement="top" title="Dribbble"><i class="socicon-dribbble"></i></a><a class="social-btn sb-style-6 sb-twitter" href="#" data-toggle="tooltip" data-placement="top" title="Twitter"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-6 sb-linkedin" href="#" data-toggle="tooltip" data-placement="top" title="LinkedIn"><i class="socicon-linkedin"></i></a><a class="social-btn sb-style-6 sb-youtube" href="#" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="socicon-youtube"></i></a><small class="form-text text-muted">You can use any style of social buttons. See  <a href='social-buttons.html'>Social buttons</a> component for available styles.</small>
+            </div>
+          </div>
+          <!-- CTA Button-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">CTA Button</h4><a class="btn btn-style-2 btn-primary btn-block" href="#">Call to Action</a><small class="form-text text-muted pt-2">Some description goes here to convince the user to click this button. </small>
+            </div>
+          </div>
+        </div>
+        <!-- Blog widgets-->
+        <div class="d-flex flex-wrap justify-content-between pt-3">
+          <h4 class="mr-3">Blog widgets</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#widgets-blog-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row">
+          <!-- Author-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-author">
+              <h4 class="widget-title">About author</h4>
+              <div class="author-card">
+                <div class="author-card-cover" style="background-image: url(../img/widgets/author/cover.jpg);"></div>
+                <div class="author-card-profile">
+                  <div class="author-card-avatar"><img src="../img/widgets/author/avatar.jpg" alt="Post Author"/>
+                  </div>
+                  <div class="author-card-details">
+                    <h5 class="author-card-name">Sara Palson</h5><span class="author-card-position">Marketing Director</span>
+                  </div>
+                </div>
+                <p class="author-card-info">Sed ut perspiciatis unde omnis iste natus error sit voluptatem olore accusantium doloremque isul laudantium, totam remape.</p>
+                <div class="author-card-social-bar-wrap">
+                  <div class="author-card-social-bar"><a class="social-btn sb-style-1 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-1 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-1 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-1 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Blog categories-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-categories">
+              <h4 class="widget-title">Blog categories</h4>
+              <ul>
+                <li><a href="#technology" data-toggle="collapse">Software &amp; Technology<span>&nbsp;(45)</span></a>
+                  <div class="collapse show" id="technology">
+                    <ul>
+                      <li><a href="#">Gadgets reviews<span>&nbsp;(22)</span></a></li>
+                      <li><a href="#">Robotics &amp; AI<span>&nbsp;(10)</span></a></li>
+                      <li><a href="#">Technological trends<span>&nbsp;(13)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="collapsed" href="#design" data-toggle="collapse">Digital design<span>&nbsp;(76)</span></a>
+                  <div class="collapse" id="design">
+                    <ul>
+                      <li><a href="#">Web design<span>&nbsp;(31)</span></a></li>
+                      <li><a href="#">Mobile UI and UX<span>&nbsp;(28)</span></a></li>
+                      <li><a href="#">Design tools reviews<span>&nbsp;(17)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="collapsed" href="#architecture" data-toggle="collapse">Architecture<span>&nbsp;(32)</span></a>
+                  <div class="collapse" id="architecture">
+                    <ul>
+                      <li><a href="#">Modern trends<span>&nbsp;(23)</span></a></li>
+                      <li><a href="#">History of architecture<span>&nbsp;(9)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a href="#">Marketing &amp; Management<span>&nbsp;(24)</span></a></li>
+                <li><a href="#">Hobby &amp; Lifestyle<span>&nbsp;(18)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Archives-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-categories">
+              <h4 class="widget-title">Archives</h4>
+              <ul>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>August 2018<span>&nbsp;(34)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>July 2018<span>&nbsp;(28)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>June 2018<span>&nbsp;(47)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>May 2018<span>&nbsp;(19)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>April 2018<span>&nbsp;(48)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>March 2018<span>&nbsp;(16)</span></a></li>
+                <li><a href="#"><i class="fe-icon-book text-muted"></i>February 2018<span>&nbsp;(22)</span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Recent posts. List-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-featured-posts">
+              <h4 class="widget-title">Recent posts. List</h4><a class="featured-post" href="#">
+                <div class="featured-post-thumb"><img src="../img/widgets/blog/01.jpg" alt="Post Thumbnail"/>
+                </div>
+                <div class="featured-post-info">
+                  <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>22/04/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>21</span></div>
+                  <div class="featured-post-title">Getting to another level of design and functionality.</div>
+                </div></a><a class="featured-post" href="#">
+                <div class="featured-post-thumb"><img src="../img/widgets/blog/02.jpg" alt="Post Thumbnail"/>
+                </div>
+                <div class="featured-post-info">
+                  <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>30/05/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>17</span></div>
+                  <div class="featured-post-title">Cherry 5 WordPress Framework Sneaky Peaks.</div>
+                </div></a><a class="featured-post" href="#">
+                <div class="featured-post-thumb"><img src="../img/widgets/blog/03.jpg" alt="Post Thumbnail"/>
+                </div>
+                <div class="featured-post-info">
+                  <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>11/06/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>8</span></div>
+                  <div class="featured-post-title">Multiple skins &amp; easy demo data import.</div>
+                </div></a>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-3 mb-5">
+        <div class="row">
+          <!-- Recent posts. Carousel-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-featured-posts-carousel">
+              <h4 class="widget-title">Recent posts. Carousel</h4>
+              <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 10, &quot;loop&quot;: true }"><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/01.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>22/04/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>21</span></div>
+                    <div class="featured-post-title">Getting to another level of design and functionality.</div>
+                  </div></a><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/02.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>30/05/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>17</span></div>
+                    <div class="featured-post-title">Cherry 5 WordPress Framework Sneaky Peaks.</div>
+                  </div></a><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/03.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary opacity-70"><i class="fe-icon-clock"></i>11/06/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>8</span></div>
+                    <div class="featured-post-title">Multiple skins &amp; easy demo data import.</div>
+                  </div></a></div>
+            </div>
+          </div>
+          <!-- Recent comments-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-recent-comments">
+              <h4 class="widget-title">Recent comments</h4><a class="recent-comment" href="#"><span class="recent-comment-meta">Jane Portman on</span>
+                <div class="recent-comment-title">The App of The Future</div></a><a class="recent-comment" href="#"><span class="recent-comment-meta">William Smith on</span>
+                <div class="recent-comment-title">Cherry 5 WordPress Framework</div></a><a class="recent-comment" href="#"><span class="recent-comment-meta">Emma Johnson on</span>
+                <div class="recent-comment-title">Another Level of Design</div></a>
+            </div>
+          </div>
+          <!-- Tag cloud-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Tag cloud</h4><a class="tag-link" href="#">Technology</a><a class="tag-link" href="#">Software</a><a class="tag-link" href="#">Digital</a><a class="tag-link" href="#">Croudfunding</a><a class="tag-link" href="#">Social</a><a class="tag-link active" href="#">Freelance</a><a class="tag-link" href="#">Marketing</a><a class="tag-link" href="#">Management</a>
+            </div>
+          </div>
+        </div>
+        <!-- E-commerce (Shop) widgets-->
+        <div class="d-flex flex-wrap justify-content-between pt-4 mt-2">
+          <h4 class="mr-3">E-commerce (Shop) widgets</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#widgets-shop-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row">
+          <!-- Range slider-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Range slider</h4>
+              <form class="range-slider" method="post" data-start-min="250" data-start-max="650" data-min="0" data-max="1000" data-step="1">
+                <div class="ui-range-slider"></div>
+                <footer class="ui-range-slider-footer">
+                  <div class="column">
+                    <button class="btn btn-primary btn-xs" type="submit">Filter</button>
+                  </div>
+                  <div class="column">
+                    <div class="ui-range-values">
+                      <div class="ui-range-label">Price:</div>
+                      <div class="ui-range-value-min">$<span></span>
+                        <input type="hidden">
+                      </div>&nbsp;&ndash;&nbsp;
+                      <div class="ui-range-value-max">$<span></span>
+                        <input type="hidden">
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              </form>
+            </div>
+          </div>
+          <!-- Shop categories-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-categories">
+              <h4 class="widget-title">Shop categories</h4>
+              <ul>
+                <li><a href="#tv" data-toggle="collapse">TV, Video &amp; Audio<span>&nbsp;(420)</span></a>
+                  <div class="collapse show" id="tv">
+                    <ul>
+                      <li><a href="#">Smart TV Sets<span>&nbsp;(180)</span></a></li>
+                      <li><a href="#">Blue-Ray Players<span>&nbsp;(132)</span></a></li>
+                      <li><a href="#">Sound Systems<span>&nbsp;(47)</span></a></li>
+                      <li><a href="#">Home Theaters<span>&nbsp;(61)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="collapsed" href="#headphones" data-toggle="collapse">Headphones<span>&nbsp;(1239)</span></a>
+                  <div class="collapse" id="headphones">
+                    <ul>
+                      <li><a href="#">Earbuds Headphones<span>&nbsp;(752)</span></a></li>
+                      <li><a href="#">Over-Ear Headphones<span>&nbsp;(487)</span></a></li>
+                      <li><a href="#">Bluetooth Headphones<span>&nbsp;(205)</span></a></li>
+                      <li><a href="#">Sport &amp; Fitness<span>&nbsp;(96)</span></a></li>
+                      <li><a href="#">Noise-Cancelling<span>&nbsp;(113)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="collapsed" href="#wearable" data-toggle="collapse">Wearable Electronics<span>&nbsp;(340)</span></a>
+                  <div class="collapse" id="wearable">
+                    <ul>
+                      <li><a href="#">Smart Watches<span>&nbsp;(175)</span></a></li>
+                      <li><a href="#">Fitness Trackers<span>&nbsp;(123)</span></a></li>
+                      <li><a href="#">Smart Glasses<span>&nbsp;(42)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li><a class="collapsed" href="#printers" data-toggle="collapse">Printers &amp; Ink<span>&nbsp;(512)</span></a>
+                  <div class="collapse" id="printers">
+                    <ul>
+                      <li><a href="#">All-in-One<span>&nbsp;(304)</span></a></li>
+                      <li><a href="#">Copying<span>&nbsp;(115)</span></a></li>
+                      <li><a href="#">Faxing<span>&nbsp;(211)</span></a></li>
+                      <li><a href="#">Photo Printing<span>&nbsp;(68)</span></a></li>
+                      <li><a href="#">Scanning<span>&nbsp;(143)</span></a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Featured products. List-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-featured-products">
+              <h4 class="widget-title">Featured products. List</h4><a class="featured-product" href="#">
+                <div class="featured-product-thumb"><img src="../img/widgets/shop/01.jpg" alt="Product Image"/>
+                </div>
+                <div class="featured-product-info">
+                  <h5 class="featured-product-title">Amazon Echo Dot 2</h5>
+                  <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                  </div><span class="featured-product-price">
+                    <del>$62.00</del>&nbsp;$49.99</span>
+                </div></a><a class="featured-product" href="#">
+                <div class="featured-product-thumb"><img src="../img/widgets/shop/02.jpg" alt="Product Image"/>
+                </div>
+                <div class="featured-product-info">
+                  <h5 class="featured-product-title">Zeus Bluetooth Earbuds</h5>
+                  <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i><i class="fe-icon-star"></i>
+                  </div><span class="featured-product-price">$28.99</span>
+                </div></a><a class="featured-product" href="#">
+                <div class="featured-product-thumb"><img src="../img/widgets/shop/03.jpg" alt="Product Image"/>
+                </div>
+                <div class="featured-product-info">
+                  <h5 class="featured-product-title">Xbox One S White</h5>
+                  <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                  </div><span class="featured-product-price">$298.99</span>
+                </div></a>
+            </div>
+          </div>
+          <!-- Featured products. Carousel-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-featured-products-carousel">
+              <h4 class="widget-title">Featured products. Carousel</h4>
+              <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;margin&quot;: 10, &quot;loop&quot;: true }"><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/01.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Amazon Echo Dot 2</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">
+                      <del>$62.00</del>&nbsp;$49.99</span>
+                  </div></a><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/02.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Zeus Bluetooth Earbuds</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">$28.99</span>
+                  </div></a><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/03.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Xbox One S White</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">$298.99</span>
+                  </div></a></div>
+            </div>
+          </div>
+        </div>
+        <hr class="mt-3 mb-5">
+        <div class="row">
+          <!-- Shopping cart-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget widget-cart">
+              <h4 class="widget-title">Shopping cart</h4><a class="featured-product" href="#">
+                <div class="featured-product-thumb"><img src="../img/widgets/cart/01.jpg" alt="Product Image"/>
+                </div>
+                <div class="featured-product-info">
+                  <h5 class="featured-product-title">Samsung Galaxy S9 Plus</h5><span class="featured-product-price">1x $839.99</span>
+                </div><span class="remove-product"><i class="fe-icon-x"></i></span></a><a class="featured-product" href="#">
+                <div class="featured-product-thumb"><img src="../img/widgets/cart/02.jpg" alt="Product Image"/>
+                </div>
+                <div class="featured-product-info">
+                  <h5 class="featured-product-title">Samsung Gear 360 Camera</h5><span class="featured-product-price">1 x $68.00</span>
+                </div><span class="remove-product"><i class="fe-icon-x"></i></span></a>
+              <hr class="mt-3 mb-3"><span class="text-sm text-muted">Subtotal:&nbsp;</span><strong>$907.99</strong>
+              <div class="d-flex justify-content-between pt-3"><a class="btn btn-primary btn-block btn-sm mr-2" href="#">View Cart</a><a class="btn btn-accent btn-block btn-sm mt-0 mr-2" href="#">Checkout</a></div>
+            </div>
+          </div>
+          <!-- Filter. Checkboxes-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Filter. Checkboxes</h4>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="apple" checked>
+                <label class="custom-control-label" for="apple">Apple&nbsp;<span class="text-muted">(254)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="bosh">
+                <label class="custom-control-label" for="bosh">Bosh&nbsp;<span class="text-muted">(39)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="canon">
+                <label class="custom-control-label" for="canon">Canon Inc.&nbsp;<span class="text-muted">(128)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="dell">
+                <label class="custom-control-label" for="dell">Dell&nbsp;<span class="text-muted">(310)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="hewlet">
+                <label class="custom-control-label" for="hewlet">Hewlett-Packard&nbsp;<span class="text-muted">(42)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="hitachi">
+                <label class="custom-control-label" for="hitachi">Hitachi&nbsp;<span class="text-muted">(217)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="lg">
+                <label class="custom-control-label" for="lg">LG Electronics&nbsp;<span class="text-muted">(310)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="panasonic">
+                <label class="custom-control-label" for="panasonic">Panasonic&nbsp;<span class="text-muted">(74)</span></label>
+              </div>
+              <div class="custom-control custom-checkbox">
+                <input class="custom-control-input" type="checkbox" id="siemens">
+                <label class="custom-control-label" for="siemens">Siemens&nbsp;<span class="text-muted">(86)</span></label>
+              </div>
+            </div>
+          </div>
+          <!-- Filter. Radio buttons-->
+          <div class="col-xl-3 col-sm-6">
+            <div class="widget">
+              <h4 class="widget-title">Filter. Radio buttons</h4>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p100" name="price" checked>
+                <label class="custom-control-label" for="p100">$0 - $100&nbsp;<span class="text-muted">(254)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p300" name="price">
+                <label class="custom-control-label" for="p300">$101 - $300&nbsp;<span class="text-muted">(39)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p500" name="price">
+                <label class="custom-control-label" for="p500">$301 - $500&nbsp;<span class="text-muted">(128)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p750" name="price">
+                <label class="custom-control-label" for="p750">$501 - $750&nbsp;<span class="text-muted">(310)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p1000" name="price">
+                <label class="custom-control-label" for="p1000">$751 - $1,000&nbsp;<span class="text-muted">(42)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p1500" name="price">
+                <label class="custom-control-label" for="p1500">$1,001 - $1,500&nbsp;<span class="text-muted">(217)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p2000" name="price">
+                <label class="custom-control-label" for="p2000">$1,501 - $2,000&nbsp;<span class="text-muted">(310)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p3000" name="price">
+                <label class="custom-control-label" for="p3000">$2,001 - $3,000&nbsp;<span class="text-muted">(74)</span></label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input class="custom-control-input" type="radio" id="p4000" name="price">
+                <label class="custom-control-label" for="p4000">$3,001 - $4,000&nbsp;<span class="text-muted">(86)</span></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Light skin examples-->
+      <div class="bg-dark py-5 px-4">
+        <div class="container pt-4 pb-2">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="text-white mr-3">Light skin examples</h4><a class="navi-link text-white font-weight-bold text-sm text-uppercase py-2" href="#widgets-light-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="hr-light pb-4 mb-2">
+          <div class="row">
+            <!-- Blog categories-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-categories widget-light-skin">
+                <h4 class="widget-title">Blog categories</h4>
+                <ul>
+                  <li><a href="#technology2" data-toggle="collapse">Software &amp; Technology<span>&nbsp;(45)</span></a>
+                    <div class="collapse show" id="technology2">
+                      <ul>
+                        <li><a href="#">Gadgets reviews<span>&nbsp;(22)</span></a></li>
+                        <li><a href="#">Robotics &amp; AI<span>&nbsp;(10)</span></a></li>
+                        <li><a href="#">Technological trends<span>&nbsp;(13)</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a class="collapsed" href="#design2" data-toggle="collapse">Digital design<span>&nbsp;(76)</span></a>
+                    <div class="collapse" id="design2">
+                      <ul>
+                        <li><a href="#">Web design<span>&nbsp;(31)</span></a></li>
+                        <li><a href="#">Mobile UI and UX<span>&nbsp;(28)</span></a></li>
+                        <li><a href="#">Design tools reviews<span>&nbsp;(17)</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a class="collapsed" href="#architecture2" data-toggle="collapse">Architecture<span>&nbsp;(32)</span></a>
+                    <div class="collapse" id="architecture2">
+                      <ul>
+                        <li><a href="#">Modern trends<span>&nbsp;(23)</span></a></li>
+                        <li><a href="#">History of architecture<span>&nbsp;(9)</span></a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#">Hobby &amp; Lifestyle<span>&nbsp;(18)</span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Contacts-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-contacts widget-light-skin">
+                <h4 class="widget-title">Contacts</h4>
+                <ul>
+                  <li><i class="fe-icon-map-pin"></i><span>Find us</span><a href="#">1260 Broadway, New York</a></li>
+                  <li><i class="fe-icon-phone"></i><span>Call us</span><a href="tel:00180039025">001 800 390 25</a></li>
+                  <li><i class="fe-icon-mail"></i><span>Write us</span><a href="mailto:info@example.com">info@example.com</a></li>
+                </ul>
+              </div>
+            </div>
+            <!-- Recent posts-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-featured-posts widget-light-skin">
+                <h4 class="widget-title">Recent posts</h4><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/01.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary"><i class="fe-icon-clock"></i>22/04/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>21</span></div>
+                    <div class="featured-post-title">Getting to another level of design and functionality.</div>
+                  </div></a><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/02.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary"><i class="fe-icon-clock"></i>30/05/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>17</span></div>
+                    <div class="featured-post-title">Cherry 5 WordPress Framework Sneaky Peaks.</div>
+                  </div></a><a class="featured-post" href="#">
+                  <div class="featured-post-thumb"><img src="../img/widgets/blog/03.jpg" alt="Post Thumbnail"/>
+                  </div>
+                  <div class="featured-post-info">
+                    <div class="featured-post-meta"><span class="text-primary"><i class="fe-icon-clock"></i>11/06/2018</span><span class="ml-3"><i class="fe-icon-message-square"></i>8</span></div>
+                    <div class="featured-post-title">Multiple skins &amp; easy demo data import.</div>
+                  </div></a>
+              </div>
+            </div>
+            <!-- Recent comments-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-recent-comments widget-light-skin">
+                <h4 class="widget-title">Recent comments</h4><a class="recent-comment" href="#"><span class="recent-comment-meta">Jane Portman on</span>
+                  <div class="recent-comment-title">The App of The Future</div></a><a class="recent-comment" href="#"><span class="recent-comment-meta">William Smith on</span>
+                  <div class="recent-comment-title">Cherry 5 WordPress Framework</div></a><a class="recent-comment" href="#"><span class="recent-comment-meta">Emma Johnson on</span>
+                  <div class="recent-comment-title">Another Level of Design</div></a>
+              </div>
+            </div>
+          </div>
+          <hr class="hr-light mt-3 mb-5">
+          <div class="row">
+            <!-- Testimonials carousel-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-testimonials-carousel widget-light-skin">
+                <h4 class="widget-title">Testimonials carousel</h4>
+                <div class="owl-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true }">
+                  <div class="blockquote testimonial">
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <footer class="testimonial-footer">
+                      <div class="testimonial-avatar"><img src="../img/testimonials/01.jpg" alt="Testimonial Author Avatar"/>
+                      </div>
+                      <div class="d-table-cell align-middle pl-2">
+                        <div class="blockquote-footer">Barbara Palson
+                          <cite>Graphic Designer</cite>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                  <div class="blockquote testimonial">
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <footer class="testimonial-footer">
+                      <div class="testimonial-avatar"><img src="../img/testimonials/02.jpg" alt="Testimonial Author Avatar"/>
+                      </div>
+                      <div class="d-table-cell align-middle pl-2">
+                        <div class="blockquote-footer">Hinata Nakamura
+                          <cite>Financial Director</cite>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                  <div class="blockquote testimonial">
+                    <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                    <footer class="testimonial-footer">
+                      <div class="testimonial-avatar"><img src="../img/testimonials/03.jpg" alt="Testimonial Author Avatar"/>
+                      </div>
+                      <div class="d-table-cell align-middle pl-2">
+                        <div class="blockquote-footer">Michael Davis
+                          <cite>Co-Founder, CEO</cite>
+                        </div>
+                      </div>
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Featured products-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-featured-products widget-light-skin">
+                <h4 class="widget-title">Featured products</h4><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/01.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Amazon Echo Dot 2</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">
+                      <del>$62.00</del>&nbsp;$49.99</span>
+                  </div></a><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/02.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Zeus Bluetooth Earbuds</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">$28.99</span>
+                  </div></a><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/shop/03.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Xbox One S White</h5>
+                    <div class="rating-stars"><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star active"></i><i class="fe-icon-star"></i>
+                    </div><span class="featured-product-price">$298.99</span>
+                  </div></a>
+              </div>
+            </div>
+            <!-- Shopping cart-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-cart widget-light-skin">
+                <h4 class="widget-title">Shopping cart</h4><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/cart/01.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Samsung Galaxy S9 Plus</h5><span class="featured-product-price">1x $839.99</span>
+                  </div><span class="remove-product"><i class="fe-icon-x"></i></span></a><a class="featured-product" href="#">
+                  <div class="featured-product-thumb"><img src="../img/widgets/cart/02.jpg" alt="Product Image"/>
+                  </div>
+                  <div class="featured-product-info">
+                    <h5 class="featured-product-title">Samsung Gear 360 Camera</h5><span class="featured-product-price">1 x $68.00</span>
+                  </div><span class="remove-product"><i class="fe-icon-x"></i></span></a>
+                <hr class="hr-light mt-3 mb-3"><span class="text-sm text-white opacity-60">Subtotal:&nbsp;</span><strong class="text-white">$907.99</strong>
+                <div class="d-flex justify-content-between pt-3"><a class="btn btn-primary btn-block btn-sm mr-2" href="#">View Cart</a><a class="btn btn-accent btn-block btn-sm mt-0 mr-2" href="#">Checkout</a></div>
+              </div>
+            </div>
+            <!-- Range slider-->
+            <div class="col-xl-3 col-sm-6">
+              <div class="widget widget-light-skin">
+                <h4 class="widget-title">Range slider</h4>
+                <form class="range-slider" method="post" data-start-min="250" data-start-max="650" data-min="0" data-max="1000" data-step="1">
+                  <div class="ui-range-slider"></div>
+                  <footer class="ui-range-slider-footer">
+                    <div class="column">
+                      <button class="btn btn-primary btn-xs" type="submit">Filter</button>
+                    </div>
+                    <div class="column">
+                      <div class="ui-range-values">
+                        <div class="ui-range-label">Price:</div>
+                        <div class="ui-range-value-min">$<span></span>
+                          <input type="hidden">
+                        </div>&nbsp;&ndash;&nbsp;
+                        <div class="ui-range-value-max">$<span></span>
+                          <input type="hidden">
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

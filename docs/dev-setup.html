@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dev Environment Setup
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left" aria-label="Page title" style="background-image: url(../img/page-title/portfolio-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="#">Documentation</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading">Dev Environment Setup</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-accent py-1 px-2 text-white text-sm"><strong>Docs</strong></div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 105px; height: calc(100% - 105px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action active" href="dev-setup.html">Dev Environment Setup</a><a class="list-group-item list-group-item-action" href="working-with-gulp.html">Working With Gulp</a><a class="list-group-item list-group-item-action" href="project-structure.html">Project Structure</a><a class="list-group-item list-group-item-action" href="using-preprocessors.html">Using Preprocessors (Pug &amp; Sass)</a><a class="list-group-item list-group-item-action" href="autoprefixer.html">Browser Support (Autoprefixer)</a><a class="list-group-item list-group-item-action" href="global-colors.html">Global Colors</a><a class="list-group-item list-group-item-action" href="components.html">Components</a><a class="list-group-item list-group-item-action" href="utilities.html">Utility Classes</a><a class="list-group-item list-group-item-action" href="font-icons.html">Font Icons</a><a class="list-group-item list-group-item-action" href="google-maps.html">Google Maps API</a><a class="list-group-item list-group-item-action" href="credits.html">Sources and Credits</a><a class="list-group-item list-group-item-action" href="changelog.html">Changelog</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5 mb-2">
+        <div class="alert alert-secondary mb-4"><strong>Please note:</strong> this step is absolutely optional. It aims for advanced user who want to speed up development process with professional grade Front-End toolset shiped with CreateX. If you are not familiar with these tools and have no time to dive in you can still use plain HTML / CSS / JS to customize CreateX. Files you need are located inside <strong>Createx/dist</strong> folder. In this case you can skip this and next sections. Happy coding :)</div>
+        <p class="text-lg font-weight-medium">CreateX is built using modern development toolset.</p><img src="../img/docs/technologies.png" alt="Technologies">
+        <div class="d-block mt-4 mb-4">
+          <dl>
+            <dt class="font-family-body text-md">Node.js <a href="https://nodejs.org/en/" target="_blank">Official website</a></dt>
+            <dd>Is a JavaScript runtime built on Chrome's V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js' package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</dd>
+            <dt class="font-family-body text-md">Gulp <a href="https://gulpjs.com/" target="_blank">Official website</a></dt>
+            <dd>The JavaScript task runner. It helps with performing repetitive tasks like minification, compilation, unit testing, linting, etc. This is possible thanks to extensive Gulp Plugins library.</dd>
+            <dt class="font-family-body text-md">Sass (Syntactically Awesome Style Sheets) <a href="http://sass-lang.com/" target="_blank">Official website</a></dt>
+            <dd>Sass is a scripting language that is interpreted or compiled into Cascading Style Sheets (CSS). It is the most mature, stable, and powerful professional grade CSS extension language in the world. Sass gives you the power of variables, mixins, functions, etc.</dd>
+            <dt class="font-family-body text-md">Pug (former Jade) <a href="https://pugjs.org/api/getting-started.html" target="_blank">Official website</a></dt>
+            <dd>Pug is a high performance Node.js Templating Engine. Just like SASS, Pug is a prepocessor and, as such it helps you accomplishing tasks like wrapping away repetitive work by providing features not available in plain HTML like variables, includes, mixins, functions, etc.</dd>
+            <dt class="font-family-body text-md">Bootstrap 4 <a href="http://getbootstrap.com" target="_blank">Official website</a></dt>
+            <dd>Latest version of the most popular HTML, CSS, and JS framework in the world. CreateX is built on Bootstrap 4 and heavily depends on it. CreateX has all BS4 components + bunch of own plugins and its own components.</dd>
+          </dl>
+        </div>
+        <p class="mb-4"><u>This section will explain how to setup professional Front-End development environment for fast and smooth CreateX customization using these technologies.</u></p>
+        <h2 class="h5 pt-3">Text Editor and Terminal (Command Line)</h2>
+        <p>
+           You can use any text editor at your disposal and available Command line tool (Command Prompt for Windows or Terminal on MacOS). My personal preference is <a class="font-weight-medium" href="https://code.visualstudio.com/" target="_blank">Visual Studio Code.</a> It is free, has great buil-in terminal (console), built-in git client, debugging, huge extensions library and available for MacOS, Windows, Linux.</p>
+        <h2 class="h5 pt-3">Installing Node.js and npm</h2>
+        <p>In order to be able to setup CreateX development environment you will need to <strong>install Node.js and its Package Manager (npm)</strong>.</p>
+        <p>
+           Node.js is absolutely free and available for download via its official website for MacOS, Windows, Linux systems. <a class="font-weight-medium" href="https://nodejs.org/en/" target="_blank">Download Node.js and npm here.</a></p>
+        <p>Learn more about Node Package Manager and available packages here: <a class="font-weight-medium" href="https://www.npmjs.com" target="_blank">https://www.npmjs.com</a></p>
+        <h2 class="h5 pt-3">Installing packages necessary for CreateX development</h2>
+        <p>When Node.js and npm is installed you are ready to install all dependencies necessary for CreateX development.</p>
+        <u class="d-block mb-3">Inside your command line tool type:</u><kbd class="d-inline-block mb-3">npm install</kbd>
+        <p>This will start the process of installing all dependencies which is listed inside <code>Createx/package.json</code> file. Wait until installation is finished and jump to the next section <a class="font-weight-medium" href="working-with-gulp.html">Working with Gulp.</a></p>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

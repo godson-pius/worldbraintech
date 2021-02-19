@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tabs
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Tabs</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Tabs Style 1 (Default) Code-->
+    <div class="modal fade" id="tabs-style1-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tabs Style 1 (Default) --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Bordered Tabs Style 1 (Default) --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-bordered&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content border&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tabs Style 1 (Default)</strong>
+ul(class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...
+
+<strong>//- Bordered Tabs Style 1 (Default)</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-bordered&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content.border
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs Style 2 Code-->
+    <div class="modal fade" id="tabs-style2-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tabs Style 2 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-2&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Bordered Tabs Style 2 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-2 nav-tabs-bordered&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content border&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tabs Style 2</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-2&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...
+
+<strong>//- Bordered Tabs Style 2</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-2 nav-tabs-bordered&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content.border
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs Style 3 Code-->
+    <div class="modal fade" id="tabs-style3-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tabs Style 3 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-3&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Bordered Tabs Style 3 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-3 nav-tabs-bordered&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content border&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tabs Style 3</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-3&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...
+
+<strong>//- Bordered Tabs Style 3</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-3 nav-tabs-bordered&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content.border
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs Style 4 Code-->
+    <div class="modal fade" id="tabs-style4-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tabs Style 4 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-4&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Bordered Tabs Style 4 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-4 nav-tabs-bordered&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content border&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tabs Style 4</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-4&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...
+
+<strong>//- Bordered Tabs Style 4</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-4 nav-tabs-bordered&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content.border
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs Style 5 Code-->
+    <div class="modal fade" id="tabs-style5-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html5" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html5" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Tabs Style 5 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-5&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings1&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings1&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Bordered Tabs Style 5 --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs nav-tabs-style-5 nav-tabs-bordered&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings2&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content border&quot;&gt;
+  &lt;div class=&quot;tab-pane fade show active&quot; id=&quot;home2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard ...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;profile2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;messages2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes anderson tofu...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane fade&quot; id=&quot;settings2&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar raw...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug5" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Tabs Style 5</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-5&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...
+
+<strong>//- Bordered Tabs Style 5</strong>
+ul(class=&quot;nav nav-tabs nav-tabs-style-5 nav-tabs-bordered&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home1&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile1&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings1&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings
+.tab-content.border
+  div(id=&quot;home1&quot; class=&quot;tab-pane fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard ...
+  div(id=&quot;profile1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;messages1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes anderson tofu...
+  div(id=&quot;settings1&quot; class=&quot;tab-pane fade&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar raw...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tabs Transition Effects Code-->
+    <div class="modal fade" id="tabs-transitions-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html6" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html6" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Fade, Scale Up, Scale Down, Left --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#fade&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Fade&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#scaleup&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Scale Up&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#scaledown&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Scale Down&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#left&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Left&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane transition fade show active&quot; id=&quot;fade&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade scale&quot; id=&quot;scaleup&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade scaledown&quot; id=&quot;scaledown&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade left&quot; id=&quot;left&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Right, Top, Bottom, Flip --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#right&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Right&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#top&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Top&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#bottom&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Bottom&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#flip&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Flip&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+  &lt;div class=&quot;tab-pane transition fade right show active&quot; id=&quot;right&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Raw denim you probably haven't heard...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade top&quot; id=&quot;top&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Food truck fixie locavore, accusamus...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade bottom&quot; id=&quot;bottom&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Etsy mixtape wayfarers, ethical wes...&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;tab-pane transition fade flip&quot; id=&quot;flip&quot; role=&quot;tabpanel&quot;&gt;
+    &lt;p class=&quot;text-muted&quot;&gt;Trust fund seitan letterpress, keytar...&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug6" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Fade, Scale Up, Scale Down, Left</strong>
+ul(class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;)
+  li.nav-item: a(href=&quot;#fade&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Fade
+  li.nav-item: a(href=&quot;#scaleup&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Scale Up
+  li.nav-item: a(href=&quot;#scaledown&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Scale Down
+  li.nav-item: a(href=&quot;#left&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Left
+.tab-content
+  div(id=&quot;fade&quot; class=&quot;tab-pane transition fade show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard...
+  div(id=&quot;scaleup&quot; class=&quot;tab-pane transition fade scale&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;scaledown&quot; class=&quot;tab-pane transition fade scaledown&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes...
+  div(id=&quot;left&quot; class=&quot;tab-pane transition fade left&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar...
+
+<strong>//- Right, Top, Bottom, Flip</strong>
+ul(class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;)
+  li.nav-item: a(href=&quot;#right&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Right
+  li.nav-item: a(href=&quot;#top&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Top
+  li.nav-item: a(href=&quot;#bottom&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Bottom
+  li.nav-item: a(href=&quot;#flip&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Flip
+.tab-content
+  div(id=&quot;right&quot; class=&quot;tab-pane transition fade right show active&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Raw denim you probably haven't heard...
+  div(id=&quot;top&quot; class=&quot;tab-pane transition fade top&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Food truck fixie locavore, accusamus...
+  div(id=&quot;bottom&quot; class=&quot;tab-pane transition fade bottom&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Etsy mixtape wayfarers, ethical wes...
+  div(id=&quot;flip&quot; class=&quot;tab-pane transition fade flip&quot; role=&quot;tabpanel&quot;)
+    p.text-muted Trust fund seitan letterpress, keytar...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action active" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-4">
+        <!-- Style 1-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 1 (Default)</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-style1-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home1" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile1" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages1" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings1" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home1" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile1" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages1" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings1" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-bordered" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home2" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile2" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile <sup>5</sup></a></li>
+              <li class="nav-item"><a class="nav-link" href="#settings2" data-toggle="tab" role="tab"><i class="fe-icon-settings"></i>&nbsp;Settings <sup>10</sup></a></li>
+            </ul>
+            <div class="tab-content border">
+              <div class="tab-pane fade show active" id="home2" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile2" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="settings2" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Style 2-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 2</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-style2-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-2" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home3" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile3" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages3" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings3" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home3" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile3" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages3" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings3" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-2 nav-tabs-bordered" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home4" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile4" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile <sup>5</sup></a></li>
+              <li class="nav-item"><a class="nav-link" href="#settings4" data-toggle="tab" role="tab"><i class="fe-icon-settings"></i>&nbsp;Settings <sup>10</sup></a></li>
+            </ul>
+            <div class="tab-content border">
+              <div class="tab-pane fade show active" id="home4" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile4" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="settings4" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Style 3-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 3</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-style3-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-3" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home5" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile5" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages5" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings5" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home5" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile5" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages5" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings5" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-3 nav-tabs-bordered" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home6" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile6" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile <sup>5</sup></a></li>
+              <li class="nav-item"><a class="nav-link" href="#settings6" data-toggle="tab" role="tab"><i class="fe-icon-settings"></i>&nbsp;Settings <sup>10</sup></a></li>
+            </ul>
+            <div class="tab-content border">
+              <div class="tab-pane fade show active" id="home6" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile6" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="settings6" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Style 4-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 4</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-style4-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-4" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home7" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile7" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages7" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings7" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home7" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile7" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages7" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings7" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-4 nav-tabs-bordered" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home8" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile8" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile <sup>5</sup></a></li>
+              <li class="nav-item"><a class="nav-link" href="#settings8" data-toggle="tab" role="tab"><i class="fe-icon-settings"></i>&nbsp;Settings <sup>10</sup></a></li>
+            </ul>
+            <div class="tab-content border">
+              <div class="tab-pane fade show active" id="home8" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile8" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="settings8" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Style 5-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Style 5</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-style5-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-5" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home9" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile9" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages9" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings9" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home9" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile9" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages9" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings9" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-5 nav-tabs-bordered" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home10" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile10" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile <sup>5</sup></a></li>
+              <li class="nav-item"><a class="nav-link" href="#settings10" data-toggle="tab" role="tab"><i class="fe-icon-settings"></i>&nbsp;Settings <sup>10</sup></a></li>
+            </ul>
+            <div class="tab-content border">
+              <div class="tab-pane fade show active" id="home10" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile10" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="settings10" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Transition Effects-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Transition Effects &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Transition effects applicable to all tab styles.</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#tabs-transitions-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-2">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#fade" data-toggle="tab" role="tab">Fade</a></li>
+              <li class="nav-item"><a class="nav-link" href="#scaleup" data-toggle="tab" role="tab">Scale Up</a></li>
+              <li class="nav-item"><a class="nav-link" href="#scaledown" data-toggle="tab" role="tab">Scale Down</a></li>
+              <li class="nav-item"><a class="nav-link" href="#left" data-toggle="tab" role="tab">Left</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane transition fade show active" id="fade" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel.</p>
+              </div>
+              <div class="tab-pane transition fade scale" id="scaleup" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit.</p>
+              </div>
+              <div class="tab-pane transition fade scaledown" id="scaledown" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them.</p>
+              </div>
+              <div class="tab-pane transition fade left" id="left" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#right" data-toggle="tab" role="tab">Right</a></li>
+              <li class="nav-item"><a class="nav-link" href="#top" data-toggle="tab" role="tab">Top</a></li>
+              <li class="nav-item"><a class="nav-link" href="#bottom" data-toggle="tab" role="tab">Bottom</a></li>
+              <li class="nav-item"><a class="nav-link" href="#flip" data-toggle="tab" role="tab">Flip</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane transition fade right show active" id="right" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel.</p>
+              </div>
+              <div class="tab-pane transition fade top" id="top" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit.</p>
+              </div>
+              <div class="tab-pane transition fade bottom" id="bottom" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them.</p>
+              </div>
+              <div class="tab-pane transition fade flip" id="flip" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

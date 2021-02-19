@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dropdowns
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Dropdowns</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Dropdown Static Example Code-->
+    <div class="modal fade" id="dropdown-static-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Basic Example --&gt;</strong>
+&lt;div class=&quot;dropdown-menu d-block&quot; style=&quot;position: static;&quot;&gt;
+  &lt;span class=&quot;dropdown-item-text&quot;&gt;Dropdown item text&lt;/span&gt;
+  &lt;a class=&quot;dropdown-item active&quot; href=&quot;#&quot;&gt;Action active&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- With Header --&gt;</strong>
+&lt;div class=&quot;dropdown-menu d-block&quot; style=&quot;position: static;&quot;&gt;
+  &lt;h6 class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/h6&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- With Icons and Badges --&gt;</strong>
+&lt;div class=&quot;dropdown-menu d-block&quot; style=&quot;position: static;&quot;&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+    &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+    &amp;nbsp;Home
+    &lt;span class=&quot;badge badge-pill badge-secondary&quot;&gt;2&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+    &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+    &amp;nbsp;Profile
+    &lt;span class=&quot;badge badge-pill badge-primary&quot;&gt;3&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+    &lt;i class=&quot;fe-icon-message-square&quot;&gt;&lt;/i&gt;
+    &amp;nbsp;Messages
+    &lt;span class=&quot;badge badge-pill badge-info&quot;&gt;5&lt;/span&gt;
+  &lt;/a&gt;
+  &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;
+    &lt;i class=&quot;fe-icon-settings&quot;&gt;&lt;/i&gt;
+    &amp;nbsp;Settings
+    &lt;span class=&quot;badge badge-pill badge-warning&quot;&gt;1&lt;/span&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Basic Example</strong>
+.dropdown-menu(style=&quot;position: static;&quot;).d-block
+  span.dropdown-item-text Dropdown item text
+  a(href=&quot;#&quot;).dropdown-item.active Action active
+  a(href=&quot;#&quot;).dropdown-item Another action
+  a(href=&quot;#&quot;).dropdown-item Something else here
+
+<strong>//- With Header</strong>
+.dropdown-menu(style=&quot;position: static;&quot;).d-block
+  h6.dropdown-header Dropdown header
+  a(href=&quot;#&quot;).dropdown-item.active Action active
+  a(href=&quot;#&quot;).dropdown-item Another action
+  a(href=&quot;#&quot;).dropdown-item Something else here
+
+<strong>//- With Icons and Badges</strong>
+.dropdown-menu(style=&quot;position: static;&quot;).d-block
+  a(href=&quot;#&quot;).dropdown-item
+    i.fe-icon-home
+    | &amp;nbsp;Home
+    span.badge.badge-pill.badge-secondary 2
+  a(href=&quot;#&quot;).dropdown-item
+    i.fe-icon-user
+    | &amp;nbsp;Profile
+    span.badge.badge-pill.badge-primary 3
+  a(href=&quot;#&quot;).dropdown-item
+    i.fe-icon-message-square
+    | &amp;nbsp;Messages
+    span.badge.badge-pill.badge-info 5
+  a(href=&quot;#&quot;).dropdown-item
+    i.fe-icon-settings
+    | &amp;nbsp;Settings
+    span.badge.badge-pill.badge-warning 1</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown Position Code-->
+    <div class="modal fade" id="dropdown-position-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Dropdown --&gt;</strong>
+&lt;div class=&quot;btn-group&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown&lt;/button&gt;
+  &lt;div class=&quot;dropdown-menu&quot;&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Dropup --&gt;</strong>
+&lt;div class=&quot;btn-group dropup&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropup&lt;/button&gt;
+  &lt;div class=&quot;dropdown-menu&quot;&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;
+
+<strong>&lt;!-- Dropright --&gt;</strong>
+&lt;div class=&quot;btn-group dropright&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropright&lt;/button&gt;
+  &lt;div class=&quot;dropdown-menu&quot;&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;
+
+<strong>&lt;!-- Dropleft --&gt;</strong>
+&lt;div class=&quot;btn-group dropleft&quot;&gt;
+  &lt;button class=&quot;btn btn-secondary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropleft&lt;/button&gt;
+  &lt;div class=&quot;dropdown-menu&quot;&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+  &lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Dropdown</strong>
+.btn-group
+  button(type=&quot;button&quot; data-toggle=&quot;dropdown&quot;).btn.btn-secondary.dropdown-toggle Dropdown
+  .dropdown-menu
+    a(href=&quot;#&quot;).dropdown-item Action
+    a(href=&quot;#&quot;).dropdown-item Another action
+    a(href=&quot;#&quot;).dropdown-item Something else here
+
+<strong>//- Dropup</strong>
+.btn-group.dropup
+  button(type=&quot;button&quot; data-toggle=&quot;dropdown&quot;).btn.btn-secondary.dropdown-toggle Dropup
+  .dropdown-menu
+    a(href=&quot;#&quot;).dropdown-item Action
+    a(href=&quot;#&quot;).dropdown-item Another action
+    a(href=&quot;#&quot;).dropdown-item Something else here
+
+<strong>//- Dropright</strong>
+.btn-group.dropright
+  button(type=&quot;button&quot; data-toggle=&quot;dropdown&quot;).btn.btn-secondary.dropdown-toggle Dropright
+  .dropdown-menu
+    a(href=&quot;#&quot;).dropdown-item Action
+    a(href=&quot;#&quot;).dropdown-item Another action
+    a(href=&quot;#&quot;).dropdown-item Something else here
+
+<strong>//- Dropleft</strong>
+.btn-group.dropleft
+  button(type=&quot;button&quot; data-toggle=&quot;dropdown&quot;).btn.btn-secondary.dropdown-toggle Dropleft
+  .dropdown-menu
+    a(href=&quot;#&quot;).dropdown-item Action
+    a(href=&quot;#&quot;).dropdown-item Another action
+    a(href=&quot;#&quot;).dropdown-item Something else here</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown inside Tabs Code-->
+    <div class="modal fade" id="dropdown-tabs-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Dropdown inside Tabs --&gt;</strong>
+&lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#home&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-home&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Home
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#profile&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;
+      &lt;i class=&quot;fe-icon-user&quot;&gt;&lt;/i&gt;
+      &amp;nbsp;Profile
+    &lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#messages&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#settings&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;&gt;Settings&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Dropdown inside Tabs</strong>
+ul(class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;)
+  li.nav-item
+    a(href=&quot;#home&quot; class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-home
+      | &amp;nbsp;Home
+  li.nav-item
+    a(href=&quot;#profile&quot; class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;)
+      i.fe-icon-user
+      | &amp;nbsp;Profile
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#messages&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Messages
+      a(href=&quot;#settings&quot; class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; role=&quot;tab&quot;) Settings</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Dropdown inside Pills Code-->
+    <div class="modal fade" id="dropdown-pills-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Dropdown inside Pills --&gt;</strong>
+&lt;ul class=&quot;nav nav-pills&quot;&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link active&quot; href=&quot;#&quot;&gt;Active&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item&quot;&gt;
+    &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;nav-item dropdown&quot;&gt;
+    &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;#&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;&gt;Dropdown&lt;/a&gt;
+    &lt;div class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another Action&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Dropdown inside Pills</strong>
+ul.nav.nav-pills
+  li.nav-item: a(href=&quot;#&quot; class=&quot;nav-link active&quot;) Active
+  li.nav-item: a(href=&quot;#&quot; class=&quot;nav-link&quot;) Link
+  li.nav-item.dropdown
+    a(href=&quot;#&quot; class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot;) Dropdown
+    .dropdown-menu
+      a(href=&quot;#&quot; class=&quot;dropdown-item&quot;) Action
+      a(href=&quot;#&quot; class=&quot;dropdown-item&quot;) Another Action
+      a(href=&quot;#&quot; class=&quot;dropdown-item&quot;) Something else here</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action active" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <!-- Static examples-->
+      <div class="container clearfix pb-4 mb-2">
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Static examples</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#dropdown-static-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="dropdown-menu d-inline-block align-top mr-4 mb-grid-gutter" style="position: static;"><span class="dropdown-item-text">Dropdown item text</span><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        <div class="dropdown-menu d-inline-block align-top mr-4 mb-grid-gutter" style="position: static;"><a class="dropdown-item" href="#">Regular link</a><a class="dropdown-item" href="#">Another regular link</a><a class="dropdown-item active" href="#">Active link</a><a class="dropdown-item" href="#">Another regular link</a></div>
+        <div class="dropdown-menu d-inline-block align-top mr-4 mb-grid-gutter" style="position: static;">
+          <h6 class="dropdown-header">Dropdown header</h6><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a>
+        </div>
+        <div class="dropdown-menu d-inline-block align-top mr-4 mb-grid-gutter" style="position: static;"><a class="dropdown-item" href="#"><i class="fe-icon-home"></i>&nbsp;Home<span class="badge badge-pill badge-secondary">2</span></a><a class="dropdown-item" href="#"><i class="fe-icon-user"></i>&nbsp;Profile<span class="badge badge-pill badge-primary">3</span></a><a class="dropdown-item" href="#"><i class="fe-icon-message-square"></i>&nbsp;Messages<span class="badge badge-pill badge-info">5</span></a><a class="dropdown-item" href="#"><i class="fe-icon-settings"></i>&nbsp;Settings<span class="badge badge-pill badge-warning">1</span></a></div>
+      </div>
+      <!-- Position-->
+      <div class="container pb-5">
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Position &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Applicable to button styles 1, 2, 6.</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#dropdown-position-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="btn-group d-inline-block mb-3 mr-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        </div>
+        <div class="btn-group dropup d-inline-block mb-3 mr-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropup</button>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        </div>
+        <div class="btn-group dropright d-inline-block mb-3 mr-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropright</button>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        </div>
+        <div class="btn-group dropleft d-inline-block mb-3 mr-3">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">Dropleft</button>
+          <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
+        </div>
+      </div>
+      <!-- Inside tabs-->
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Inside tabs &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Applicable to all tab styles.</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#dropdown-tabs-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-4">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home1" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile1" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages1" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings1" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home1" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile1" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages1" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings1" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-tabs nav-tabs-style-3" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#home5" data-toggle="tab" role="tab"><i class="fe-icon-home"></i>&nbsp;Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#profile5" data-toggle="tab" role="tab"><i class="fe-icon-user"></i>&nbsp;Profile</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#messages5" data-toggle="tab" role="tab">Messages</a><a class="dropdown-item" href="#settings5" data-toggle="tab" role="tab">Settings</a></div>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="home5" role="tabpanel">
+                <p class="text-muted">Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. Excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="tab-pane fade" id="profile5" role="tabpanel">
+                <p class="text-muted">Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente.</p>
+              </div>
+              <div class="tab-pane fade" id="messages5" role="tabpanel">
+                <p class="text-muted">Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.</p>
+              </div>
+              <div class="tab-pane fade" id="settings5" role="tabpanel">
+                <p class="text-muted">Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin. Cred vinyl keffiyeh DIY salvia PBR, banh mi before they sold out farm-to-table VHS viral locavore cosby sweater. Lomo wolf viral, mustache readymade thundercats keffiyeh craft beer marfa ethical. Wolf salvia freegan.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inside pills-->
+      <div class="container pb-2">
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Inside pills &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Applicable to all pill styles.</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#dropdown-pills-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-5">
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-pills">
+              <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another Action</a><a class="dropdown-item" href="#">Something else here</a></div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-6 mb-4 pb-2">
+            <ul class="nav nav-pills nav-pills-style-2">
+              <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button">Dropdown</a>
+                <div class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another Action</a><a class="dropdown-item" href="#">Something else here</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Input Group
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Input Group</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Input Group Addon Position Code-->
+    <div class="modal fade" id="input-group-addon-position-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Addon on the Left --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Addon on the Right --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Recipient's e-mail&quot;&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;@example.com&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Addon on Both Sides --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-dollar-sign&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Amount&quot;&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Addon on the Left</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text
+      i.fe-icon-lock
+  input(type=&quot;password&quot; placeholder=&quot;Password&quot;).form-control
+
+<strong>//- Addon on the Right</strong>
+.input-group
+  input(type=&quot;text&quot; placeholder=&quot;Recipient's e-mail&quot;).form-control
+  .input-group-append
+    span.input-group-text @example.com
+
+<strong>//- Addon on Both Sides</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text
+      i.fe-icon-dollar-sign
+  input(type=&quot;text&quot; placeholder=&quot;Amount&quot;).form-control
+  .input-group-append
+    span.input-group-text .00</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Group Addon Types Code-->
+    <div class="modal fade" id="input-group-addon-types-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Icon Addon (Textarea) --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-message-square&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Type your message here...&quot; rows=&quot;6&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Text Addon (Select) --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;Options&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;select class=&quot;form-control&quot;&gt;
+    &lt;option&gt;Choose one...&lt;/option&gt;
+    &lt;option&gt;One&lt;/option&gt;
+    &lt;option&gt;Two&lt;/option&gt;
+    &lt;option&gt;Three&lt;/option&gt;
+  &lt;/select&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Checkbox Addon (Text Input) --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+      &lt;div class=&quot;custom-control custom-checkbox&quot;&gt;
+        &lt;input class=&quot;custom-control-input&quot; type=&quot;checkbox&quot; id=&quot;ex-check-1&quot;&gt;
+        &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-check-1&quot;&gt;&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Checkbox here&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Radio Button Addon (Text Input) --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;div class=&quot;input-group-text&quot;&gt;
+      &lt;div class=&quot;custom-control custom-radio&quot;&gt;
+        &lt;input class=&quot;custom-control-input&quot; type=&quot;radio&quot; id=&quot;ex-radio-1&quot; name=&quot;radio&quot;&gt;
+        &lt;label class=&quot;custom-control-label&quot; for=&quot;ex-radio-1&quot;&gt;&lt;/label&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Radio button here&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Icon Addon (Textarea)</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text
+      i.fe-icon-message-square
+  textarea(placeholder=&quot;Type your message here...&quot; rows=&quot;6&quot;).form-control
+
+<strong>//- Text Addon (Select)</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text Options
+  select.form-control
+    option Choose one...
+    option One
+    option Two
+    option Three
+    option Four
+    option Five
+
+<strong>//- Checkbox Addon (Text Input)</strong>
+.input-group
+  .input-group-prepend
+    .input-group-text
+      .custom-control.custom-checkbox
+        input(type=&quot;checkbox&quot; id=&quot;ex-check-1&quot;).custom-control-input
+        label(for=&quot;ex-check-1&quot;).custom-control-label
+  input(type=&quot;text&quot; placeholder=&quot;Checkbox here&quot;).form-control
+
+<strong>//- Radio Button Addon (Text Input)</strong>
+.input-group
+  .input-group-prepend
+    .input-group-text
+      .custom-control.custom-radio
+        input(type=&quot;radio&quot; id=&quot;ex-radio-1&quot; name=&quot;radio&quot;).custom-control-input
+        label(for=&quot;ex-radio-1&quot;).custom-control-label
+  input(type=&quot;text&quot; placeholder=&quot;Radio button here&quot;).form-control</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Group Multiple Inputs Code-->
+    <div class="modal fade" id="input-group-multiple-inputs-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Multiple Inputs --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;First &amp;amp; last name&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;First name&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Last name&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Multiple Inputs</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text First &amp; last name
+  input(type=&quot;text&quot; placeholder=&quot;First name&quot;).form-control
+  input(type=&quot;text&quot; placeholder=&quot;Last name&quot;).form-control</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Group Multiple Addons Code-->
+    <div class="modal fade" id="input-group-multiple-addons-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Multiple Addons on the Left --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-dollar-sign&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Amount&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Multiple Addons on the Right --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Amount&quot;&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-dollar-sign&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;.00&lt;/span&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Multiple Addons on the Left</strong>
+.input-group
+  .input-group-prepend
+    span.input-group-text
+      i.fe-icon-dollar-sign
+    span.input-group-text .00
+  input(type=&quot;text&quot; placeholder=&quot;Amount&quot;).form-control
+
+<strong>//- Multiple Addons on the Right</strong>
+.input-group
+  input(type=&quot;text&quot; placeholder=&quot;Amount&quot;).form-control
+  .input-group-append
+    span.input-group-text
+      i.fe-icon-dollar-sign
+    span.input-group-text .00</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Group Button Addons Code-->
+    <div class="modal fade" id="input-group-button-addons-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html5" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug5" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html5" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Button Addon on the Left --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;button class=&quot;btn btn-primary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Button on the left&quot;&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Multiple Button Addons --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control border-right-0&quot; type=&quot;text&quot; placeholder=&quot;Buttons on the right&quot;&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;button class=&quot;btn btn-secondary&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fe-icon-edit text-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-success&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fe-icon-check-circle text-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+    &lt;button class=&quot;btn btn-danger&quot; type=&quot;button&quot;&gt;&lt;i class=&quot;fe-icon-trash-2 text-lg&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Dropdown Addon on the Right --&gt;</strong>
+&lt;div class=&quot;input-group&quot;&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;text&quot; placeholder=&quot;Dropdown on the right&quot;&gt;
+  &lt;div class=&quot;input-group-append&quot;&gt;
+    &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown&lt;/button&gt;
+    &lt;nav class=&quot;dropdown-menu&quot;&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+      &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+    &lt;/nav&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug5" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Button Addon on the Left</strong>
+.input-group
+  .input-group-prepend
+    button(type=&quot;button&quot;).btn.btn-primary Button
+  input(type=&quot;text&quot; placeholder=&quot;Button on the left&quot;).form-control
+.input-group.form-group
+  input(type=&quot;text&quot; placeholder=&quot;Button on the right&quot;).form-control
+  .input-group-append
+    button(type=&quot;button&quot;).btn.btn-primary Button
+
+<strong>//- Multiple Button Addons</strong>
+.input-group
+  input(type=&quot;text&quot; placeholder=&quot;Buttons on the right&quot;).form-control.border-right-0
+  .input-group-append
+    button(type=&quot;button&quot;).btn.btn-secondary
+      i.fe-icon-edit.text-lg
+    button(type=&quot;button&quot;).btn.btn-success
+      i.fe-icon-check-circle.text-lg
+    button(type=&quot;button&quot;).btn.btn-danger
+      i.fe-icon-trash-2.text-lg
+
+<strong>//- Dropdown Addon on the Right</strong>
+.input-group
+  input(type=&quot;text&quot; placeholder=&quot;Dropdown on the right&quot;).form-control
+  .input-group-append
+    button(type=&quot;button&quot; data-toggle=&quot;dropdown&quot;).btn.btn-primary.dropdown-toggle Dropdown
+    nav.dropdown-menu
+      a(href=&quot;#&quot;).dropdown-item Action
+      a(href=&quot;#&quot;).dropdown-item Another action
+      a(href=&quot;#&quot;).dropdown-item Something else here</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Input Group Light Skin Code-->
+    <div class="modal fade" id="input-group-light-skin-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html6" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug6" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html6" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Input Group Light Skin --&gt;</strong>
+&lt;div class=&quot;input-group input-group-light-skin&quot;&gt;
+  &lt;div class=&quot;input-group-prepend&quot;&gt;
+    &lt;span class=&quot;input-group-text&quot;&gt;&lt;i class=&quot;fe-icon-lock&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/div&gt;
+  &lt;input class=&quot;form-control&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug6" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Input Group Light Skin</strong>
+.input-group.input-group-light-skin
+  .input-group-prepend
+    span.input-group-text
+      i.fe-icon-lock
+  input(type=&quot;password&quot; placeholder=&quot;Password&quot;).form-control</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action active" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5 mb-4">
+        <!-- Addon position-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Addon position</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#input-group-addon-position-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-5">
+          <div class="col-md-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-lock"></i></span></div>
+              <input class="form-control" type="password" placeholder="Password">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group form-group">
+              <input class="form-control" type="text" placeholder="Recipient's e-mail">
+              <div class="input-group-append"><span class="input-group-text">@example.com</span></div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-dollar-sign"></i></span></div>
+              <input class="form-control" type="text" placeholder="Amount">
+              <div class="input-group-append"><span class="input-group-text">.00</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Different types-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Different types</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#input-group-addon-types-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row pb-5">
+          <div class="col-md-6">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-message-square"></i></span></div>
+              <textarea class="form-control" placeholder="Type your message here..." rows="6"></textarea>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text">Options</span></div>
+              <select class="form-control">
+                <option>Choose one...</option>
+                <option>One</option>
+                <option>Two</option>
+                <option>Three</option>
+                <option>Four</option>
+                <option>Five</option>
+              </select>
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="custom-control custom-checkbox">
+                    <input class="custom-control-input" type="checkbox" id="ex-check-1">
+                    <label class="custom-control-label" for="ex-check-1"></label>
+                  </div>
+                </div>
+              </div>
+              <input class="form-control" type="text" placeholder="Checkbox here">
+            </div>
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">
+                  <div class="custom-control custom-radio">
+                    <input class="custom-control-input" type="radio" id="ex-radio-1" name="radio">
+                    <label class="custom-control-label" for="ex-radio-1"></label>
+                  </div>
+                </div>
+              </div>
+              <input class="form-control" type="text" placeholder="Radio button here">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Multiple inputs-->
+          <div class="col-md-6 pb-5">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Multiple inputs</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#input-group-multiple-inputs-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text">First &amp; last name</span></div>
+              <input class="form-control" type="text" placeholder="First name">
+              <input class="form-control" type="text" placeholder="Last name">
+            </div>
+          </div>
+          <!-- Multiple addons-->
+          <div class="col-md-6 pb-5">
+            <div class="d-flex flex-wrap justify-content-between">
+              <h4 class="mr-3">Multiple addons</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#input-group-multiple-addons-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+            </div>
+            <hr class="pb-4 mb-1">
+            <div class="input-group form-group">
+              <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-dollar-sign"></i></span><span class="input-group-text">.00</span></div>
+              <input class="form-control" type="text" placeholder="Amount">
+            </div>
+            <div class="input-group form-group">
+              <input class="form-control" type="text" placeholder="Amount">
+              <div class="input-group-append"><span class="input-group-text"><i class="fe-icon-dollar-sign"></i></span><span class="input-group-text">.00</span></div>
+            </div>
+          </div>
+        </div>
+        <!-- Button addons-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Button addons &nbsp;<span class="d-inline-block font-family-body text-md font-weight-normal text-muted">Applicable to all button styles.</span></h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#input-group-button-addons-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-primary" type="button">Button</button>
+              </div>
+              <input class="form-control" type="text" placeholder="Button on the left">
+            </div>
+            <div class="input-group form-group">
+              <input class="form-control" type="text" placeholder="Button on the right">
+              <div class="input-group-append">
+                <button class="btn btn-primary" type="button">Button</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group form-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+                <nav class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></nav>
+              </div>
+              <input class="form-control" type="text" placeholder="Dropdown on the left">
+            </div>
+            <div class="input-group form-group">
+              <input class="form-control" type="text" placeholder="Dropdown on the right">
+              <div class="input-group-append">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+                <nav class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-2">
+          <div class="col-md-9">
+            <div class="input-group">
+              <input class="form-control border-right-0" type="text" placeholder="Buttons on the right">
+              <div class="input-group-append">
+                <button class="btn btn-secondary" type="button"><i class="fe-icon-edit text-lg"></i></button>
+                <button class="btn btn-success" type="button"><i class="fe-icon-check-circle text-lg"></i></button>
+                <button class="btn btn-danger" type="button"><i class="fe-icon-trash-2 text-lg"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Light Skin-->
+      <div class="bg-dark py-5">
+        <div class="container py-2 mb-2">
+          <div class="d-flex flex-wrap justify-content-between">
+            <h4 class="text-white mr-3">Input group light version</h4><a class="navi-link font-weight-bold text-white text-sm text-uppercase py-2" href="#input-group-light-skin-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+          </div>
+          <hr class="hr-light pb-4 mb-1">
+          <div class="row pb-2">
+            <div class="col-lg-10">
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Addon left</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-lock"></i></span></div>
+                    <input class="form-control" type="password" placeholder="Password">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Addon right</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <input class="form-control" type="text" placeholder="Recipient's e-mail">
+                    <div class="input-group-append"><span class="input-group-text">@example.com</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Addon both sides</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <div class="input-group-prepend"><span class="input-group-text"><i class="fe-icon-dollar-sign"></i></span></div>
+                    <input class="form-control" type="text" placeholder="Amount">
+                    <div class="input-group-append"><span class="input-group-text">.00</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Select addon</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <div class="input-group-prepend"><span class="input-group-text">Options</span></div>
+                    <select class="form-control">
+                      <option>Choose one...</option>
+                      <option>One</option>
+                      <option>Two</option>
+                      <option>Three</option>
+                      <option>Four</option>
+                      <option>Five</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Button addon</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <input class="form-control" type="text" placeholder="Button on the right">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">Button</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row align-items-center">
+                <label class="col-2 col-form-label text-white opacity-60">Dropdown addon</label>
+                <div class="col-10">
+                  <div class="input-group input-group-light-skin">
+                    <div class="input-group-prepend">
+                      <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Dropdown</button>
+                      <nav class="dropdown-menu"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></nav>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Dropdown on the right">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>

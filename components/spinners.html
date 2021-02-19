@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Spinners
+    </title>
+    <!-- SEO Meta Tags-->
+    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="keywords" content="multipurpose, portfolio, blog, shop, e-commerce, modern, flat style, responsive,  business, corporate, mobile, bootstrap 4, html5, css3, jquery, js, gallery, slider, touch, creative, clean">
+    <meta name="author" content="Createx Studio">
+    <!-- Viewport-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon and Touch Icons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="manifest" href="../site.webmanifest">
+    <link rel="mask-icon" color="#343b43" href="../safari-pinned-tab.svg">
+    <meta name="msapplication-TileColor" content="#603cba">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
+    <link rel="stylesheet" media="screen" href="../css/vendor.min.css">
+    <!-- Main Theme Styles + Bootstrap-->
+    <link rel="stylesheet" media="screen" href="../css/theme.min.css">
+    <!-- Modernizr-->
+    <script src="../js/modernizr.min.js"></script>
+  </head>
+  <!-- Body-->
+  <body>
+    <!-- Page Title-->
+    <div class="page-title d-flex page-title-indent-left bg-dark" aria-label="Page title" style="background-image: url(../img/page-title/components-pattern.png);">
+      <div class="container text-left align-self-center">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item"><a href="../components.html">Components</a>
+            </li>
+          </ol>
+        </nav>
+        <h1 class="page-title-heading text-white">Spinners</h1>
+      </div>
+    </div>
+    <!-- Page Content-->
+    <!-- Border Spinner Code-->
+    <div class="modal fade" id="spinner-border-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html1" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug1" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html1" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Default Color --&gt;</strong>
+&lt;div class=&quot;spinner-border&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Muted Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-muted&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+
+<strong>&lt;!-- Primary Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-primary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Success Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-success&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Info Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-info&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Warning Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-warning&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Danger Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-danger&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Light Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border text-light&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug1" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Default Color</strong>
+div(role=&quot;status&quot;).spinner-border
+  span.sr-only Loading...
+
+<strong>//- Muted Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-muted
+  span.sr-only Loading...
+
+<strong>//- Primary Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-primary
+  span.sr-only Loading...
+
+<strong>//- Success Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-success
+  span.sr-only Loading...
+
+<strong>//- Info Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-info
+  span.sr-only Loading...
+
+<strong>//- Warning Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-warning
+  span.sr-only Loading...
+
+<strong>//- Danger Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-danger
+  span.sr-only Loading...
+
+<strong>//- Light Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.text-light
+  span.sr-only Loading...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Growing Spinner Code-->
+    <div class="modal fade" id="spinner-grow-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html2" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug2" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html2" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Default Color --&gt;</strong>
+&lt;div class=&quot;spinner-grow&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Muted Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-muted&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+
+<strong>&lt;!-- Primary Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-primary&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Success Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-success&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Info Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-info&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Warning Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-warning&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Danger Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-danger&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Light Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow text-light&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug2" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Default Color</strong>
+div(role=&quot;status&quot;).spinner-grow
+  span.sr-only Loading...
+
+<strong>//- Muted Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-muted
+  span.sr-only Loading...
+
+<strong>//- Primary Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-primary
+  span.sr-only Loading...
+
+<strong>//- Success Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-success
+  span.sr-only Loading...
+
+<strong>//- Info Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-info
+  span.sr-only Loading...
+
+<strong>//- Warning Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-warning
+  span.sr-only Loading...
+
+<strong>//- Danger Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-danger
+  span.sr-only Loading...
+
+<strong>//- Light Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.text-light
+  span.sr-only Loading...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Spinner Size Code-->
+    <div class="modal fade" id="spinner-size-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html3" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug3" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html3" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Small Border Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border spinner-border-sm&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Small Growing Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow spinner-grow-sm&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+
+<strong>&lt;!-- Larger Border Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-border&quot; style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;
+
+<strong>&lt;!-- Larger Growing Spinner --&gt;</strong>
+&lt;div class=&quot;spinner-grow&quot; style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;Loading...&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug3" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Small Border Spinner</strong>
+div(role=&quot;status&quot;).spinner-border.spinner-border-sm
+  span.sr-only Loading...
+
+<strong>//- Small Growing Spinner</strong>
+div(role=&quot;status&quot;).spinner-grow.spinner-grow-sm
+  span.sr-only Loading...
+
+<strong>//- Larger Border Spinner</strong>
+div(style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;).spinner-border
+  span.sr-only Loading...
+
+<strong>//- Larger Growing Spinner</strong>
+div(style=&quot;width: 3rem; height: 3rem;&quot; role=&quot;status&quot;).spinner-grow
+  span.sr-only Loading...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Spinner Inside Button Code-->
+    <div class="modal fade" id="spinner-inside-button-code">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Code</h4>
+            <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body pb-0">
+            <ul class="nav nav-tabs pre-nav-tabs justify-content-end" role="tablist">
+              <li class="nav-item"><a class="nav-link active" href="#html4" data-toggle="tab" role="tab">HTML</a></li>
+              <li class="nav-item"><a class="nav-link" href="#pug4" data-toggle="tab" role="tab">Pug</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="html4" role="tabpanel">
+                <pre class="text-md"><code><strong>&lt;!-- Border Spinner --&gt;</strong>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  &lt;span class=&quot;spinner-border spinner-border-sm text-light mr-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;
+
+<strong>&lt;!-- Growing Spinner --&gt;</strong>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;
+  &lt;span class=&quot;spinner-grow spinner-grow-sm text-light mr-2&quot; role=&quot;status&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;
+  Loading...
+&lt;/button&gt;</code></pre>
+              </div>
+              <div class="tab-pane fade" id="pug4" role="tabpanel">
+                <pre class="text-md"><code><strong>//- Border Spinner</strong>
+button(type=&quot;button&quot;).btn.btn-primary
+  span(role=&quot;status&quot; aria-hidden=&quot;true&quot;).spinner-border.spinner-border-sm.text-light.mr-2
+  | Loading...
+
+<strong>//- Growing Spinner</strong>
+button(type=&quot;button&quot;).btn.btn-primary
+  span(role=&quot;status&quot; aria-hidden=&quot;true&quot;).spinner-grow.spinner-grow-sm.text-light.mr-2
+  | Loading...</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Off-Canvas (Sidebar)-->
+    <!-- Off-Canvas Toggle--><a class="offcanvas-toggle" href="#sidebarComponents" data-toggle="offcanvas"><i class="fe-icon-sidebar"></i></a>
+    <!-- Off-Canvas Container-->
+    <div class="offcanvas-container is-static" id="sidebarComponents"><span class="offcanvas-close"><i class="fe-icon-x"></i></span>
+      <div class="d-flex align-items-center px-4"><a class="navbar-brand mr-2" href="../index.html"><img src="../img/logo/logo-dark.png" alt="CreateX"></a>
+        <div class="bg-gradient py-1 px-2 text-white text-sm"><strong>UI Kit</strong></div>
+      </div>
+      <div class="py-4 px-4 mt-2" data-filter="#components-list">
+        <div class="input-group form-group">
+          <div class="input-group-prepend">
+            <div class="input-group-text"><i class="fe-icon-search"></i></div>
+          </div>
+          <input class="form-control" type="text" placeholder="Search components">
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-all" name="compFilter" value="all" checked>
+          <label class="custom-control-label" for="filter-all">ALL</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-ab" name="compFilter" value="ab">
+          <label class="custom-control-label" for="filter-ab">A-B</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-cf" name="compFilter" value="cf">
+          <label class="custom-control-label" for="filter-cf">C-F</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-gl" name="compFilter" value="gl">
+          <label class="custom-control-label" for="filter-gl">G-L</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-mp" name="compFilter" value="mp">
+          <label class="custom-control-label" for="filter-mp">M-P</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-rs" name="compFilter" value="rs">
+          <label class="custom-control-label" for="filter-rs">R-S</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input class="custom-control-input" type="radio" id="filter-tw" name="compFilter" value="tw">
+          <label class="custom-control-label" for="filter-tw">T-W</label>
+        </div>
+      </div>
+      <div class="offcanvas-scrollable-area" style="top: 239px; height: calc(100% - 250px);">
+        <nav class="list-group list-group-flush" id="components-list"><a class="list-group-item list-group-item-action" href="accordion.html" data-filter-item="ab">Accordion</a><a class="list-group-item list-group-item-action" href="alerts.html" data-filter-item="ab">Alerts</a><a class="list-group-item list-group-item-action" href="animated-digits.html" data-filter-item="ab">Animated Digits</a><a class="list-group-item list-group-item-action" href="block-title.html" data-filter-item="ab">Block Title</a><a class="list-group-item list-group-item-action" href="blog-post-cards.html" data-filter-item="ab">Blog Post Cards</a><a class="list-group-item list-group-item-action" href="buttons.html" data-filter-item="ab">Buttons</a><a class="list-group-item list-group-item-action" href="cards.html" data-filter-item="cf">Cards</a><a class="list-group-item list-group-item-action" href="carousel.html" data-filter-item="cf">Carousel</a><a class="list-group-item list-group-item-action" href="code.html" data-filter-item="cf">Code</a><a class="list-group-item list-group-item-action" href="contacts-card.html" data-filter-item="cf">Contacts Card</a><a class="list-group-item list-group-item-action" href="countdown.html" data-filter-item="cf">Countdown</a><a class="list-group-item list-group-item-action" href="dropdowns.html" data-filter-item="cf">Dropdowns</a><a class="list-group-item list-group-item-action" href="forms.html" data-filter-item="cf">Forms</a><a class="list-group-item list-group-item-action" href="gallery.html" data-filter-item="gl">Gallery</a><a class="list-group-item list-group-item-action" href="google-maps.html" data-filter-item="gl">Google Maps</a><a class="list-group-item list-group-item-action" href="icon-box.html" data-filter-item="gl">Icon Box</a><a class="list-group-item list-group-item-action" href="images.html" data-filter-item="gl">Images &amp; Figures</a><a class="list-group-item list-group-item-action" href="input-group.html" data-filter-item="gl">Input Group</a><a class="list-group-item list-group-item-action" href="jumbotron.html" data-filter-item="gl">Jumbotron</a><a class="list-group-item list-group-item-action" href="list-group.html" data-filter-item="gl">List Group</a><a class="list-group-item list-group-item-action" href="market-buttons.html" data-filter-item="mp">Market Buttons</a><a class="list-group-item list-group-item-action" href="media.html" data-filter-item="mp">Media Object</a><a class="list-group-item list-group-item-action" href="modal.html" data-filter-item="mp">Modal</a><a class="list-group-item list-group-item-action" href="navbar.html" data-filter-item="mp">Navbar</a><a class="list-group-item list-group-item-action" href="pagination.html" data-filter-item="mp">Pagination</a><a class="list-group-item list-group-item-action" href="parallax-scrolling.html" data-filter-item="mp">Parallax Scrolling</a><a class="list-group-item list-group-item-action" href="pills.html" data-filter-item="mp">Pills</a><a class="list-group-item list-group-item-action" href="portfolio-cards.html" data-filter-item="mp">Portfolio Cards</a><a class="list-group-item list-group-item-action" href="pricing.html" data-filter-item="mp">Pricing</a><a class="list-group-item list-group-item-action" href="progress-bar.html" data-filter-item="mp">Progress Bar</a><a class="list-group-item list-group-item-action" href="responsive-embed.html" data-filter-item="rs">Responsive Embed</a><a class="list-group-item list-group-item-action" href="reviews-comments.html" data-filter-item="rs">Reviews &amp; Comments</a><a class="list-group-item list-group-item-action" href="shop-components.html" data-filter-item="rs">Shop Components</a><a class="list-group-item list-group-item-action" href="social-buttons.html" data-filter-item="rs">Social Buttons</a><a class="list-group-item list-group-item-action active" href="spinners.html" data-filter-item="rs">Spinners</a><a class="list-group-item list-group-item-action" href="steps.html" data-filter-item="rs">Steps</a><a class="list-group-item list-group-item-action" href="tables.html" data-filter-item="tw">Tables</a><a class="list-group-item list-group-item-action" href="tabs.html" data-filter-item="tw">Tabs</a><a class="list-group-item list-group-item-action" href="team.html" data-filter-item="tw">Team</a><a class="list-group-item list-group-item-action" href="testimonials.html" data-filter-item="tw">Testimonials</a><a class="list-group-item list-group-item-action" href="toasts.html" data-filter-item="tw">Toast Notifications</a><a class="list-group-item list-group-item-action" href="tooltips-popovers.html" data-filter-item="tw">Tooltips &amp; Popovers</a><a class="list-group-item list-group-item-action" href="typography.html" data-filter-item="tw">Typography</a><a class="list-group-item list-group-item-action" href="utilities.html" data-filter-item="tw">Utilities</a><a class="list-group-item list-group-item-action" href="video-player.html" data-filter-item="tw">Video Player</a><a class="list-group-item list-group-item-action" href="widgets.html" data-filter-item="tw">Widgets</a><a class="list-group-item list-group-item-action" href="wizard.html" data-filter-item="tw">Wizard</a>
+        </nav>
+      </div>
+    </div>
+    <!-- Off-Canvas Wrapper-->
+    <div class="offcanvas-wrapper">
+      <div class="container pb-5">
+        <!-- Border spinner-->
+        <div class="d-flex flex-wrap justify-content-between">
+          <h4 class="mr-3">Border spinner</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#spinner-border-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="spinner-border m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-muted m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-primary m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-success m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-info m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-warning m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-border text-danger m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="d-inline-block bg-dark mx-2">
+          <div class="spinner-border text-light my-2 mx-3" role="status"><span class="sr-only">Loading...</span></div>
+        </div>
+        <!-- Growing spinner-->
+        <div class="d-flex flex-wrap justify-content-between mt-5">
+          <h4 class="mr-3">Growing spinner</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#spinner-grow-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="spinner-grow m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-muted m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-primary m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-success m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-info m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-warning m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="spinner-grow text-danger m-2" role="status"><span class="sr-only">Loading...</span></div>
+        <div class="d-inline-block bg-dark mx-2">
+          <div class="spinner-grow text-light my-2 mx-3" role="status"><span class="sr-only">Loading...</span></div>
+        </div>
+        <!-- Size-->
+        <div class="d-flex flex-wrap justify-content-between mt-5">
+          <h4 class="mr-3">Size</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#spinner-size-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <div class="d-inline-block align-middle mr-2">
+          <div class="spinner-border spinner-border-sm m-2" role="status"><span class="sr-only">Loading...</span></div>
+          <div class="spinner-grow spinner-grow-sm m-2" role="status"><span class="sr-only">Loading...</span></div>
+        </div>
+        <div class="d-inline-block align-middle">
+          <div class="spinner-border m-2" style="width: 3rem; height: 3rem;" role="status"><span class="sr-only">Loading...</span></div>
+          <div class="spinner-grow m-2" style="width: 3rem; height: 3rem;" role="status"><span class="sr-only">Loading...</span></div>
+        </div>
+        <!-- Inside button-->
+        <div class="d-flex flex-wrap justify-content-between mt-5">
+          <h4 class="mr-3">Inside button</h4><a class="navi-link font-weight-bold text-sm text-uppercase py-2" href="#spinner-inside-button-code" data-toggle="modal"><i class="fe-icon-code"></i>&nbsp;&nbsp;Show code</a>
+        </div>
+        <hr class="pb-4 mb-1">
+        <button class="btn btn-primary mr-3 mb-3" type="button"><span class="spinner-border spinner-border-sm text-light mr-2" role="status" aria-hidden="true"></span>Loading...</button>
+        <button class="btn btn-primary mb-3" type="button"><span class="spinner-grow spinner-grow-sm text-light mr-2" role="status" aria-hidden="true"></span>Loading...</button>
+      </div>
+    </div>
+    <!-- Back To Top Button--><a class="scroll-to-top-btn" href="#"><i class="fe-icon-chevron-up"></i></a>
+    <!-- Backdrop-->
+    <div class="site-backdrop"></div>
+    <!-- JavaScript (jQuery) libraries, plugins and custom scripts-->
+    <script src="../js/vendor.min.js"></script>
+    <script src="../js/theme.min.js"></script>
+  </body>
+</html>
