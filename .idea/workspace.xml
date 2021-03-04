@@ -27,7 +27,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92027f28-43ee-4e5d-bf37-d271bdf79504" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.idea/charis admin.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/dbconfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/dbconfig.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -4,7 +4,7 @@ session_start();
 define('HOST', 'localhost');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DBNAME', 'godsonpius');
+define('DBNAME', 'world_bt');
 
 $link = mysqli_connect(HOST, USERNAME, PASSWORD, DBNAME);
 
