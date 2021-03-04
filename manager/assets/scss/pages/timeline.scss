@@ -1,0 +1,62 @@
+﻿$border-color: rgba(black, .1);
+
+.timeline-item {
+	padding: 3em 2em 2em;
+	position: relative;
+	border-left: 1px solid #e4e4e4;
+		
+	&:before {
+		content: attr(date-is);
+		position: absolute;
+		left: 2em;
+		font-weight: bold;
+		top: 1em;
+		display: block;
+		font-weight: 700;
+		font-size: .785rem;
+	}
+
+	&:after {
+		width: 15px;
+		height: 15px;
+		display: block;
+		top: 1em;
+		position: absolute;
+		left: -9px;
+		border-radius: 10px;
+		content: '';		
+        background: white;
+        border: 3px solid;
+	}
+
+	&:last-child {
+		border-image: linear-gradient(
+			to bottom,
+			$border-color 60%,
+			rgba($border-color, 0)) 1 100%
+		;
+    }
+
+    &.green{
+        &:after{
+            border-color: #18ce0f;
+        }
+    }
+    &.blue{
+        &:after{
+            border-color: #2CA8FF;
+        }
+    }
+    &.warning{
+        &:after{
+            border-color: #FFB236;
+        }
+    }
+    
+    h5{
+        margin: 0;
+    }
+    .msg{
+        margin: 15px 0;
+    }
+}

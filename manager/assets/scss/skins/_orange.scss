@@ -1,0 +1,114 @@
+﻿$white: #ffffff;
+$blue-grey-700: #455a64 !default;
+$blue-grey-900: #263238 !default;
+$grey-900: #212121 !default;
+$orange-400: #e7ca52 !default;
+$orange-500: #ffce4b !default;
+$orange-600: #fb8c00 !default;
+
+.theme-orange{
+    
+    .btn-primary{
+        background: $orange-500;
+        &:active,
+        &:hover,
+        &:focus{
+            background: $orange-400;
+        }
+        &.btn-simple{
+            border-color: $orange-500;
+            color: $orange-500;
+            background: transparent;
+        }
+    }
+
+    .page-loader-wrapper,
+    .active-bg{
+        background:$orange-500;
+    }    
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active.open {                   
+                    .active a{
+                        color:$orange-500;
+                    }  
+                }
+                a{
+                    &:hover{
+                        color:$orange-500;
+                    }
+                }
+            }
+        }
+
+        &.h_menu{
+            .menu li{
+                &.active.open{
+                    > a{
+                        color: $orange-500;
+                        &:before{
+                            background: $orange-500;;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        &:before{
+                            background: $orange-500;;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border-color:$orange-500;
+        background: $orange-500;
+        color: $white;
+    }  
+
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $orange-500 !important;
+            background: $orange-500;
+            color: $white;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $orange-500;
+                }
+                strong{
+                    color: $orange-500;
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        &:hover{
+                            background-color: $orange-500;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .authentication{
+        .navbar, .page-header{
+            background: $orange-500 !important;
+        }
+    }
+    
+    .form-control:focus,
+    .form-control:focus+.input-group-addon, .form-control:focus ~ .input-group-addon{
+        border-color: $orange-500;
+    }
+}

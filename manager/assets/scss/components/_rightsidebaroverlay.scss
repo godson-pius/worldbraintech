@@ -1,0 +1,115 @@
+﻿.overlay{
+    position: fixed;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    @extend .displaynone;
+    z-index: 12;
+}
+.right-sidebar{
+    width: 230px;
+    height: calc(100vh - 0px);
+    position: fixed;
+    right: -300px;
+    top: 0px;
+    background: $white;
+    z-index: 13 !important;
+    @include box-shadow(-2px 2px 5px rgba(0, 0, 0, 0.1));
+    overflow: hidden;
+    @include transition(.5s);
+
+    &.open {
+        right: 0;
+    }
+
+    .nav-tabs + .tab-content {
+        @extend .padding-0;
+        
+    }
+
+    .slim_scroll{
+        @extend .p-t-15;
+    }
+
+    .card{
+        padding:10px 20px;
+        @extend .m-b-0;
+        box-shadow: none;
+
+        h6{
+            border-bottom: 1px solid $grey-200;    
+            @extend .p-b-5;
+            @extend .m-b-15;
+            font-size: 12px;
+        }
+        ul{
+            @extend .m-b-0;
+        }
+    }
+    
+    .nav-tabs {
+        padding: 9px 20px;
+        border-bottom: 1px solid $grey-200;
+    }
+
+    .theme-light-dark{
+        li{
+            @extend .inlineblock;
+        }
+    }
+
+}
+
+.choose-skin {
+    li {
+
+        @extend .p-r-5;
+        @extend .inlineblock;
+        position: relative;
+        cursor: pointer;        
+
+        &.active {              
+
+            &:after {
+                font-family: 'Material Icons';
+                position: absolute;
+                top: 15px;
+                left: 18px;
+                content: '\E876';
+                font-size: 18px;
+                color: $white;                    
+            }
+        }
+
+        div {
+            @extend .inlineblock;
+            width: 55px;
+            height: 55px;
+        }
+
+        span {
+            position: relative;
+            bottom: 7px;
+            left: 5px;
+        }
+    }
+
+    @each $key, $val in $colors {
+        .#{$key} {
+            background-color: $val;
+        }
+    }
+}
+
+
+@media (max-width: 767px){
+    .right-sidebar{
+        .slim_scroll{
+            padding-bottom: 40px;
+        }
+    }
+}
+

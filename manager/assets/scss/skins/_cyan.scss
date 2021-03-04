@@ -1,0 +1,113 @@
+﻿$white: #ffffff;
+$blue-grey-400: #78909c !default;
+$grey-900: #212121 !default;
+$cyan-400: #45e5c3 !default;
+$cyan-500: #49c5b6 !default;
+$cyan-600: #00acc1 !default;
+
+.theme-cyan{
+    
+    .btn-primary{
+        background: $cyan-500;
+        &:active,
+        &:hover,
+        &:focus{
+            background: $cyan-400;
+        }
+        &.btn-simple{
+            border-color: $cyan-500;
+            color: $cyan-500;
+            background: transparent;
+        }
+    }
+
+    .page-loader-wrapper,
+    .active-bg{
+        background:$cyan-500;
+    }    
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active.open {                   
+                    .active a{
+                        color:$cyan-500;
+                    }  
+                }
+                a{
+                    &:hover{
+                        color:$cyan-500;
+                    }
+                }
+            }
+        }
+
+        &.h_menu{
+            .menu li{
+                &.active.open{
+                    > a{
+                        color: $cyan-500;
+                        &:before{
+                            background: $cyan-500;;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        &:before{
+                            background: $cyan-500;;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border-color:$cyan-500;
+        background: $cyan-500;
+        color: $white;
+    }  
+
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $cyan-500 !important;
+            background: $cyan-500;
+            color: $white;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $cyan-500;
+                }
+                strong{
+                    color: $cyan-500;
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        &:hover{
+                            background-color: $cyan-500;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .authentication{
+        .navbar, .page-header{
+            background: $cyan-500 !important;
+        }
+    }
+    
+    .form-control:focus,
+    .form-control:focus+.input-group-addon, .form-control:focus ~ .input-group-addon{
+        border-color: $cyan-500;
+    }
+}

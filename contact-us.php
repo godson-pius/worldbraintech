@@ -1,7 +1,26 @@
 <?php
-  $title = "World Brain Technology";
-  require_once 'components/header.php';
-  ?>
+require_once 'inc/functions/config.php';
+
+if (isset($_POST['submit'])){
+    $response = UpdateCont($_POST);
+
+    if ($response === true) {
+        echo "<script>alert('right')</script>";
+    } else {
+        if (is_array($response)) {
+            foreach ($response as $err) {
+                echo "<script>alert('$err')</script>";
+            }
+        } else{
+            echo "<script>alert('Failed')</script>";
+        }
+    }
+}
+
+
+$title = "Contact | World Brain Technology";
+require_once 'components/header.php';
+?>
     <!-- Page Content-->
     <!-- Hero-->
     <section class="bg-parallax py-5"><span class="bg-overlay" style="opacity: .6;"></span>
@@ -34,57 +53,57 @@
       </div>
     </section>
     <!-- Contact Form-->
-    <section class="container mb-5 pb-3">
-      <div class="wizard">
+<section class="container mb-5 pb-3">
+    <div class="wizard">
         <div class="wizard-body pt-3">
-          <h2 class="h4 text-center">Drop us a line</h2>
-          <p class="text-muted text-center">We will get back to you as soon as possible</p>
-          <form class="needs-validation" novalidate>
-            <div class="row pt-3">
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="contact-name">Your Name <span class='text-danger font-weight-medium'>*</span></label>
-                  <input class="form-control" type="text" id="contact-name" placeholder="John Doe" required>
-                  <div class="invalid-feedback">Please enter your name!</div>
+            <h2 class="h4 text-center">Drop us a line</h2>
+            <p class="text-muted text-center">We will get back to you as soon as possible</p>
+            <form method="POST" class="needs-validation"  novalidate  enctype="multipart/form-data">
+                <div class="row pt-3">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="contact-name">Your Name <span class='text-danger font-weight-medium'>*</span></label>
+                            <input class="form-control" name="name" type="text" id="contact-name"  placeholder="John Doe" required>
+                            <div class="invalid-feedback">Please enter your name!</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="contact-email">Your Email <span class='text-danger font-weight-medium'>*</span></label>
+                            <input class="form-control" name="email" type="email" id="contact-email"  placeholder="johndoe@email.com" required>
+                            <div class="invalid-feedback">Please provide a valid email address!</div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="contact-email">Your Email <span class='text-danger font-weight-medium'>*</span></label>
-                  <input class="form-control" type="email" id="contact-email" placeholder="johndoe@email.com" required>
-                  <div class="invalid-feedback">Please provide a valid email address!</div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="contact-subject">Subject</label>
+                            <input class="form-control" name="subject" type="text" id="contact-subject"  placeholder="Provide short title of you request">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="contact-file">Attachment</label>
+                            <div class="custom-file">
+                                <input class="custom-file-input" type="file" id="contact-file" name="attach">
+                                <label class="custom-file-label" for="contact-file">Choose file...</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
                 <div class="form-group">
-                  <label for="contact-subject">Subject</label>
-                  <input class="form-control" type="text" id="contact-subject" placeholder="Provide short title of you request">
+                    <label for="contact-message">Message <span class='text-danger font-weight-medium'>*</span></label>
+                    <textarea class="form-control" name="message" rows="7" id="contact-message"  placeholder="Let us know more what's on your mind..." required></textarea>
+                    <div class="invalid-feedback">Please write a message!</div>
                 </div>
-              </div>
-              <!-- <div class="col-sm-6">
-                <div class="form-group">
-                  <label for="contact-file">Attachment</label>
-                  <div class="custom-file">
-                    <input class="custom-file-input" type="file" id="contact-file">
-                    <label class="custom-file-label" for="contact-file">Choose file...</label>
-                  </div>
+                <div class="text-center">
+                    <button onclick="sendEmail()" class="btn btn-primary" name="submit" type="submit">Send Message</button>
                 </div>
-              </div> -->
-            </div>
-            <div class="form-group">
-              <label for="contact-message">Message <span class='text-danger font-weight-medium'>*</span></label>
-              <textarea class="form-control" rows="7" id="contact-message" placeholder="Let us know more what's on your mind..." required></textarea>
-              <div class="invalid-feedback">Please write a message!</div>
-            </div>
-            <div class="text-center">
-              <button class="btn btn-primary" type="submit">Send Message</button>
-            </div>
-          </form>
+            </form>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
     
      <!-- Footer-->
      <?php require_once 'components/footer.php'; ?>

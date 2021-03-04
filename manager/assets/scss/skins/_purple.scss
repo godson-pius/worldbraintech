@@ -1,0 +1,114 @@
+﻿$white: #ffffff;
+$blue-grey-400: #78909c !default;
+$grey-900: #212121 !default;
+$purple-400: #c18eda !default;
+$purple-500: #a27ce6 !default;
+$purple-600: #a27ce6 !default;
+
+
+.theme-purple{
+    
+    .btn-primary{
+        background: $purple-500;
+        &:active,
+        &:hover,
+        &:focus{
+            background: $purple-400;
+        }
+        &.btn-simple{
+            border-color: $purple-500;
+            color: $purple-500;
+            background: transparent;
+        }
+    }
+
+    .page-loader-wrapper,
+    .active-bg{
+        background:$purple-500;
+    }    
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active.open {                   
+                    .active a{
+                        color:$purple-500;
+                    }  
+                }
+                a{
+                    &:hover{
+                        color:$purple-500;
+                    }
+                }
+            }
+        }
+
+        &.h_menu{
+            .menu li{
+                &.active.open{
+                    > a{
+                        color: $purple-500;
+                        &:before{
+                            background: $purple-500;;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        &:before{
+                            background: $purple-500;;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border-color:$purple-500;
+        background: $purple-500;
+        color: $white;
+    }  
+
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $purple-500 !important;
+            background: $purple-500;
+            color: $white;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $purple-500;
+                }
+                strong{
+                    color: $purple-500;
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        &:hover{
+                            background-color: $purple-500;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .authentication{
+        .navbar, .page-header{
+            background: $purple-500 !important;
+        }
+    }
+    
+    .form-control:focus,
+    .form-control:focus+.input-group-addon, .form-control:focus ~ .input-group-addon{
+        border-color: $purple-500;
+    }
+}

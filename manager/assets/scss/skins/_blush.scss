@@ -1,0 +1,113 @@
+﻿$white: #ffffff;
+$blue-grey-900: #263238 !default;
+$grey-900: #212121 !default;
+$blush-400: #e98eac !default;
+$blush-500: #e47297 !default;
+$blush-600: #e25985 !default;
+
+.theme-blush{
+    
+    .btn-primary{
+        background: $blush-500;
+        &:active,
+        &:hover,
+        &:focus{
+            background: $blush-400;
+        }
+        &.btn-simple{
+            border-color: $blush-500;
+            color: $blush-500;
+            background: transparent;
+        }
+    }
+
+    .page-loader-wrapper,
+    .active-bg{
+        background:$blush-500;
+    }    
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active.open {                   
+                    .active a{
+                        color:$blush-500;
+                    }  
+                }
+                a{
+                    &:hover{
+                        color:$blush-500;
+                    }
+                }
+            }
+        }
+
+        &.h_menu{
+            .menu li{
+                &.active.open{
+                    > a{
+                        color: $blush-500;
+                        &:before{
+                            background: $blush-500;;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        &:before{
+                            background: $blush-500;;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border-color:$blush-500;
+        background: $blush-500;
+        color: $white;
+    }  
+
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $blush-500 !important;
+            background: $blush-500;
+            color: $white;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $blush-500;
+                }
+                strong{
+                    color: $blush-500;
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        &:hover{
+                            background-color: $blush-500;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .authentication{
+        .navbar, .page-header{
+            background: $blush-500 !important;
+        }
+    }
+    
+    .form-control:focus,
+    .form-control:focus+.input-group-addon, .form-control:focus ~ .input-group-addon{
+        border-color: $blush-500;
+    }
+}

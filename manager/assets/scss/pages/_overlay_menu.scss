@@ -1,0 +1,90 @@
+/*overlay*/
+.overlay_menu {
+	display:none;
+	position:fixed;
+	top:0;
+	height:100%;
+	width:100%;
+	background:rgba(0,0,0,0.8);
+	overflow:auto;
+    z-index:99;
+    padding-top:120px;
+
+    .btn{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        @extend .margin-0;
+    }
+    
+    .links{        
+        h6{
+            @extend .m-t-20;
+        }
+        ul{
+            li{
+                a{
+                    padding: 6px 0px 6px 20px;
+                    @extend .displayblock;
+                    position: relative;
+
+                    &:hover{
+                        &::before{
+                            left:5px;
+                        }
+                    }
+                    &:before{
+                        content: '\f30f';
+                        position: absolute;
+                        transition: .5s;
+                        left: 0px;
+                        font-size: 12px;
+                        font-family: 'Material-Design-Iconic-Font';
+                        color: $grey-500;
+                        top: 8px;
+                    }
+                }
+            }    
+        }  
+    }
+    .social{
+        font-size:25px;
+        padding:20px;       
+        @extend .align-center;
+        p {
+            @extend .margin-0;
+            padding:20px 0 5px 0;
+            line-height:30px;
+            font-size:13px;
+            color:$grey-100;
+            a {                    
+                text-decoration:none;
+                @extend .margin-0;
+                @extend .padding-0;
+            }
+        }
+        .icon {
+            width:50px;
+            height:50px;
+            background:$grey-300;
+            color:$grey-800;
+            @extend .inlineblock;
+            @extend .align-center;
+            margin:0 20px;
+            border-radius: $border-radius-large;
+            transition-property:all .2s linear 0s;
+            -moz-transition:all .2s linear 0s;
+            -webkit-transition:all .2s linear 0s;
+            -o-transition:all .2s linear 0s;    
+            
+            &:hover {
+                background:#f96332;
+                color:$grey-100;
+            }
+        
+            i {
+                vertical-align: text-bottom;
+            }
+        }
+    }
+}

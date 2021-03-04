@@ -1,0 +1,60 @@
+.navbar{
+    .navbar-toggler{
+        width: 37px;
+        height: 27px;
+        outline: 0;
+        cursor: pointer;
+
+        &.navbar-toggler-left{
+            position: relative;
+            left: 0;
+            padding-left: 0;
+        }
+
+        &:hover{
+            & .navbar-toggler-bar.bar2{
+                width: 22px;
+            }
+        }
+    }
+    .navbar-brand{
+        text-transform: uppercase;
+        font-size: $font-size-small;
+        padding-top: $padding-base-vertical;
+        padding-bottom: $padding-base-vertical;
+        line-height: $line-height-nav-link;
+    }
+    .button-dropdown{
+        .navbar-toggler-bar:nth-child(2){
+            width: 17px;
+        }
+    }
+}
+
+.bg-default{
+    background-color: $default-color !important;
+}
+
+.bg-primary{
+    background-color: $primary-color !important;
+}
+
+.bg-info{
+    background-color: $info-color !important;
+}
+
+.bg-success{
+    background-color: $success-color !important;
+}
+
+.bg-danger{
+    background-color: $danger-color !important;
+}
+
+.bg-warning{
+    background-color: $warning-color !important;
+}
+
+.bg-white{
+    background-color: $white-color !important;
+}

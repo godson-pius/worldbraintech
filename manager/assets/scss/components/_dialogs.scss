@@ -1,0 +1,39 @@
+﻿.sweet-alert {
+    border-radius: $border-radius-large;
+
+    .sa-input-error {
+        top: 23px !important;
+        right: 13px !important;
+    }
+
+    h2 {
+        font-size: 18px !important;
+        margin: 0 0 5px 0 !important;
+    }
+
+    .confirm, .cancel{
+        border-width: 1px;
+        border-radius: 30px !important;
+        padding: 11px 23px;
+        font-weight: 400;
+        font-size: .8571em;
+        line-height: 1.35em;
+        margin: 5px 1px;
+    }
+    input{
+        background-color: transparent;
+        border: 1px solid #E3E3E3;
+        border-radius: 30px;
+        color: #2c2c2c;
+        line-height: normal;
+        font-size: .8571em;
+        box-shadow: none;
+        padding: 10px 18px 10px 18px;
+        height: auto;
+
+        &:focus{
+            box-shadow: none;
+            border: 1px solid $grey-500;
+        }
+    }
+}

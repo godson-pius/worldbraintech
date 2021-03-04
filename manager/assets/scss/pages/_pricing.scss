@@ -1,0 +1,49 @@
+.pricing {
+	
+	color: $grey-600;	    
+    @extend .p-l-0;
+    @extend .m-b-0;
+    @extend .align-center;
+    
+    li{
+        list-style: none;
+        padding: 13px;
+        
+        &:first-child,
+        &:last-child{
+            padding: 20px 13px;
+        }
+
+        &:nth-last-child(2) {
+            padding: 30px 13px;
+        }
+
+        + li{
+            border-top: 1px solid #f0f0f0;
+        }        
+    }
+
+    big {
+        font-size: 32px;
+    }
+
+    h3 {
+        @extend .m-b-0;
+        font-size: 36px;
+    }
+
+    span {     
+        color: $grey-400;
+        font-weight: normal;
+    }
+
+    &.active{
+        
+        big, h3{
+            color: $amber-800;
+        }
+    }
+}
+
+
+

@@ -1,0 +1,126 @@
+﻿.badge {
+    @include border-radius(2px)
+}
+
+.list-group-item {
+    @include border-radius(0);
+    @include transition(.5s);
+}
+
+.list-group {
+    .active {
+        background-color: #2196F3;
+        border-color: #2196F3;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: #2196F3;
+            border-color: #2196F3;
+        }
+
+        .list-group-item-text {
+            color: #dfe9f1;
+            font-size: 13px;
+
+            &:hover,
+            &:active,
+            &:focus {
+                color: #dfe9f1;
+            }
+        }
+    }
+
+    .list-group-item.active {
+        &:hover,
+        &:focus,
+        &:active {
+            .list-group-item-text {
+                color: #dfe9f1;
+            }
+        }
+    }
+
+    .list-group-item {
+        &:first-child,
+        &:last-child {
+            @include border-radius(0);
+        }
+
+        .list-group-item-heading {
+            font-weight: bold;
+            font-size: 17px;
+        }
+    }
+
+    .list-group-item-success {
+        background-color: $green-500;
+        border: none;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: $green-500;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-info {
+        background-color: $blue-400;
+        border: none;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: $blue-400;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-warning {
+        background-color: $orange-400;
+        border: none;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: $orange-400;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+
+    .list-group-item-danger {
+        background-color: $red-400;
+        border: none;
+        color: $white;
+
+        &:hover,
+        &:focus {
+            background-color: $red-400;
+            color: $white;
+            opacity: 0.8;
+        }
+    }
+
+    @each $key, $val in $colors {
+        .pl-#{$key} {
+            stroke: $val;
+        }
+
+        .list-group-bg-#{$key} {
+            background-color: $val;
+            border: none;
+            color: $white;
+
+            &:hover,
+            &:focus {
+                background-color: $val;
+                color: $white;
+                opacity: 0.8;
+            }
+        }
+    }
+}

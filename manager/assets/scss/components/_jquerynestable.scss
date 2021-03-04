@@ -1,0 +1,38 @@
+﻿
+.dd-handle {
+    background-color: #f4f7f6 !important;
+    border: 1px solid #e8e8e8;
+    padding: 9px 10px 9px 20px;
+    height: 40px;
+
+    &:hover {
+        color: #2196F3;
+    }
+}
+.dd-item > button{ height: 27px;}
+
+.nestable-dark-theme {
+    .dd-handle {
+        background: #ccc !important;
+        border: 1px solid #999 !important;
+    }
+}
+
+.dd3-content{
+    background: #f4f7f6 !important;
+    border: 1px solid #f4f7f6;
+    padding: 9px 10px 9px 40px;
+}
+
+.dd3-handle {
+    background: #a27ce6 !important;
+    &:before{
+        top: 7px;
+    }
+}
+
+.dd3-content {
+    &:hover {
+        color: #2196F3;
+    }
+}
