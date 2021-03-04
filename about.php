@@ -102,7 +102,7 @@ require_once 'components/header.php';
   <div class="d-lg-table-cell py-5 my-lg-5 px-2 px-lg-5">
     <div class="p-3">
       <h2 class="h3 block-title mb-4">Our Key Skills</h2>
-      <p class="text-muted pb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+      <p class="text-muted pb-4">Over the years, we have built products for customers that are well deserving. We help these clients have a Github, Dribble and Behance accounts to acess their projects  </p>
       <!-- Progress-->
       <div class="progress mb-3">
         <div class="progress-bar" role="progressbar" style="width: 99%;" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"><span><i class="fe-icon-globe"></i>Web Development - 99%</span></div>

@@ -45,14 +45,14 @@ require_once 'components/header.php';
 <section class="container  pt-3 mb-3">
   <h2 class="h3 block-title text-center">What we do<small>Whatever we do, we do with your end user in mind </small></h2>
   <div class="row pt-5 mt-30">
-    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
+    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/01.png" alt="UX Prototyping"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">UX Prototyping</h3>
           <p class="card-text text-sm">We determine the fidelity of a prototype depending on the stage of the design process, the available resources, and the goals for the prototype either low and high fidelity using tools that are essentials like Skecth, Figma, Adobe Xd.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
         </div>
       </a></div>
-    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
+    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/02.png" alt="Web &amp; UI Design"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">Web &amp; UI Design</h3>
@@ -80,7 +80,7 @@ require_once 'components/header.php';
           <p class="card-text text-sm">Getting all process done demands usabilty testing, hence we push the project to specific users to test and give feedbacks to the team.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
         </div>
       </a></div>
-    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
+    <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/06.png" alt="SEO Optimization"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">SEO Optimization</h3>
@@ -108,7 +108,7 @@ require_once 'components/header.php';
 <!-- Testimonials-->
 <section class="py-5 bg-secondary">
   <div class="container py-1">
-    <h2 class="h3 block-title text-center mt-2 mb-5">And here what Clients say</h2>
+    <h2 class="h3 block-title text-center mt-2 mb-5">What Clients are saying</h2>
     <div class="owl-carousel testimonials-carousel" data-owl-carousel="{ &quot;nav&quot;: false, &quot;dots&quot;: true, &quot;loop&quot;: true, &quot;margin&quot;: -15, &quot;autoplay&quot;: true, &quot;autoplayTimeout&quot;: 4000, &quot;responsive&quot;: {&quot;0&quot;:{&quot;items&quot;:1},&quot;630&quot;:{&quot;items&quot;:2},&quot;991&quot;:{&quot;items&quot;:2},&quot;1200&quot;:{&quot;items&quot;:3}} }">
       <div class="blockquote testimonial">
         <p>WBT is top class IT giving all clients sastification, i have done alot of successful projects with them</p>.</p>
