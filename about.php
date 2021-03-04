@@ -8,7 +8,7 @@ require_once 'components/header.php';
   <div class="bg-parallax-img" data-parallax="{&quot;y&quot; : 100}"><img src="img/pages/about-hero-bg.png" alt="Parallax Background" />
   </div>
   <div class="container bg-parallax-content py-5 my-3 text-center">
-    <h1 class="pb-4"><span class='d-block h3 font-family-body font-weight-light text-muted mb-2'>We are leading</span>IT Solutionist<span class='d-block h2 font-weight-normal text-muted mt-3'><!--since 2020 --></span></h1><a class="scroll-to btn btn-gradient" href="#services">Learn More</a>
+    <h1 class="pb-4 mt-5"><span class='d-block h3 font-family-body font-weight-light text-muted mb-2'>We are leading</span>IT Solutionist<span class='d-block h2 font-weight-normal text-muted mt-3'><!--since 2020 --></span></h1><a class="scroll-to btn btn-gradient" href="#services">Learn More</a>
   </div>
 </section>
 <!-- Services-->
