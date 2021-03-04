@@ -1,0 +1,115 @@
+﻿$white: #ffffff;
+$blue-grey-900: #263238 !default;
+$grey-900: #212121 !default;
+$green-300: #8de4af !default;
+$green-400: #5cdb94 !default;
+$green-500: #50d38a !default;
+$green-600: #43a047 !default;
+
+
+.theme-green{
+    
+    .btn-primary{
+        background: $green-500;
+        &:active,
+        &:hover,
+        &:focus{
+            background: $green-400;
+        }
+        &.btn-simple{
+            border-color: $green-500;
+            color: $green-500;
+            background: transparent;
+        }
+    }
+
+    .page-loader-wrapper,
+    .active-bg{
+        background:$green-500;
+    }    
+
+    .sidebar{
+        .menu{
+            .list{
+                li.active.open {                   
+                    .active a{
+                        color:$green-500;
+                    }  
+                }
+                a{
+                    &:hover{
+                        color:$green-500;
+                    }
+                }
+            }
+        }
+
+        &.h_menu{
+            .menu li{
+                &.active.open{
+                    > a{
+                        color: $green-500;
+                        &:before{
+                            background: $green-500;;
+                        }
+                    }
+                }
+                a{
+                    &:hover{
+                        &:before{
+                            background: $green-500;;                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .checkbox input[type="checkbox"]:checked+label::after{
+        border-color:$green-500;
+        background: $green-500;
+        color: $white;
+    }  
+
+    .nav-tabs{
+        .nav-link.active {
+            border: 1px solid $green-500 !important;
+            background: $green-500;
+            color: $white;
+        }
+    }
+
+    .card{
+        .header{
+            h2{
+                &:before{
+                    background: $green-500;
+                }
+                strong{
+                    color: $green-500;
+                }
+            }
+            .dropdown-menu{
+                li{
+                    a{
+                        &:hover{
+                            background-color: $green-500;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .authentication{
+        .navbar, .page-header{
+            background: $green-500 !important;
+        }
+    }
+    
+    .form-control:focus,
+    .form-control:focus+.input-group-addon, .form-control:focus ~ .input-group-addon{
+        border-color: $green-500;
+    }
+}

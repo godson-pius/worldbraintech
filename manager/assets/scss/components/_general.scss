@@ -1,0 +1,201 @@
+﻿body {
+    background-color: #f4f7f6;
+    @include transition(all .5s);
+    font-family: 'Poppins', Arial, Tahoma, sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+
+button,
+input,
+select,
+a {
+    outline: none !important;    
+}
+a:hover{text-decoration: none;}
+.no-animate {
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+}
+
+section {
+    &.content {
+        margin: 66px 0 0 0;
+        @include transition(.5s);
+        z-index: 9;
+        position: relative;
+        border-radius: $border-radius-large;
+        &::before{
+            background: #191f28;
+            top: -120px;
+            left: 0;
+            content: '';
+            height: 180px;
+            width: 100%;
+            position: absolute;
+        }
+    }
+    small{
+        font-size: 90%;
+    }
+}
+
+.l-green { background: linear-gradient(45deg, #9ce89d, #cdfa7e) !important;}
+.l-pink {background: linear-gradient(45deg, #ffc0cb, #fbc1cb) !important;}
+.l-turquoise {background: linear-gradient(45deg, #00ced1, #08e5e8) !important;color: $white !important;}
+.l-cyan {background: linear-gradient(45deg, #49cdd0, #00bcd4) !important;color: $white !important;}
+.l-khaki {background: linear-gradient(45deg, #f0e68c, #fdf181) !important;}
+.l-coral {background: linear-gradient(45deg, #f08080, #f58787) !important;color: $white !important;}
+.l-salmon {background: linear-gradient(45deg, #ec74a1, #fbc7c0) !important;color: $white !important;}
+.l-blue {background: linear-gradient(45deg, #72c2ff, #86f0ff) !important;color: $white !important;}
+.l-seagreen {background: linear-gradient(45deg, #8ed8ec, #85f7b5) !important;color: $white !important;}
+.l-amber {background: linear-gradient(45deg, #fda582, #f7cf68) !important;color: $white !important;}
+.l-blush {background: linear-gradient(45deg, #dd5e89, #f7bb97) !important;color: $white !important;}
+.l-parpl {background: linear-gradient(45deg, #a890d3, #edbae7) !important;color: $white !important;}
+.l-slategray {background: linear-gradient(45deg, #708090, #7c8ea0) !important;color: $white !important;}
+
+.xl-pink{background: #f9edee !important;}
+.xl-turquoise{background: #bdf3f5 !important;}
+.xl-khaki{background: #f9f1d8 !important;}
+.xl-parpl{background: #efebf4 !important;}
+.xl-salmon{background: #ffd4c3 !important;}
+.xl-blue{background: #e0eff5 !important;}
+.xl-seagreen{background: #ebf2e8 !important;}
+.xl-slategray{background: #eceeef !important;}
+.col-white{ color: $white;}
+
+.btn-white { background-color: $white; color: $black; }
+.bg-black{ background-color: $black; color: $white; }
+.inlineblock {display: inline-block;}
+.displayblock {display: block;}
+.displaynone {display: none; }
+.overflowhidden{overflow: hidden;}
+
+.z-index{ z-index: 9999;}
+
+.fullscreen{    
+    &.is-fullscreen{
+        .zmdi-fullscreen{
+            &::before{
+                content: '\f16c';
+            }
+        }
+    }
+}
+
+.table {
+    tbody {
+        tr,
+        th {
+            td {
+                vertical-align: middle;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
+.modal-open{
+    padding-right: 0 !important;
+    .modal{
+        padding-right: 0 !important;
+    }
+}
+
+.sub_menu{
+    display: none;
+    position: absolute;
+    background: $white;
+    z-index: 99;
+    transition: .5s;
+
+    &.show{
+        @extend .displayblock;
+    }
+
+    .btn{
+        font-size: 14px;
+        i{
+            @extend .m-r-5;
+            margin-top: -3px;
+            vertical-align: middle;
+        }
+    }
+}
+
+#bdatetimepicker{ border-top-right-radius:30px;  border-bottom-right-radius: 30px; }
+.input-group-focus{
+    .bootstrap-datetimepicker-widget{ display: block;}
+    .collapse.in{display: block;}
+    .collapse.in {
+        .datepicker{visibility: visible; opacity: 1; transform: unset;}
+    }
+    .bootstrap-datetimepicker-widget{
+        .timepicker {
+            .separator{ background-color: transparent;}
+            .btn{ background-color: transparent; line-height: normal; border: 0; color: inherit; padding: 0; margin: 0;}
+        }
+    }    
+}
+
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
+    .container{
+        max-width: 1500px;
+    }
+}
+
+@media screen and (max-width: 1600px) and (min-width: 1359px) {
+    .container{
+        max-width: 1300px;
+    }
+}
+
+@media only screen and (max-width: 1359px) {
+    .sidebar{
+        &.h_menu .menu{
+            li{
+                a{
+                    font-size: 15px;
+                    i{
+                        display: none;
+                    }
+                    span{
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .hidden-md{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .hidden-sm{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .hidden-xs{
+        display: none !important;
+    }
+}

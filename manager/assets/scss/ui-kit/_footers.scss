@@ -1,0 +1,39 @@
+.footer{
+    padding: 24px 0;
+
+    &.footer-default{
+        background-color: #f2f2f2;
+    }
+
+    nav{
+        @extend .inlineblock;
+        float: left;
+    }
+
+    ul{
+        @extend .m-b-0;
+        @extend .padding-0;
+        list-style: none;
+
+        li{
+            @extend .inlineblock;
+
+            a{
+                color: inherit;
+                padding: $padding-base-vertical;
+                text-transform: uppercase;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    &:after{
+        display: table;
+        clear: both;
+        content: " ";
+    }
+}

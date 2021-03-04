@@ -1,0 +1,16 @@
+﻿
+.visitors-chart {
+    @extend .align-center;
+
+    .donut_chart{
+        height: 270px;
+        @extend .m-b-20;
+    }
+    span{
+        @extend .m-r-15;
+        i{
+            font-size: 15px;
+            @extend .m-r-5;
+        }
+    }
+}
