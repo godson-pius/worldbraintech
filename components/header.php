@@ -241,7 +241,7 @@
                         <li class="nav-item <?php if ($title == "Portfolio | World Brain Technology") : echo "active"; endif; ?>"><a class="nav-link" href="portfolio">Portfolio</a></li>
 
                         <!-- User Contact-->
-                        <li class="nav-item <?php if ($title == "Contact | World Brain Technology") : echo "active"; endif; ?>"><a class="nav-link" href="portfolio">Contact Us</a></li>
+                        <li class="nav-item <?php if ($title == "Contact | World Brain Technology") : echo "active"; endif; ?>"><a class="nav-link" href="contact-us">Contact Us</a></li>
                     </ul>
                     <div>
                         <ul class="navbar-buttons d-inline-block align-middle">
