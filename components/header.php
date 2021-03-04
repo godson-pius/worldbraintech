@@ -45,36 +45,7 @@
                 <!-- Home-->
                 <div class="card">
                     <div class="card-header"><a class="mobile-menu-link active" href="index.html">Home</a><a class="collapsed" href="#home-submenu" data-toggle="collapse"></a></div>
-                    <div class="collapse" id="home-submenu" data-parent="#accordion-menu">
-                        <div class="card-body">
-                            <ul>
-                                <li class="dropdown-header"><i class="fe-icon-briefcase"></i>&nbsp;&nbsp;Portfolio</li>
-                                <li class="dropdown-item active"><a href="home-digital-agency.html">Digital Agency</a></li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Architectural Agency<span class="badge badge-secondary">Soon</span></a></li>
-                                <li class="dropdown-item"><a href="home-freelancer-portfolio.html">Freelancer's Portfolio</a></li>
-                                <li class="dropdown-item"><a href="home-photographer-portfolio.html">Photographer's Portfolio</a></li>
-                                <li class="dropdown-header"><i class="fe-icon-shopping-bag"></i>&nbsp;&nbsp;E-Commerce</li>
-                                <li class="dropdown-item"><a href="home-shop-v1.html">Online Shop v.1</a></li>
-                                <li class="dropdown-item"><a href="home-shop-v2.html">Online Shop v.2</a></li>
-                                <li class="dropdown-header"><i class="fe-icon-edit"></i>&nbsp;&nbsp;Blog</li>
-                                <li class="dropdown-item"><a href="home-corporate-blog.html">Corporate Blog</a></li>
-                                <li class="dropdown-item"><a href="home-personal-blog.html">Personal Blog</a></li>
-                                <li class="dropdown-header"><i class="fe-icon-home"></i>&nbsp;&nbsp;Landing Pages</li>
-                                <li class="dropdown-item"><a href="home-mobile-app-showcase.html">Mobile App Showcase</a></li>
-                                <li class="dropdown-item"><a href="home-web-app-showcase.html">Web App Showcase (SAAS)</a></li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Product Promo Page<span class="badge badge-secondary">Soon</span></a></li>
-                                <li class="dropdown-item"><a href="home-conference-landing.html">Conference Landing</a></li>
-                                <li class="dropdown-header"><i class="fe-icon-dollar-sign"></i>&nbsp;&nbsp;Business</li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Corporate Website<span class="badge badge-secondary">Soon</span></a></li>
-                                <li class="dropdown-item"><a href="home-marketing-seo.html">Digital Marketing &amp; SEO</a></li>
-                                <li class="dropdown-item"><a href="home-capital-investments.html">Venture Capital Investments</a></li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Startup Homepage<span class="badge badge-secondary">Soon</span></a></li>
-                                <li class="dropdown-header"><i class="fe-icon-menu"></i>&nbsp;&nbsp;Directory &amp; Listings</li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Real Estate Listing<span class="badge badge-secondary">Soon</span></a></li>
-                                <li class="dropdown-item"><a class="disabled-link" href="#">Jobs Board<span class="badge badge-secondary">Soon</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
+                    
                 </div>
                 <!-- Portfolio-->
                 <div class="card">
@@ -274,7 +245,8 @@
                         <ul class="navbar-buttons d-inline-block align-middle">
                             <li class="d-block d-lg-none"><a href="#mobile-menu" data-toggle="offcanvas"><i class="fe-icon-menu"></i></a></li>
                             <li><a href="#" data-toggle="search"><i class="fe-icon-search"></i></a></li>
-                        </ul><a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" target="_blank">Buy Now</a>
+                        </ul>
+                        <!-- <a class="btn btn-gradient ml-3 d-none d-xl-inline-block" href="https://themes.getbootstrap.com/product/createx-multipurpose-template-ui-kit/" target="_blank">Buy Now</a> -->
                     </div>
                 </div>
             </div>
