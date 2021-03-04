@@ -36,16 +36,15 @@ require_once 'components/header.php';
 
     <!-- Portfolio Item-->
     <div class="grid-item mobile-apps mb-30 pb-2">
-      <div class="card portfolio-card"><a class="portfolio-thumb" style="width: auto; height: 300px; background-color: red; background-image: url(img/logo/pg); background-size: cover; background-position: center;" href="portfolio-single-side-gallery-grid.html"></a>
+      <div class="card portfolio-card"><a class="portfolio-thumb" style="width: auto; height: 300px; background-color: blue; background-image: url('img/portfolio/01.jpg'); background-size: cover; background-position: center;" href="portfolio-single-side-gallery-grid.html"></a>
 
-        <!-- <div class="card portfolio-card"><a class="portfolio-thumb" href="portfolio-single-side-gallery-grid.html"><img src="img/portfolio/01.jpg" alt="Portfolio Thumbnail" /></a> -->
           <div class="card-body">
-            <div class="portfolio-meta"><span><i class="fe-icon-user"></i>William Smith</span></div>
+            <div class="portfolio-meta"><span><i class="fe-icon-user"></i>World Brain Technology</span></div>
             <h5 class="portfolio-title"><a href="portfolio-single-side-gallery-grid.html">iOS App UI Design</a></h5>
           </div>
           <div class="card-footer">
             <div><a class="tag-link" href="#">Mobile Apps</a></div>
-            <div class="portfolio-meta"><a href="#"><i class="fe-icon-heart text-accent"></i>12</a></div>
+            <div class="portfolio-meta"><i class="fe-icon-heart text-accent" id="like"></i><a href="#" id="likeHolder">12</a></div>
           </div>
         </div>
       </div>
