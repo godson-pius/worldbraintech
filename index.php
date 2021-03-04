@@ -86,9 +86,9 @@
             <div class="team-card-inner">
               <div class="team-thumb"><img src="img/team/style-1/05.jpg" alt="Team Member Picture"/>
               </div>
-              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+72056557984"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+72056557984"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@worldbraintechnology.com</a>
             </div><span class="team-position">Backend Experts & Graphic Designer</span>
-            <h4 class="team-name">Godson Pius</h4>
+            <h4 class="team-name">James Edmond</h4>
           </div>
         </div>
         <!-- Team member-->
@@ -97,7 +97,7 @@
             <div class="team-card-inner">
               <div class="team-thumb"><img src="img/team/style-1/06.jpg" alt="Team Member Picture"/>
               </div>
-              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-google-plus" href="#"><i class="socicon-googleplus"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+57872336590"><i class="fe-icon-phone"></i>&nbsp;(+234) 812385976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-google-plus" href="#"><i class="socicon-googleplus"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+57872336590"><i class="fe-icon-phone"></i>&nbsp;(+234) 812385976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@worldbraintechnology.com</a>
             </div><span class="team-position">Marketing Strategist</span>
             <h4 class="team-name">Sara Madueke</h4>
           </div>
@@ -108,7 +108,7 @@
             <div class="team-card-inner">
               <div class="team-thumb"><img src="img/team/style-1/07.jpg" alt="Team Member Picture"/>
               </div>
-              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-github" href="#"><i class="socicon-github"></i></a><a class="social-btn sb-style-4 sb-stackoverflow" href="#"><i class="socicon-stackoverflow"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a></div><a class="team-contact-link" href="tel:+19871625346"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-github" href="#"><i class="socicon-github"></i></a><a class="social-btn sb-style-4 sb-stackoverflow" href="#"><i class="socicon-stackoverflow"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a></div><a class="team-contact-link" href="tel:+19871625346"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@worldbraintechnology.com</a>
             </div><span class="team-position">Critical Thinker</span>
             <h4 class="team-name">Brandon Simon</h4>
           </div>
@@ -119,7 +119,7 @@
             <div class="team-card-inner">
               <div class="team-thumb"><img src="img/team/style-1/08.jpg" alt="Team Member Picture"/>
               </div>
-              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-4 sb-behance" href="#"><i class="socicon-behance"></i></a><a class="social-btn sb-style-4 sb-dribbble" href="#"><i class="socicon-dribbble"></i></a></div><a class="team-contact-link" href="tel:+13907765843"><i class="fe-icon-phone"></i>&nbsp;(+234) 812385976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
+              <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-pinterest" href="#"><i class="socicon-pinterest"></i></a><a class="social-btn sb-style-4 sb-behance" href="#"><i class="socicon-behance"></i></a><a class="social-btn sb-style-4 sb-dribbble" href="#"><i class="socicon-dribbble"></i></a></div><a class="team-contact-link" href="tel:+13907765843"><i class="fe-icon-phone"></i>&nbsp;(+234) 812385976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;info@worldbraintechnology.com</a>
             </div><span class="team-position">Lead, UI/UX Designer</span>
             <h4 class="team-name">Ezra Jonathan</h4>
           </div>
