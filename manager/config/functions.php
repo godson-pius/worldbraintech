@@ -142,6 +142,13 @@ function addProject($post) {
         $errors[] = "Project Title is required";
     }
 
+    if (!empty($project_cat)) {
+        $project_cat = sanitize($project_cat);
+    } else {
+        $err_flag = true;
+        $errors[] = "Project Title is required";
+    }
+
     if (!empty($_FILES['ProjectImage'])) {
         $ProjectImage = sanitize($_FILES['ProjectImage']['name']);
         $ProjectImageTmp = $_FILES['ProjectImage']['tmp_name'];
@@ -170,7 +177,7 @@ function addProject($post) {
     if ($err_flag === false) {
         $admin = $_SESSION['current_admin'];
 
-        $sql = "INSERT INTO projects (project_title, client, project_objective, technologies, project_images, project_date) VALUES ('$project_title', '$project_client', '$project_desc', '$project_tech', '$ProjectImage', now())";
+        $sql = "INSERT INTO projects (project_title, project_cat, client, project_objective, technologies, project_images, project_date) VALUES ('$project_title', '$project_cat', '$project_client', '$project_desc', '$project_tech', '$ProjectImage', now())";
         $query = mysqli_query($link, $sql);
 
         if ($query) {
@@ -269,9 +276,9 @@ function delete($table, $table_id, $id) {
     return false;
 }
 
-function fetch_all($table, $id) {
+function fetch_all($table, $id, $limit) {
     global $link;
-    $sql = "SELECT * FROM $table ORDER BY $id DESC";
+    $sql = "SELECT * FROM $table ORDER BY $id DESC LIMIT $limit";
     $query = mysqli_query($link, $sql);
 
     if ($query) {

@@ -1,4 +1,15 @@
 <?php
+
+require_once 'manager/config/functions.php';
+require_once 'inc/functions/config.php';
+
+$gettingAchievements = load("achievements");
+if ($gettingAchievements) {
+    foreach ($gettingAchievements as $achievement) {
+        extract($achievement);
+    }
+}
+
 $title = "Services | World Brain Technology";
 require_once 'components/header.php';
 ?>
@@ -16,25 +27,25 @@ require_once 'components/header.php';
   <section class="bg-white container-fluid border-top">
       <div class="row">
         <div class="col-md-3 col-sm-6 border-right py-5 border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="102">
+          <div class="animated-digits mx-auto text-center" data-number="<?= $satisfied_clients; ?>">
             <h5 class="animated-digits-digit"><span>0</span>+</h5>
             <p class="animated-digits-text">Satisfied clients</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 py-5 border-right border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="96">
+          <div class="animated-digits mx-auto text-center" data-number="<?= $positive_feedback; ?>">
             <h5 class="animated-digits-digit"><span>0</span>%</h5>
             <p class="animated-digits-text">Positive feedback</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 py-5 border-right border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="81">
+          <div class="animated-digits mx-auto text-center" data-number="<?= load_total("projects"); ?>">
             <h5 class="animated-digits-digit"><span>0</span></h5>
             <p class="animated-digits-text">Projects Delivered</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 py-5 border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="5">
+          <div class="animated-digits mx-auto text-center" data-number="4">
             <h5 class="animated-digits-digit"><span>5</span></h5>
             <p class="animated-digits-text">Years In Operation</p>
           </div>
@@ -49,42 +60,42 @@ require_once 'components/header.php';
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/01.png" alt="UX Prototyping"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">UX Prototyping</h3>
-          <p class="card-text text-sm">We determine the fidelity of a prototype depending on the stage of the design process, the available resources, and the goals for the prototype either low and high fidelity using tools that are essentials like Skecth, Figma, Adobe Xd.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">We determine the fidelity of a prototype depending on the stage of the design process, the available resources, and the goals for the prototype either low and high fidelity using tools that are essentials like Skecth, Figma, Adobe Xd.</p>
         </div>
       </a></div>
     <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/02.png" alt="Web &amp; UI Design"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">Web &amp; UI Design</h3>
-          <p class="card-text text-sm">The UI design is the goal of the end user and how it feels to them, we provide high quality concepts to the demand of the user after achieveing user testing, at this point we give you nothing but absolute best.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">The UI design is the goal of the end user and how it feels to them, we provide high quality concepts to the demand of the user after achieveing user testing, at this point we give you nothing but absolute best.</p>
         </div>
       </a></div>
     <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/03.png" alt="Front-End Development"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">Front-End Development</h3>
-          <p class="card-text text-sm">Understanding the need of our clients after all design process completed, we execute all those process with full time coding from scratch from our experts with coding skills of HTML, CSS, Javascript etc </p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">Understanding the need of our clients after all design process completed, we execute all those process with full time coding from scratch from our experts with coding skills of HTML, CSS, Javascript etc </p>
         </div>
       </a></div>
     <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/04.png" alt="Back-End Development"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">Back-End Development</h3>
-          <p class="card-text text-sm">Working on the frontend will give birth to the backend with high programming skills from the experts behind the screen with skills like PHP Laravel, Node.js, Express.js, .Net frameworks and so on as it fits in to the demand of the clients.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">Working on the frontend will give birth to the backend with high programming skills from the experts behind the screen with skills like PHP Laravel, Node.js, Express.js, .Net frameworks and so on as it fits in to the demand of the clients.</p>
         </div>
       </a></div>
     <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services-single.html">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/05.png" alt="Usability Testing"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">Usability Testing</h3>
-          <p class="card-text text-sm">Getting all process done demands usabilty testing, hence we push the project to specific users to test and give feedbacks to the team.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">Getting all process done demands usabilty testing, hence we push the project to specific users to test and give feedbacks to the team.</p>
         </div>
       </a></div>
     <div class="col-lg-4 col-sm-6 mb-30 pb-5"><a class="card" href="services">
         <div class="box-shadow bg-white rounded-circle mx-auto" style="width: 90px; height: 90px; margin-top: -45px;"><img class="d-block mx-auto" src="img/services/06.png" alt="SEO Optimization"></div>
         <div class="card-body text-center">
           <h3 class="card-title pt-1">SEO Optimization</h3>
-          <p class="card-text text-sm">We give specific descriptions to all clients website for google spider and search engines to crawl through it.</p><span class="text-sm text-uppercase font-weight-bold">Learn More&nbsp;<i class="fe-icon-arrow-right"></i></span>
+          <p class="card-text text-sm">We give specific descriptions to all clients website for google spider and search engines to crawl through it.</p>
         </div>
       </a></div>
   </div>

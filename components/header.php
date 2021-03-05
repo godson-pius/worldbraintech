@@ -6,19 +6,30 @@
     <title><?= $title; ?>
     </title>
     <!-- SEO Meta Tags-->
-    <meta name="description" content="CreateX - Multipurpose Bootstrap Theme">
+    <meta name="description" content="This website belongs to World Brain Technology, to make clients get in touch much more efficiently">
     <meta name="keywords" content="World Brain Technology, World, Brain, Technology, Your Solution, Our Piority, Tech, Tech Company, Compnay, Solutions, Digital, Digital Solutions, Web design, Web, Design, Web Development, Development, Mobile, Mobile Development, Digital Marketing, Graphics, Graphics Designs, Laptops, Github">
     <meta name="author" content="World Brain Technology">
     <!-- Viewport-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon and Touch Icons-->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/logo/wbtlogo.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo/wbtlogo.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo/wbtlogo.png">
-    <link rel="manifest" href="site.webmanifest">
+<!--    <link rel="manifest" href="site.webmanifest">-->
     <link rel="mask-icon" color="#343b43" href="img/logo/wbtlogo.png">
     <meta name="msapplication-TileColor" content="#603cba">
     <meta name="theme-color" content="#ffffff">
+
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<?= $title; ?> - Best IT Company">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="index">
+    <meta property="og:site_name" content="World Brain Technology">
+    <meta property="og:image" content="img/logo/wbtlogo.png">
+    <meta property="og:description" content="Most trusted and reliable tech company around the globe. Leading to change the world with the power of tech.">
+
+
     <!-- Vendor Styles including: Font Icons, Plugins, etc.-->
     <link rel="stylesheet" media="screen" href="css/vendor.min.css">
     <!-- Main Theme Styles + Bootstrap-->

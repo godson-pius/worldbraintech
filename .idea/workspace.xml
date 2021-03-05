@@ -27,22 +27,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92027f28-43ee-4e5d-bf37-d271bdf79504" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/img/logo/wbtmockup1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/img/logo/worldbraintechnology.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manager/ProjectImages/Screenshot (48).png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/ProjectImages/newlogo2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/404.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/clients.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/project-request.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/project-request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact-us.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inc/functions/contact_fxns.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions/contact_fxns.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/ProjectImages/Screenshot (48).png" beforeDir="false" afterPath="$PROJECT_DIR$/manager/ProjectImages/Screenshot.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/config/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/file-dashboard.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/includes/page_aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/includes/page_aside.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/includes/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/includes/page_header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/sign-in.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/services.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +56,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../xampp/htdocs/madueke" />
   </component>
   <component name="TaskManager">
     <servers />
@@ -96,9 +93,17 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614943611289" />
+    <state x="740" y="280" key="FileChooserDialogImpl" timestamp="1614959345472">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="280" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1614959345472" />
     <state x="794" y="297" key="refactoring.ChangeSignatureDialog" timestamp="1614948737883">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="794" y="297" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614948737883" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1614958651246">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1614958651246" />
   </component>
 </project>

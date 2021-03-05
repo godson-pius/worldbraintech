@@ -491,6 +491,10 @@
                                         </div>
 
                                         <div class="form-group form-float">
+                                            <input type="text" class="form-control" placeholder="Project Category" name="project_cat" required />
+                                        </div>
+
+                                        <div class="form-group form-float">
                                             <input type="file" class="form-control" name="ProjectImage" required />
                                             <div class="ml-4 help-info">Project Image</div>
                                         </div>
@@ -504,7 +508,7 @@
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <textarea class="form-control" name="project_desc" >Project Description</textarea>
+                                            <textarea class="form-control" name="project_desc" placeholder="Project Description"></textarea>
                                         </div>
                                         
                                          <button type="submit" name="project_upload" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPLOAD PROJECT</button>

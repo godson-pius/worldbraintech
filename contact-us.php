@@ -5,7 +5,7 @@ if (isset($_POST['submit'])){
     $response = UpdateCont($_POST);
 
     if ($response === true) {
-        echo "<script>alert('right')</script>";
+        echo "<script>alert('Message Sent! We will reply as soon as possible!')</script>";
     } else {
         if (is_array($response)) {
             foreach ($response as $err) {
