@@ -18,7 +18,7 @@
     <section class="bg-white container-fluid border-top">
       <div class="row">
         <div class="col-md-3 col-sm-6 border-right py-5 border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="350">
+          <div class="animated-digits mx-auto text-center" data-number="90">
             <h5 class="animated-digits-digit"><span>0</span>+</h5>
             <p class="animated-digits-text">Satisfied clients</p>
           </div>
@@ -30,13 +30,13 @@
           </div>
         </div>
         <div class="col-md-3 col-sm-6 py-5 border-right border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="201">
+          <div class="animated-digits mx-auto text-center" data-number="24">
             <h5 class="animated-digits-digit"><span>0</span></h5>
             <p class="animated-digits-text">Projects Delivered</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 py-5 border-bottom">
-          <div class="animated-digits mx-auto text-center" data-number="5">
+          <div class="animated-digits mx-auto text-center" data-number="4">
             <h5 class="animated-digits-digit"><span>5</span></h5>
             <p class="animated-digits-text">Years In Operation</p>
           </div>
