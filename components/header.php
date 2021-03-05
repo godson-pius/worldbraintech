@@ -36,7 +36,8 @@
             <div class="d-flex justify-content-between pt-2">
                 <div class="btn-group w-100 mr-2"><a class="btn btn-secondary btn-sm btn-block dropdown-toggle" href="#" data-toggle="dropdown"><img src="img/flags/en.png" alt="English" />English</a>
                     <div class="dropdown-menu" style="min-width: 150px;"><a class="dropdown-item" href="#"><img src="img/flags/fr.png" alt="Français" />Français</a><a class="dropdown-item" href="#"><img src="img/flags/de.png" alt="Deutsch" />Deutsch</a><a class="dropdown-item" href="#"><img src="img/flags/it.png" alt="Italiano" />Italiano</a></div>
-                </div><a class="btn btn-primary btn-sm btn-block" href="account-login.html"><i class="fe-icon-user"></i>&nbsp;Login</a>
+                </div>
+<!--                <a class="btn btn-primary btn-sm btn-block" href="account-login.html"><i class="fe-icon-user"></i>&nbsp;Login</a>-->
             </div>
         </div>
         <div class="offcanvas-scrollable-area border-top" style="height:calc(100% - 235px); top: 144px;">
