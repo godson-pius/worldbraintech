@@ -1,12 +1,12 @@
 ﻿<?php require_once "config/dbconfig.php";
     $validate = loginValidation("sign-in");
     $admin = $_SESSION['current_admin'];
-    $track_total_num = load("tracks"); // Fetching all uploaded music
-    $project_total_num= load("project_requests"); // Fetching all project request
-    $contact_total_num = load("contacts"); // Fetching all contact
+    $clients_total_num = load("clients"); // Fetching all clients
+    $project_total_num= load("projects"); // Fetching all project
+    $contact_total_num = load("contact_us"); // Fetching all contact
 
-    if (isset($_POST['track_upload'])) {
-        $response = addMusic($_POST);
+    if (isset($_POST['client_upload'])) {
+        $response = addClient($_POST);
         if ($response === true) {
             $uploaded = "uploaded";
         } else {
@@ -33,7 +33,7 @@
     }
 
     if (isset($_POST['completed_projects'])) {
-        $response = update_projects_completed($_POST);
+        $response = update_projects_feedback($_POST);
         if ($response === true) {
             $updated = "updated";
         } else {
@@ -44,13 +44,13 @@
 ?>
 
 <!-- Page Header -->
-<?php $page_title = ":: Godson Pius :: Admin"; require_once "includes/page_header.php"; ?>
+<?php $page_title = ":: World Brain Technology :: Admin"; require_once "includes/page_header.php"; ?>
 
 <!-- Consists of left menu bar and aisde -->
 <?php require_once "includes/page_aside.php"; ?>
 
 <!-- Main Content -->
-<section class="content" style="font-family: ubuntu medium">
+<section class="content" style="font-family: 'Roboto Medium'">
     <div class="container">
         <div class="row clearfix">
             <div class="col-lg-12">
@@ -58,7 +58,7 @@
                     <div class="body block-header">
                         <div class="row">
                             <div class="col-lg-6 col-md-8 col-sm-12">
-                                <h6>Welcome <span class="text-info"><?php echo ucfirst($admin); ?></span></h6>
+                                <h6><span class="text-info"><?php echo ucfirst($admin); ?></span></h6>
                                 <ul class="breadcrumb   p-l-0 p-b-0 ">
                                     <li class="breadcrumb-item"><a href="index"><i class="icon-home"></i></a></li>
                                     <li class="breadcrumb-item active">Dashboard</li>
@@ -67,13 +67,13 @@
                             <div class="col-lg-6 col-md-4 col-sm-12 text-right">
                                 <div class="inlineblock text-center m-r-15 m-l-15 hidden-sm">
                                     <div class="sparkline" data-type="bar" data-width="97%" data-height="28px" data-bar-Width="2" data-bar-Spacing="5" data-bar-Color="#706bd1">3,2,6,5,9,8,7,9,5,1,3,5,7,4,6</div>
-                                    <small>Godson</small>
+                                    <small>World Brain</small>
                                 </div>
                                 <div class="inlineblock text-center m-r-15 m-l-15 hidden-sm">
                                     <div class="sparkline" data-type="bar" data-width="97%" data-height="28px" data-bar-Width="2" data-bar-Spacing="5" data-bar-Color="#191f28">1,3,5,7,4,6,3,2,6,5,9,8,7,9,5</div>
-                                    <small>Pius</small>
+                                    <small>Technology</small>
                                 </div>
-                                <button class="btn btn-primary btn-round btn-simple float-right hidden-xs m-l-10">Godson Pius</button>
+                                <button class="btn btn-primary btn-round btn-simple float-right hidden-xs m-l-10">World Brain Technology</button>
                             </div>
                         </div>
                     </div>
@@ -85,11 +85,11 @@
                 <div class="card info-box-2" id="hover">
                     <div class="body">
                         <div class="icon">
-                            <div class="h1 icon-music-tone-alt mr-2"></div>
+                            <div class="h1 icon-users mr-2"></div>
                         </div>
                         <div class="content">
-                            <div class="text">TOTAL MUSIC</div>
-                            <div class="number"><span class="number" id="totalAudio"></span></div> <!-- Loading from custom.js -->
+                            <div class="text">TOTAL CLIENTS</div>
+                            <div class="number"><span class="number" id="totalClients"></span></div> <!-- Loading from custom.js -->
                         </div>
                     </div>
                 </div>
@@ -101,7 +101,7 @@
                             <div class="h1 mr-2 icon-question"></div>
                         </div>
                         <div class="content">
-                            <div class="text">TOTAL PROJECT REQUESTS</div>
+                            <div class="text">TOTAL PROJECT</div>
                             <div class="number" id="totalProjectRequest"></div> <!-- Loading from custom.js -->
                         </div>
                     </div>
@@ -128,27 +128,27 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="header">
-                        <h2><strong>Project</strong>  Request</h2>
+                        <h2><strong>Project</strong>  Completed</h2>
                     </div>
                     <div class="body">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center table-striped table-hover js-basic-example dataTable">
                                 <thead>
                                 <tr>
-                                    <th>User Name</th>
-                                    <th>User Email</th>
+                                    <th>Clients Name</th>
                                     <th>Project Title</th>
                                     <th>Project Description</th>
+                                    <th>Tech Used</th>
                                     <th>Date Sent</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th>User Name</th>
-                                    <th>User Email</th>
+                                    <th>Clients Name</th>
                                     <th>Project Title</th>
                                     <th>Project Description</th>
+                                    <th>Tech Used</th>
                                     <th>Date Sent</th>
                                     <th>Action</th>
                                 </tr>
@@ -159,12 +159,14 @@
                                     foreach ($project_total_num as $data) {
                                         extract($data); ?>
                                         <tr>
-                                            <td><?php echo $user_name; ?></td>
-                                            <td><?php echo $user_email; ?></td>
+                                            <td><?php echo $client; ?></td>
                                             <td><?php echo $project_title; ?></td>
-                                            <td><?php echo substr($project_desc, 0, 20) . "....."; ?></td>
-                                            <td><?php echo $date_sent; ?></td>
-                                            <td><a data-toggle="modal" data-target="#desc<?= $project_id; ?>" class="text-light btn btn-info">Read More</a><a href="delete?request=<?php echo $project_id; ?>" class="btn btn-danger">Delete</a></td>
+                                            <td><?php echo substr($project_objective, 0, 20) . "....."; ?></td>
+                                            <td><?php echo substr($technologies, 0, 20) . "....."; ?></td>
+                                            <td><?php echo $project_date; ?></td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#desc<?= $project_id; ?>" class="text-light btn btn-info">Read More</a>
+                                                <a href="delete?request=<?php echo $project_id; ?>" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                         <!-- Modal For Project Description -->
@@ -179,7 +181,7 @@
                                               </div>
                                               <div class="modal-body">
                                                 <hr>
-                                                <?= $project_desc; ?>
+                                                <?= $project_objective; ?>
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -202,45 +204,53 @@
             <div class="col-lg-12">
                 <div class="card">
                     <div class="header">
-                        <h2><strong>Uploaded</strong> Music </h2>
+                        <h2><strong>Company</strong> Clients </h2>
                     </div>
                     <div class="body">
                         <div class="table-responsive">
                             <table class="table table-bordered text-center table-striped table-hover js-basic-example dataTable">
                                 <thead>
                                 <tr>
-                                    <th>Song Title</th>
-                                    <th>Date Uploaded</th>
+                                    <th>Client Name</th>
+                                    <th>Client Services</th>
+                                    <th>Client Websites</th>
                                     <th>Uploaded By</th>
+                                    <th>Uploaded Date</th>
                                     <th>Action</th>
                                 </tr>
                                 </thead>
                                 <tfoot>
                                 <tr>
-                                    <th>Song Title</th>
-                                    <th>Date Uploaded</th>
+                                    <th>Client Name</th>
+                                    <th>Client Services</th>
+                                    <th>Client Websites</th>
                                     <th>Uploaded By</th>
+                                    <th>Uploaded Date</th>
                                     <th>Action</th>
                                 </tr>
                                 </tfoot>
                                 <tbody>
                                 <?php
-                                if (!empty($track_total_num)) {
-                                    foreach ($track_total_num as $data) {
+                                if (!empty($clients_total_num)) {
+                                    foreach ($clients_total_num as $data) {
                                         extract($data); ?>
                                         <tr>
-                                            <td><?php echo $track_title; ?></td>
-                                            <td><?php echo $date_uploaded; ?></td>
+                                            <td><?php echo $client_name; ?></td>
+                                            <td><?php echo $services; ?></td>
+                                            <td><?php echo $website; ?></td>
                                             <td><?php echo $admin; ?></td>
-                                            <td><a data-toggle="modal" data-target="#edit<?= $track_id; ?>" class="text-light btn btn-info">Edit Track</a><a href="delete?track=<?php echo $track_id; ?>" class="btn btn-danger">Delete</a></td>
+                                            <td><?php echo $created_at; ?></td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#edit<?= $id; ?>" class="text-light btn btn-info">Edit Client</a>
+                                                <a href="delete?client=<?php echo $id; ?>" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                         <!-- Modal For Editing Tracks -->
-                                        <div class="modal fade" style="margin-top: 200px;" id="edit<?= $track_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal fade" style="margin-top: 200px;" id="edit<?= $id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                           <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle"><?= $track_title; ?></h5>
+                                                <h5 class="modal-title" id="exampleModalLongTitle"><?= $client_name; ?></h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                                 </button>
@@ -248,10 +258,10 @@
                                               <div class="modal-body">
                                                 <hr>
                                                 <?php 
-                                                    $edit_track = getSpecifiedColumn("tracks", "track_id", $track_id);
-                                                    if ($edit_track) {
-                                                        foreach ($edit_track as $track_edit) {
-                                                            $edit_id = $track_edit['track_id'];
+                                                    $edit_client = getSpecifiedColumn("clients", "id", $id);
+                                                    if ($edit_client) {
+                                                        foreach ($edit_client as $client_edit) {
+                                                            $edit_id = $client_edit['id'];
                                                         }
                                                     }
                                                  ?>
@@ -260,29 +270,23 @@
                                                     <div class="col-lg-12 col-md-12 col-sm-12">
                                                         <div class="card">
                                                             <div class="header">
-                                                                <h2><strong>Edit</strong> Track</h2>
+                                                                <h2><strong>Edit</strong> Client</h2>
                                                             </div>
                                                                 <div class="body">
                                                                     <form id="track_edit" action="" method="POST" enctype="multipart/form-data">
                                                                         <div class="form-group form-float">
-                                                                            <input type="text" class="form-control" placeholder="Title" value="<?= $track_edit['track_title']; ?>" name="title">
+                                                                            <input type="text" class="form-control" placeholder="Name" value="<?= $client_edit['client_name']; ?>" name="name">
                                                                         </div>
 
                                                                         <div class="form-group form-float">
-                                                                            <input type="file" class="form-control" name="audioImage" required>
-                                                                            <div class="ml-4 help-info">(Current Track Image <strong><?= $track_edit['track_image']; ?></strong>)</div>
+                                                                            <input type="text" class="form-control" name="website" value="<?= $client_edit['website']; ?>" required>
                                                                         </div>
 
                                                                         <div class="form-group form-float">
-                                                                            <input type="file" class="form-control" name="audio" required>
-                                                                            <div class="ml-4 help-info">(Current Track Path <strong><?= $track_edit['track_path']; ?></strong>)</div>
-                                                                        </div>
-
-                                                                        <div class="form-group form-float">
-                                                                            <textarea class="form-control" name="track_desc" ><?= $track_edit['track_desc']; ?></textarea>
+                                                                            <textarea class="form-control" name="track_desc" ><?= $client_edit['services']; ?></textarea>
                                                                         </div>
                                                                         
-                                                                         <button type="submit" name="track_edit" id="trackedit_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">EDIT AUDIO</button>
+                                                                         <button type="submit" name="client_edit" id="trackedit_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">EDIT CLIENT</button>
                                                                         </div>
                                                                 </form>
                                                             </div>
@@ -302,7 +306,7 @@
 
                                     <!-- PHP code for editing the tracks -->
                                     <?php 
-                                        if (isset($_POST['track_edit'])) {
+                                        if (isset($_POST['client_edit'])) {
                                             $edit_single_track = editTrack($edit_id, $_POST);
                                             if ($edit_single_track === true) {
                                                 echo "<script>alert('edited')</script>";
@@ -362,28 +366,30 @@
                                     foreach ($contact_total_num as $data) {
                                         extract($data); ?>
                                         <tr>
-                                            <td><?php echo $user_name; ?></td>
-                                            <td><?php echo $user_email; ?></td>
-                                            <td><?php echo $user_phone; ?></td>
-                                            <td><?php echo $contact_title; ?></td>
-                                            <td><?php echo substr($contact_message, 0, 20); ?>.....</td>
-                                            <td><?php echo $date_sent; ?></td>
-                                            <td><a data-toggle="modal" data-target="#message<?= $contact_id; ?>" class="text-light btn btn-info">Read More</a><a href="delete?contact=<?php echo $contact_id; ?>" class="btn btn-danger">Delete</a></td>
+                                            <td><?php echo $name; ?></td>
+                                            <td><?php echo $email; ?></td>
+                                            <td><?php echo "08147871946"; ?></td>
+                                            <td><?php echo $subject; ?></td>
+                                            <td><?php echo substr($message, 0, 20); ?>.....</td>
+                                            <td><?php echo $date; ?></td>
+                                            <td>
+                                                <a data-toggle="modal" data-target="#message<?= $contact_us_id; ?>" class="text-light btn btn-info">Read More</a>
+                                                <a href="delete?contact=<?php echo $contact_us_id; ?>" class="btn btn-danger">Delete</a></td>
                                         </tr>
 
                                         <!-- Modal For Contact Message -->
-                                        <div class="modal fade" style="margin-top: 200px;" id="message<?= $contact_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                        <div class="modal fade" style="margin-top: 200px;" id="message<?= $contact_us_id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                                           <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                               <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLongTitle"><?= $contact_title; ?></h5>
+                                                <h5 class="modal-title" id="exampleModalLongTitle"><?= $subject; ?></h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                   <span aria-hidden="true">&times;</span>
                                                 </button>
                                               </div>
                                               <div class="modal-body">
                                                 <hr>
-                                                <?= $contact_message; ?>
+                                                <?= $message; ?>
                                               </div>
                                               <div class="modal-footer">
                                                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -404,12 +410,12 @@
         <!-- #END# Basic Examples -->
 
 
-        <!-- Modal For Uploading Tracks -->
+        <!-- Modal For Uploading Clients -->
         <div class="modal fade" style="margin-top: 200px;" id="track_upload" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLongTitle">Track Upload Modal</h5>
+                <h5 class="modal-title" id="exampleModalLongTitle">Upload Client</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -421,31 +427,29 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="header">
-                                <h2><strong>Upload</strong> Track</h2>
+                                <h2><strong>Upload</strong> Client</h2>
                             </div>
                                 <div class="body">
-                                    <form id="track_upload" action="" method="POST" enctype="multipart/form-data">
+                                    <form action="" method="POST">
                                         <div class="form-group form-float">
-                                            <input type="text" class="form-control" placeholder="Title" name="title">
+                                            <input type="text" class="form-control" placeholder="Name" name="clientname">
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <input type="file" class="form-control" name="audioImage" required>
-                                            <div class="ml-4 help-info">Track Image</div>
+                                            <input type="text" class="form-control" placeholder="Service" name="service">
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <input type="file" class="form-control" name="audio" required>
-                                            <div class="ml-4 help-info">Track Path</div>
+                                            <input type="text" class="form-control" placeholder="Website" name="website">
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <textarea class="form-control" name="track_desc" >Track Description</textarea>
+                                            <input type="text" class="form-control" hidden  name="admin" value="<?= $_SESSION['current_admin']; ?>">
                                         </div>
                                         
-                                         <button type="submit" name="track_upload" id="trackupload_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPLOAD AUDIO</button>
+                                         <button type="submit" name="client_upload" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPLOAD CLIENT</button>
                                         </div>
-                                </form>
+                                    </form>
                             </div>
                         </div>
                     </div>
@@ -483,23 +487,27 @@
                                     <form id="project_upload" action="" method="POST" enctype="multipart/form-data">
 
                                         <div class="form-group form-float">
-                                            <input type="text" class="form-control" placeholder="Project Title" name="project_title" required>
+                                            <input type="text" class="form-control" placeholder="Project Title" name="project_title" required />
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <input type="file" class="form-control" name="ProjectImage" required>
+                                            <input type="file" class="form-control" name="ProjectImage" required />
                                             <div class="ml-4 help-info">Project Image</div>
                                         </div>
 
                                         <div class="form-group form-float">
-                                            <input type="text" class="form-control" placeholder="Project Url" name="project_url">
+                                            <input type="text" class="form-control" placeholder="Project Tech" name="project_tech">
+                                        </div>
+
+                                        <div class="form-group form-float">
+                                            <input type="text" class="form-control" placeholder="Project Client" name="project_client">
                                         </div>
 
                                         <div class="form-group form-float">
                                             <textarea class="form-control" name="project_desc" >Project Description</textarea>
                                         </div>
                                         
-                                         <button type="submit" name="project_upload" id="trackupload_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPLOAD PROJECT</button>
+                                         <button type="submit" name="project_upload" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPLOAD PROJECT</button>
                                         </div>
                                 </form>
                             </div>
@@ -543,7 +551,7 @@
                                             <input type="number" class="form-control" placeholder="Happy Clients" name="happy_clients" required>
                                         </div>
                                         
-                                         <button type="submit" name="clients_records" id="trackupload_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPDATE RECORD</button>
+                                         <button type="submit" name="clients_records" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPDATE RECORD</button>
                                         </div>
                                 </form>
                             </div>
@@ -562,12 +570,12 @@
 
 
 
-        <!-- Modal For Updating Projects Completed -->
+        <!-- Modal For Updating Projects Feedback -->
         <div class="modal fade" style="margin-top: 200px;" id="update_project_completed" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <h6 class="modal-title" id="exampleModalLongTitle">Update Projects Completed</h6>
+                <h6 class="modal-title" id="exampleModalLongTitle">Update Projects Feedback</h6>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -579,7 +587,7 @@
                     <div class="col-lg-12 col-md-12 col-sm-12">
                         <div class="card">
                             <div class="header">
-                                <h2><strong>Update</strong> Project Completed</h2>
+                                <h2><strong>Update</strong> Project Feedbacks</h2>
                             </div>
                                 <div class="body">
                                     <form action="" method="POST">
@@ -588,7 +596,7 @@
                                             <input type="number" class="form-control" placeholder="Projects Completed" name="projects_completed" required>
                                         </div>
                                         
-                                         <button type="submit" name="completed_projects" id="trackupload_submitbutton" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPDATE RECORD</button>
+                                         <button type="submit" name="completed_projects" class="btn btn-raised btn-block btn-primary btn-round waves-effect">UPDATE RECORD</button>
                                         </div>
                                 </form>
                             </div>

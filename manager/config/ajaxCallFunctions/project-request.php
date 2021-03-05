@@ -2,7 +2,7 @@
 require_once "../dbconfig.php";
 
 global $link;
-$sql = "SELECT * FROM project_requests";
+$sql = "SELECT * FROM projects";
 $query = mysqli_query($link, $sql);
 
 if ($query) {

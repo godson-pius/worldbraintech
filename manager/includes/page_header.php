@@ -6,7 +6,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta name="description" content="Grace Women International, sermon, audios, musics, Peace Nonye, kiri kiri town, Conference, International, Grace, Women">
     <title><?php echo $page_title; ?></title>
-    <link rel="icon" href="../images/me.jpg" type="image/x-icon"> <!-- Favicon-->
+    <link rel="icon" href="../../img/logo/worldbraintechnology.png" type="image/x-icon"> <!-- Favicon-->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/jvectormap/jquery-jvectormap-2.0.3.min.css"/>
     <link rel="stylesheet" href="assets/plugins/morrisjs/morris.min.css" />
@@ -31,7 +31,7 @@
 <!-- Page Loader -->
 <div class="page-loader-wrapper">
     <div class="loader">
-        <div class="m-t-30"><img class="zmdi-hc-spin rounded-circle" src="../images/Godson.jpg" width="48" height="48" alt="sQuare"></div>
+        <div class="m-t-30"><img class="zmdi-hc-spin rounded-circle" src="../../img/logo/wbtmockup1.jpg" width="48" height="48" alt="sQuare"></div>
         <p><?php echo $_SESSION['current_admin']; ?><br> Please Wait...</p>
     </div>
 </div>
@@ -45,7 +45,7 @@
             <div class="col-12">
                 <div class="navbar-logo">
                     <a href="javascript:void(0);" class="bars"></a>
-                    <a class="navbar-brand" style="font-family: ubuntu" href="index"><img src="../images/Godson.jpg" class="rounded-circle" width="30" alt="godson pius"><span class="m-l-10">GODSON PIUS</span></a>
+                    <a class="navbar-brand" style="font-family: ubuntu" href="index"><img src="../../img/logo/Vector-1.png" class="rounded-circle" width="30" alt="godson pius"><span class="m-l-10"> World Brain Technology</span></a>
                 </div>
                 <ul class="nav navbar-nav">
 
@@ -53,7 +53,7 @@
 
                     <li class="dropdown profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button">
-                            <img class="rounded-circle" src="../images/Godson.jpg" class="rounded-circle" alt="User">
+                            <img class="rounded-circle" src="../../img/logo/Vector-1.png" class="rounded-circle" alt="User">
                         </a>
                         <ul class="dropdown-menu pullDown">
                             <li>

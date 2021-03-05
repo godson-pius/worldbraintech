@@ -27,7 +27,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="92027f28-43ee-4e5d-bf37-d271bdf79504" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/about.php" beforeDir="false" afterPath="$PROJECT_DIR$/about.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/wbtmockup1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/logo/worldbraintechnology.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manager/ProjectImages/Screenshot (48).png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/404.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/manager/assets/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/clients.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/contact.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/project-request.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/ajaxCallFunctions/project-request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/config/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/delete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/file-dashboard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/includes/page_aside.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/includes/page_aside.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/includes/page_header.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/includes/page_header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manager/sign-in.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/sign-in.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +58,9 @@
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+  </component>
   <component name="TaskManager">
     <servers />
   </component>
@@ -51,11 +69,36 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/temp" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1614943611289">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="272" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614943611289" />
+    <state x="794" y="297" key="refactoring.ChangeSignatureDialog" timestamp="1614948737883">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="794" y="297" key="refactoring.ChangeSignatureDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1614948737883" />
   </component>
 </project>

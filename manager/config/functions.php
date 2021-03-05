@@ -39,12 +39,12 @@ function login($post)
     }
 
     if ($err_flag === false) {
-        $sql = "SELECT * FROM admins WHERE username = '$username' AND password = '$password'";
+        $sql = "SELECT * FROM managers WHERE email = '$username' AND password = '$password'";
         $query = mysqli_query($link, $sql);
 
         if (mysqli_num_rows($query) > 0) {
             $row = mysqli_fetch_assoc($query);
-            $_SESSION['current_admin'] = $row['username'];
+            $_SESSION['current_admin'] = $row['email'];
             return true;
         } else {
             return false;
@@ -81,49 +81,43 @@ function loadLimit($table, $order_by, $limit, $limit2) {
     }
 }
 
-function addMusic($post) {
+function addClient($post) {
     global $link;
     $err_flag = false;
     $errors = [];
 
     extract($post);
 
-    if (!empty($title)) {
-        $title = sanitize($title);
+    if (!empty($clientname)) {
+        $name = sanitize($clientname);
     } else {
         $err_flag = true;
-        $errors[] = "Title is required";
+        $errors[] = "Name is required";
     }
 
-    if (!empty($_FILES['audioImage'])) {
-        $audioImage = sanitize($_FILES['audioImage']['name']);
-        $audioImageTmp = $_FILES['audioImage']['tmp_name'];
-        move_uploaded_file($audioImageTmp, "TrackImages/$audioImage");
+    if (!empty($service)) {
+        $service = sanitize($service);
     } else {
         $err_flag = true;
-        $errors[] = "Audio Image is required";
+        $errors[] = "Service is required";
     }
 
-    if (!empty($_FILES['audio'])) {
-        $audio = sanitize($_FILES['audio']['name']);
-        $audioTmp = $_FILES['audio']['tmp_name'];
-        move_uploaded_file($audioTmp, "Tracks/$audio");
+    if (!empty($website)) {
+        $website = sanitize($website);
     } else {
         $err_flag = true;
-        $errors[] = "Audio Path is required";
+        $errors[] = "Website is required";
     }
 
-    if (!empty($track_desc)) {
-        $track_desc = sanitize($track_desc);
+    if (!empty($admin)) {
+        $admin = sanitize($admin);
     } else {
         $err_flag = true;
-        $errors[] = "Track Description is required";
+        $errors[] = "Admin is required";
     }
 
     if ($err_flag === false) {
-        $admin = $_SESSION['current_admin'];
-
-        $sql = "INSERT INTO tracks (track_title, track_image, track_path, track_desc, date_uploaded) VALUES('$title', '$audioImage', '$audio', '$track_desc', now())";
+        $sql = "INSERT INTO clients (client_name, services, website, added_by, created_at) VALUES ('$name', '$service', '$website', '$admin', now())";
         $query = mysqli_query($link, $sql);
 
         if ($query) {
@@ -157,7 +151,14 @@ function addProject($post) {
         $errors[] = "Project Image is required";
     }
 
-    $project_url = sanitize($project_url);
+    if (!empty($project_tech)) {
+        $project_tech = sanitize($project_tech);
+    } else {
+        $err_flag = true;
+        $errors[] = "Project Technology is required";
+    }
+
+    $project_client = sanitize($project_client);
 
     if (!empty($project_desc)) {
         $project_desc = sanitize($project_desc);
@@ -169,7 +170,7 @@ function addProject($post) {
     if ($err_flag === false) {
         $admin = $_SESSION['current_admin'];
 
-        $sql = "INSERT INTO projects (project_title, project_desc, project_image, project_url, project_date) VALUES ('$project_title', '$project_desc', '$ProjectImage', '$project_url', now())";
+        $sql = "INSERT INTO projects (project_title, client, project_objective, technologies, project_images, project_date) VALUES ('$project_title', '$project_client', '$project_desc', '$project_tech', '$ProjectImage', now())";
         $query = mysqli_query($link, $sql);
 
         if ($query) {
@@ -200,7 +201,7 @@ function signIn($post)
     }
 
     if ($err_flag === false) {
-        $sql = "SELECT * FROM admins WHERE password = '$password'";
+        $sql = "SELECT * FROM managers WHERE password = '$password'";
         $query = mysqli_query($link, $sql);
 
         if (mysqli_num_rows($query) > 0) {
@@ -302,7 +303,7 @@ function update_happy_clients($post) {
         $errors[] = "Please add a new record!";
     }
 
-    $sql = "UPDATE achievements SET happy_clients = $new_record WHERE achievement_id = 1";
+    $sql = "UPDATE achievements SET satisfied_clients = $new_record, created_at = now() WHERE id = 1";
     $query = mysqli_query($link, $sql);
 
     if ($query) {
@@ -312,7 +313,7 @@ function update_happy_clients($post) {
     }
 }
 
-function update_projects_completed($post) {
+function update_projects_feedback($post) {
     global $link;
     extract($post);
     $errors = [];
@@ -323,7 +324,7 @@ function update_projects_completed($post) {
         $errors[] = "Please add a new record!";
     }
 
-    $sql = "UPDATE achievements SET project_completed = $new_record, date_updated = now()  WHERE achievement_id = 1";
+    $sql = "UPDATE achievements SET positive_feedback = $new_record, created_at = now()  WHERE id = 1";
     $query = mysqli_query($link, $sql);
 
     if ($query) {
