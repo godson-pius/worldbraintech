@@ -26,20 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="92027f28-43ee-4e5d-bf37-d271bdf79504" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manager/ProjectImages/newlogo2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/components/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact-us.php" beforeDir="false" afterPath="$PROJECT_DIR$/contact-us.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inc/functions/contact_fxns.php" beforeDir="false" afterPath="$PROJECT_DIR$/inc/functions/contact_fxns.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/ProjectImages/Screenshot (48).png" beforeDir="false" afterPath="$PROJECT_DIR$/manager/ProjectImages/Screenshot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/config/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/config/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manager/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/manager/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio-single.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio-single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/portfolio.php" beforeDir="false" afterPath="$PROJECT_DIR$/portfolio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/services.php" afterDir="false" />
-    </list>
+    <list default="true" id="92027f28-43ee-4e5d-bf37-d271bdf79504" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
