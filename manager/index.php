@@ -1,5 +1,5 @@
 ﻿<?php require_once "config/dbconfig.php";
-    //$validate = loginValidation("sign-in");
+    $validate = loginValidation("sign-in");
     $admin = $_SESSION['current_admin'];
     $clients_total_num = load("clients"); // Fetching all clients
     $project_total_num= load("projects"); // Fetching all project
