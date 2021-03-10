@@ -8,7 +8,7 @@ define('DBNAME', 'worlgmig_worldbrain');
 
 // This is to Establish Connection With Database
 
-$link = mysqli_connect(Host, Username, Password, Dbname);
+$link = mysqli_connect(HOST, USERNAME, PASSWORD, DBNAME);
 
 require_once 'contact_fxns.php';
 
