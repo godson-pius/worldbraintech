@@ -1,10 +1,10 @@
 <?php
 // session_start();
 
-define("Host","localhost");
-define("Username","root");
-define("Password","");
-define("Dbname","world_bt");
+define('HOST', 'localhost');
+define('USERNAME', 'worlgmig_worldbrain');
+define('PASSWORD', '100%worldbrain');
+define('DBNAME', 'worlgmig_worldbrain');
 
 // This is to Establish Connection With Database
 

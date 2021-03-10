@@ -1,18 +1,12 @@
 <?php
 session_start();
 
-/* define('HOST', 'localhost');
-define('USERNAME', 'root');
-define('PASSWORD', '');
-define('DBNAME', 'world_bt');
+define('HOST', 'localhost');
+define('USERNAME', 'worlgmig_worldbrain');
+define('PASSWORD', '100%worldbrain');
+define('DBNAME', 'worlgmig_worldbrain');
 
-$link = mysqli_connect(HOST, USERNAME, PASSWORD, DBNAME); */
-
-$link = mysqli_connect("localhost",
-    "worlgmig_worldbrain",
-    "100%worldbrain",
-    "worlgmig_worldbrain"
-);
+$link = mysqli_connect(HOST, USERNAME, PASSWORD, DBNAME);
 
 require_once "functions.php";
 require_once 'user_functions.php';
