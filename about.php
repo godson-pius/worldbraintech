@@ -8,7 +8,7 @@ require_once 'components/header.php';
   <div class="bg-parallax-img" data-parallax="{&quot;y&quot; : 100}"><img src="img/pages/about-hero-bg.png" alt="Parallax Background" />
   </div>
   <div class="container bg-parallax-content py-5 my-3 text-center">
-    <h1 class="pb-4"><span class='d-block h3 font-family-body font-weight-light text-muted mb-2'>We are leading</span>IT Solutionist<span class='d-block h2 font-weight-normal text-muted mt-3'>since 2016</span></h1><a class="scroll-to btn btn-gradient" href="#services">Learn More</a>
+    <h1 class="pb-4 mt-5"><span class='d-block h3 font-family-body font-weight-light text-muted mb-2'>We are leading</span>IT Solutionist<span class='d-block h2 font-weight-normal text-muted mt-3'><!--since 2020 --></span></h1><a class="scroll-to btn btn-gradient" href="#services">Learn More</a>
   </div>
 </section>
 <!-- Services-->
@@ -19,28 +19,28 @@ require_once 'components/header.php';
       <div class="icon-box text-center mx-auto">
         <div class="icon-box-icon"><i class="fe-icon-monitor"></i></div>
         <h3 class="icon-box-title">Responsive Web Design</h3>
-        <p class="icon-box-text text-sm">We design to adapt to all screens resolutions.</p><a class="icon-box-link" href="services.html">Learn more<i class="fe-icon-arrow-right"></i></a>
+        <p class="icon-box-text text-sm">We design to adapt to all screens resolutions.</p><a class="icon-box-link" href="services">Learn more<i class="fe-icon-arrow-right"></i></a>
       </div>
     </div>
     <div class="col-lg-3 col-sm-6">
       <div class="icon-box text-center mx-auto">
         <div class="icon-box-icon"><i class="fe-icon-smartphone"></i></div>
         <h3 class="icon-box-title">Mobile First UX Design</h3>
-        <p class="icon-box-text text-sm">According to the industry, while designing and coding for the environments, mobile should be included also.</p><a class="icon-box-link" href="services.html">Learn more<i class="fe-icon-arrow-right"></i></a>
+        <p class="icon-box-text text-sm">According to the industry, while designing and coding for the environments, mobile should be included also.</p><a class="icon-box-link" href="services">Learn more<i class="fe-icon-arrow-right"></i></a>
       </div>
     </div>
     <div class="col-lg-3 col-sm-6">
       <div class="icon-box text-center mx-auto">
         <div class="icon-box-icon"><i class="fe-icon-server"></i></div>
         <h3 class="icon-box-title">Back-End Development</h3>
-        <p class="icon-box-text text-sm">With our backend experts developers, the drive for successful website is our goal.</p><a class="icon-box-link" href="services.html">Learn more<i class="fe-icon-arrow-right"></i></a>
+        <p class="icon-box-text text-sm">With our backend experts developers, the drive for successful website is our goal.</p><a class="icon-box-link" href="services">Learn more<i class="fe-icon-arrow-right"></i></a>
       </div>
     </div>
     <div class="col-lg-3 col-sm-6">
       <div class="icon-box text-center mx-auto">
         <div class="icon-box-icon"><i class="fe-icon-life-buoy"></i></div>
         <h3 class="icon-box-title">Lifetime Client Support</h3>
-        <p class="icon-box-text text-sm">We give lifetime supports to all our existing customers 24/7.</p><a class="icon-box-link" href="services.html">Learn more<i class="fe-icon-arrow-right"></i></a>
+        <p class="icon-box-text text-sm">We give lifetime supports to all our existing customers 24/7.</p><a class="icon-box-link" href="services">Learn more<i class="fe-icon-arrow-right"></i></a>
       </div>
     </div>
   </div>
@@ -58,7 +58,7 @@ require_once 'components/header.php';
               </div>
               <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+72056557984"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
             </div><span class="team-position">Backend Experts & Graphic Designer</span>
-            <h4 class="team-name">Godson Pius</h4>
+            <h4 class="team-name">James Edmond</h4>
           </div>
         </div>
         <!-- Team member-->
@@ -147,7 +147,7 @@ require_once 'components/header.php';
 <!-- Contact Us CTA-->
 <section class="bg-gradient py-4">
   <div class="container position-relative bg-no-repeat bg-center py-5 text-center" style="background-image: url(img/pages/dotted-map.png);">
-    <h2 class="block-title text-white mt-5 mb-4">Let's Connect<small class="text-white">Share your ideas with us and we do our best to turn your ideas into reality.</small></h2><a class="btn btn-light mb-5" href="contacts-v1.html">Contact Us</a>
+    <h2 class="block-title text-white mt-5 mb-4">Let's Connect<small class="text-white">Share your ideas with us and we do our best to turn your ideas into reality.</small></h2><a class="btn btn-light mb-5" href="contact-us">Contact Us</a>
   </div>
 </section>
 <!-- Footer-->

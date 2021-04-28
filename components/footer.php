@@ -8,8 +8,8 @@
                 WorldBrainTechnology is a company that is connected to its clients serving them with quality projects. We are flexible, innovative, nimble, trust-worthy, fast-paced and energetic following industry standard  </p>
             <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Want to hire us?</h6>
             <ul class="list-unstyled text-white">
-                <li><span class='opacity-60'>Call:</span>(+234) 812385976, (+234) 812385976</li>
-                <li><span class='opacity-60'>Email:</span> worldbraintech@info.com</li>
+                <li><span class='opacity-60'>Call:</span>(+234) 8147871946, (+234) 812385976</li>
+                <li><span class='opacity-60'>Email:</span>info@worldbraintechnology.com</li>
             </ul>
             <div class="widget pt-3 mb-4"><a class="social-btn sb-style-6 sb-facebook sb-light-skin" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-6 sb-twitter sb-light-skin" href="#"><i class="socicon-github"></i></a><a class="social-btn sb-style-6 sb-dribbble sb-light-skin" href="#"><i class="socicon-dribbble"></i></a><a class="social-btn sb-style-6 sb-instagram sb-light-skin" href="#"><i class="socicon-instagram"></i></a><a class="social-btn sb-style-6 sb-behance sb-light-skin" href="#"><i class="socicon-behance"></i></a></div>
             <p class="m-0 text-sm text-white"><span class='opacity-60'>© All rights reserved 2021 | Terms and Condition</p>

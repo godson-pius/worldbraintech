@@ -1,17 +1,17 @@
 $(document).ready(function() {
 
-    function audioTotalNum() {
-        $.get("config/ajaxCallFunctions/audio.php", function(data){
-            $("#totalAudio").text(data);
+    function clientTotalNum() {
+        $.get("config/ajaxCallFunctions/clients.php", function(data) {
+            $("#totalClients").text(data);
         });
 
     }
-    
-    audioTotalNum();
+
+    clientTotalNum();
 
 
     function RequestTotalNum() {
-        $.get("config/ajaxCallFunctions/project-request.php", function(data){
+        $.get("config/ajaxCallFunctions/project-request.php", function(data) {
             $("#totalProjectRequest").text(data);
         });
     }
@@ -20,7 +20,7 @@ $(document).ready(function() {
     RequestTotalNum();
 
     function ContactTotalNum() {
-        $.get("config/ajaxCallFunctions/contact.php", function(data){
+        $.get("config/ajaxCallFunctions/contact.php", function(data) {
             $("#totalContacts").text(data);
         });
         

@@ -2,9 +2,9 @@
 session_start();
 
 define('HOST', 'localhost');
-define('USERNAME', 'root');
-define('PASSWORD', '');
-define('DBNAME', 'godsonpius');
+define('USERNAME', 'worlgmig_worldbrain');
+define('PASSWORD', '100%worldbrain');
+define('DBNAME', 'worlgmig_worldbrain');
 
 $link = mysqli_connect(HOST, USERNAME, PASSWORD, DBNAME);
 

@@ -14,8 +14,7 @@ if (isset($_POST['submit'])) {
 
 
 
-
-<?php $page_title = ":: Godson Pius :: Sign In"; require_once "includes/auth_header.php"; ?>
+<?php $page_title = ":: World Brain Technology :: Sign In"; require_once "includes/auth_header.php"; ?>
 
 <body class="theme-blue">
 <div class="authentication">
@@ -24,7 +23,7 @@ if (isset($_POST['submit'])) {
         <div class="row clearfix">
             <div class="col-lg-6 col-md-12">
                 <div class="company_detail">
-                    <h4 class="logo" style="font-family: ubuntu"><img src="../images/Godson.jpg" alt="Logo" class="p-1 border border-light rounded-circle"> Godson Pius</h4>
+                    <h4 class="logo" style="font-family: ubuntu"><img src="../img/logo/Vector-1.png" alt="Logo" class="p-1 border border-light rounded-circle"> World Brain Technology</h4>
                     <h3><strong></strong> <br /> Admin Dashboard</h3>
                     <div class="footer">
                         <ul  class="social_link list-unstyled">

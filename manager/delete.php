@@ -6,33 +6,27 @@ require_once "config/dbconfig.php";
 if (isset($_GET['request'])) {
     $id = $_GET['request'];
     
-    $response = delete("project_requests", "project_id", $id);
+    $response = delete("projects", "project_id", $id);
     if ($response === true)  {
-        $msg = "Project Request was deleted successfully";
+        $msg = "Project was deleted successfully";
         redirect("index?msg=$msg");
     } else {
-        $error = "Project Request could not be deleted";
+        $error = "Project could not be deleted";
         redirect("index?error=$error");
         exit();
     }
 }
 
-if (isset($_GET['track'])) {
-    $id = $_GET['track'];
-    $result = whereclause("sermons", "track_id", $id);
-    foreach ($result as $data) {
-        $track_audio = $data['track_path'];
-        $track_image = $data['track_image'];
-    }
+if (isset($_GET['client'])) {
+    $id = $_GET['client'];
     
-    $response = delete("tracks", "track_id", $id);
+    $response = delete("clients", "id", $id);
     if ($response === true)  {
-        unlink("Tracks/$track_audio");
-        unlink("TrackImages/$track_image");
-        $msg = "Track was deleted successfully";
+
+        $msg = "Client was deleted successfully";
         redirect("index?msg=$msg");
     } else {
-        $error = "Track could not be deleted";
+        $error = "Client could not be deleted";
         redirect("index?error=$error");
         exit();
     }
@@ -59,12 +53,12 @@ if (isset($_GET['event'])) {
 if (isset($_GET['contact'])) {
     $id = $_GET['contact'];
     
-    $response = delete("contacts", "contact_id", $id);
+    $response = delete("contact_us", "contact_us_id", $id);
     if ($response === true)  {
         $msg = "Message was deleted successfully";
         redirect("index?msg=$msg");
     } else {
-        $error = "Contact could not be deleted";
+        $error = "Contact Message could not be deleted";
         redirect("index?error=$error");
         exit();
     }

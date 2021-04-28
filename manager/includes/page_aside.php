@@ -12,7 +12,7 @@
                         <!-- Upload Link -->
                         <li><a href="javascript:void(0);" class="menu-toggle"><i class="icon-cloud-upload"></i><span>UPLOAD</span></a>
                             <ul class="ml-menu">
-                                <li><a data-toggle="modal" data-target="#track_upload"><i class="h6 mr-2 icon-music-tone-alt"></i>Audio</a></li>
+                                <li><a data-toggle="modal" data-target="#track_upload"><i class="h6 mr-2 icon-music-tone-alt"></i>Upload Client</a></li>
                                 <li><a data-toggle="modal" data-target="#project_upload"><i class="h6 mr-2 icon-layers"></i>Upload Project</a></li>
                             </ul>
                         </li>
@@ -20,7 +20,7 @@
                         <!-- All Upload Link -->
                         <li> <a href="javascript:void(0);" class="menu-toggle"><i class="icon-cloud-upload"></i><span>VIEW UPLOADS</span></a>
                             <ul class="ml-menu">
-                                <li><a href="index#allMusic">All Music</a></li>
+                                <li><a href="index#allMusic">All Clients</a></li>
                                 <li><a href="index#allProjects">All Projects</a></li>
                             </ul>
                         </li>
@@ -29,7 +29,7 @@
                         <li> <a href="javascript:void(0);" class="menu-toggle"><i class="icon-docs"></i><span>UPDATE RECORDS</span></a>
                             <ul class="ml-menu">
                                 <li><a data-toggle="modal" data-target="#update_happy_clients"><i class="h6 mr-2 icon-users"></i>Happy Clients</a></li>
-                                <li><a data-toggle="modal" data-target="#update_project_completed"><i class="h6 mr-2 icon-layers"></i>Project Completed</a></li>
+                                <li><a data-toggle="modal" data-target="#update_project_completed"><i class="h6 mr-2 icon-layers"></i>Project Fedbacks</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -73,8 +73,8 @@
             <button class="btn btn-default btn-block btn-round t-dark">Dark</button>
         </div>
         <div class="card">
-            <h5 class="bg-primary rounded text-light p-3 mt-5 text-center" style="font-family: fira code";
-                >Grace</h5>
+            <h5 class="bg-primary rounded text-light p-3 mt-5 text-center" style="font-family: 'Roboto Black'";
+                >WBT</h5>
         </div>
     </div>
 </aside>

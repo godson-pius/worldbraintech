@@ -3,10 +3,10 @@
 
 // This Function is for sanitizing input...
 
-function sanitize($input) {
-    $input = htmlentities(htmlspecialchars(strip_tags(trim($input))));
-    return $input;
-}
+//function sanitize($input) {
+//    $input = htmlentities(htmlspecialchars(strip_tags(trim($input))));
+//    return $input;
+//}
 
 // Update contact table...
 
@@ -40,8 +40,6 @@ function UpdateCont($contact){
         $attach = $_FILES['attach']['name'];
         // $tmp_image = $_FILES['attach']['tmp_name'];
         // move_uploaded_file($tmp_image, "upload_image/$attach");
-    } else {
-        $errors[] = "Attachment cannot be empty";
     }
 
     if (!empty($message)) {
