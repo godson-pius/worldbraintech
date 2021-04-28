@@ -84,7 +84,7 @@
         <div class="col-lg-3 col-sm-6">
           <div class="team-card-style-1 mx-auto">
             <div class="team-card-inner">
-              <div class="team-thumb"><img src="img/team/style-1/05.jpg" alt="Team Member Picture"/>
+              <div class="team-thumb"><img src="img/team/style-1/Mr_Godson_The_CEO.jpeg" alt="Team Member Picture"/>
               </div>
               <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+72056557984"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
             </div><span class="team-position">Backend Experts & Graphic Designer</span>
@@ -95,22 +95,22 @@
         <div class="col-lg-3 col-sm-6">
           <div class="team-card-style-1 mx-auto">
             <div class="team-card-inner">
-              <div class="team-thumb"><img src="img/team/style-1/06.jpg" alt="Team Member Picture"/>
+              <div class="team-thumb"><img src="img/team/style-1/Dimma_Benita_Frontend_Master.jpeg" alt="Team Member Picture"/>
               </div>
               <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-google-plus" href="#"><i class="socicon-googleplus"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+57872336590"><i class="fe-icon-phone"></i>&nbsp;(+234) 812385976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
-            </div><span class="team-position">Marketing Strategist</span>
-            <h4 class="team-name">Sara Madueke</h4>
+            </div><span class="team-position">Front-End Engineer</span>
+            <h4 class="team-name">Dimma Benita</h4>
           </div>
         </div>
         <!-- Team member-->
         <div class="col-lg-3 col-sm-6">
           <div class="team-card-style-1 mx-auto">
             <div class="team-card-inner">
-              <div class="team-thumb"><img src="img/team/style-1/07.jpg" alt="Team Member Picture"/>
+              <div class="team-thumb"><img src="img/team/style-1/Ani_Brendan.jpeg" alt="Team Member Picture"/>
               </div>
               <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-github" href="#"><i class="socicon-github"></i></a><a class="social-btn sb-style-4 sb-stackoverflow" href="#"><i class="socicon-stackoverflow"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a></div><a class="team-contact-link" href="tel:+19871625346"><i class="fe-icon-phone"></i>&nbsp;(+234) 803485976</a><a class="team-contact-link" href="mailto:info@example.com"><i class="fe-icon-mail"></i>&nbsp;worldbraintech@info.com</a>
-            </div><span class="team-position">Critical Thinker</span>
-            <h4 class="team-name">Brandon Simon</h4>
+            </div><span class="team-position">BlockChain Expert</span>
+            <h4 class="team-name">Ani Brendan</h4>
           </div>
         </div>
         <!-- Team member-->
