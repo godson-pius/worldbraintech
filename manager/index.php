@@ -389,7 +389,6 @@
                                 <tr>
                                     <th>User Name</th>
                                     <th>User Email</th>
-                                    <th>User Mobile</th>
                                     <th>Subject</th>
                                     <th>Message</th>
                                     <th>Date Sent</th>
@@ -404,7 +403,6 @@
                                 <tr>
                                     <td><?php echo $name; ?></td>
                                     <td><?php echo $email; ?></td>
-                                    <td><?php echo "08147871946"; ?></td>
                                     <td><?php echo $subject; ?></td>
                                     <td><?php echo substr($message, 0, 20); ?>.....</td>
                                     <td><?php echo $date; ?></td>
