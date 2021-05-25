@@ -140,7 +140,7 @@ if (isset($_POST['submit'])){
               <div class="team-thumb"><img src="img/team/style-1/Mr_Godson_The_CEO.jpeg" alt="Team Member Picture"/>
               </div>
               <div class="team-social-bar text-center"><a class="social-btn sb-style-4 sb-facebook" href="#"><i class="socicon-facebook"></i></a><a class="social-btn sb-style-4 sb-twitter" href="#"><i class="socicon-twitter"></i></a><a class="social-btn sb-style-4 sb-skype" href="#"><i class="socicon-skype"></i></a><a class="social-btn sb-style-4 sb-linkedin" href="#"><i class="socicon-linkedin"></i></a></div><a class="team-contact-link" href="tel:+2348147871946"><i class="fe-icon-phone"></i>&nbsp;(+234) 8147871946</a><a class="team-contact-link" href="mailto:info@worldbraintechnology.com"><i class="fe-icon-mail"></i>&nbsp;info@worldbraintechnology.com</a>
-            </div><span class="team-position">CEO & Backend Expert</span>
+            </div><span class="team-position">Backend Expert</span>
             <h4 class="team-name">Godson Pius</h4>
           </div>
         </div>
