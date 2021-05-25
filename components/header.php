@@ -109,7 +109,7 @@
     <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.-->
     <header class="navbar-wrapper navbar-floating navbar-floating navbar-sticky">
         <div class="container">
-            <div class="d-table-cell align-middle pr-md-3"><a class="navbar-brand mr-1" href="index.html"><img
+            <div class="d-table-cell align-middle pr-md-3"><a class="navbar-brand mr-1" href="index"><img
                         src="img/logo/b_logo.png" alt="World Brain Tech" /></a></div>
             <div class="d-table-cell align-middle w-100 pl-md-3">
                 <div class="navbar justify-content-end justify-content-lg-between">
