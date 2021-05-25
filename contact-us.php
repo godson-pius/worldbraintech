@@ -45,7 +45,7 @@ require_once 'components/header.php';
         <div class="col-md-3 col-sm-6 py-2 border-right border-bottom"><a class="icon-box text-center mx-auto box-shadow-none px-0" href="mailto:support@example.com">
             <div class="icon-box-icon"><i class="fe-icon-mail"></i></div>
             <h3 class="icon-box-title">Email us</h3>
-            <p class="icon-box-text font-weight-medium">worldbraintech@info.com</p></a></div>
+            <p class="icon-box-text font-weight-medium">info@worldbraintechnology.com</p></a></div>
         <div class="col-md-3 col-sm-6 py-2 border-bottom"><a class="icon-box text-center mx-auto box-shadow-none px-0" href="#">
             <div class="icon-box-icon"><i class="fe-icon-facebook"></i></div>
             <h3 class="icon-box-title">Follow us</h3>
