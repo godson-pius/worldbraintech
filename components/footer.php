@@ -38,6 +38,7 @@
                     <input type="text" name="b_c7103e2c981361a6639545bd5_1194bb7544" tabindex="-1">
                 </div>
             </form>
+            <a href="privacy-policy" class="m-0 text-sm btn btn-info btn-sm mt-5 d-flex text-white text-center" style="text-decoration: none;">Privacy Policy</a>
         </div>
     </div>
 </footer>
