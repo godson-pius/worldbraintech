@@ -165,7 +165,7 @@ if (isset($_POST['submit'])){
             </div><span class="team-position">Backend Expert</span>
             <h4 class="team-name">Ani Brendan</h4>
           </div>
-         
+
         </div>
         <!-- Team member-->
         <div class="col-lg-3 col-sm-6">

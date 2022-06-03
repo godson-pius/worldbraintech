@@ -389,6 +389,7 @@
                                 <tr>
                                     <th>User Name</th>
                                     <th>User Email</th>
+                                    <th>User Mobile</th>
                                     <th>Subject</th>
                                     <th>Message</th>
                                     <th>Date Sent</th>
