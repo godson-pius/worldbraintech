@@ -185,6 +185,12 @@
                             <a class="nav-link" href="portfolio">Portfolio</a>
                         </li>
 
+                        <!-- Our Academy-->
+                        <li
+                            class="nav-item <?php if ($title == "Academy | World Brain Technology") : echo "active"; endif; ?>">
+                            <a class="nav-link" href="academy">Academy</a>
+                        </li>
+
                         <!-- User Contact-->
                         <li
                             class="nav-item <?php if ($title == "Contact | World Brain Technology") : echo "active"; endif; ?>">
