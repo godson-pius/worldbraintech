@@ -43,24 +43,25 @@
 <!-- Body-->
 
 <body>
-<script type="text/javascript">
+    <script type="text/javascript">
         (function () {
             var head = document.getElementsByTagName("head").item(0);
             var script = document.createElement("script");
 
-            var src = (document.location.protocol == 'https:'
-                ? 'https://www.formilla.com/scripts/feedback.js'
-                : 'http://www.formilla.com/scripts/feedback.js');
+            var src = (document.location.protocol == 'https:' ?
+                'https://www.formilla.com/scripts/feedback.js' :
+                'http://www.formilla.com/scripts/feedback.js');
 
             script.setAttribute("type", "text/javascript");
-            script.setAttribute("src", src); script.setAttribute("async", true);
+            script.setAttribute("src", src);
+            script.setAttribute("async", true);
 
             var complete = false;
 
             script.onload = script.onreadystatechange = function () {
-                if (!complete && (!this.readyState
-                    || this.readyState == 'loaded'
-                    || this.readyState == 'complete')) {
+                if (!complete && (!this.readyState ||
+                        this.readyState == 'loaded' ||
+                        this.readyState == 'complete')) {
                     complete = true;
                     Formilla.guid = 'csdcf298-6893-429f-a38b-c06df22c98e7';
                     Formilla.loadWidgets();
@@ -115,6 +116,13 @@
                     <div class="card-header"><a
                             class="mobile-menu-link <?php if ($title == "Portfolio | World Brain Technology") : echo "active"; endif; ?>"
                             href="portfolio">Portfolio</a></div>
+                </div>
+
+                <!-- Our Academy-->
+                <div class="card">
+                    <div class="card-header"><a
+                            class="mobile-menu-link <?php if ($title == "Academy | World Brain Technology") : echo "active"; endif; ?>"
+                            href="academy">Academy</a></div>
                 </div>
 
                 <!-- User Contact -->
