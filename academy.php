@@ -75,7 +75,7 @@ if (isset($_POST['submit'])){
         <h2 class="h3 block-title text-white text-center px-3">What We Teach</h2>
         <div class="row pt-4">
         <div class="col-lg-4 col-sm-6 mb-30"><a class="d-block bg-white box-shadow text-decoration-none"
-                    href=""><img class="d-block w-100" src="img/academy/python.png"
+                    href="acad-single?acad=Web Development with Python"><img class="d-block w-100" src="img/academy/python.png"
                         alt="Branding &amp; identity">
                     <div class="p-4">
                         <h3 class="text-xl font-weight-bold mb-0">Web Dev with Python</h3>
