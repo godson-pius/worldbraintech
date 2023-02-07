@@ -43,34 +43,6 @@
 <!-- Body-->
 
 <body>
-    <script type="text/javascript">
-        (function () {
-            var head = document.getElementsByTagName("head").item(0);
-            var script = document.createElement("script");
-
-            var src = (document.location.protocol == 'https:' ?
-                'https://www.formilla.com/scripts/feedback.js' :
-                'http://www.formilla.com/scripts/feedback.js');
-
-            script.setAttribute("type", "text/javascript");
-            script.setAttribute("src", src);
-            script.setAttribute("async", true);
-
-            var complete = false;
-
-            script.onload = script.onreadystatechange = function () {
-                if (!complete && (!this.readyState ||
-                        this.readyState == 'loaded' ||
-                        this.readyState == 'complete')) {
-                    complete = true;
-                    Formilla.guid = 'csdcf298-6893-429f-a38b-c06df22c98e7';
-                    Formilla.loadWidgets();
-                }
-            };
-
-            head.appendChild(script);
-        })();
-    </script>
     <!-- Off-Canvas Menu-->
     <div class="offcanvas-container is-triggered offcanvas-container-reverse" id="mobile-menu"><span
             class="offcanvas-close"><i class="fe-icon-x"></i></span>
