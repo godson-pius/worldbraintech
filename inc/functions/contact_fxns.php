@@ -61,3 +61,56 @@ function UpdateCont($contact){
         }
     }
 }
+
+function RegisterFrontEndClass($register){
+    global $link;
+    $errors = [];
+    extract($register);
+
+    if (!empty($email)) {
+        $email = $email;
+
+    } else {
+        $errors[] = "Input an Email";
+    }
+
+    if (!empty($phone)) {
+        $phone = $phone;
+
+    } else {
+        $errors[] = "Input a phone number";
+    }
+
+    if (isset($newbie)) {
+        $newbie = $newbie;
+
+    } else {
+        $errors[] = "Are you new to programming";
+    }
+   
+    if (isset($detail)) {
+        $detail = $detail;
+
+    } else {
+        $errors[] = "How did you hear about us?";
+    }
+
+    if (!empty($message)) {
+        $message = $message;
+
+    } else {
+        $errors[] = "Tell us how you feel about programming";
+    }
+
+    if (!$errors) {
+        $sql = "INSERT INTO registerfront (email, phone, level, how, message) VALUES ('$email', '$phone', '$newbie', '$detail', '$message')";
+
+        $query = mysqli_query($link, $sql);
+
+        if ($query) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+}

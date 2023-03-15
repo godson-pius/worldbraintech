@@ -5,7 +5,7 @@
             <img src="img/logo/logo.png" alt="WBT">
         </a>
         <p class="text-sm text-white opacity-50">
-                WorldBrainTechnology is a company that is connected to its clients serving them with quality projects. We are flexible, innovative, nimble, trust-worthy, fast-paced and energetic following industry standard  </p>
+                World Brain Technology Ltd is a company that is connected to its clients serving them with quality projects. We are flexible, innovative, nimble, trust-worthy, fast-paced and energetic following industry standard  </p>
             <h6 class="text-sm font-weight-medium text-white text-uppercase text-center">Want to hire us?</h6>
             <ul class="list-unstyled text-white">
                 <li><span class='opacity-60'>Call:</span>(+234) 8147871946, (+234) 812385976</li>
