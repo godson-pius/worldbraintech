@@ -18,7 +18,7 @@ if (isset($_POST['submit'])){
 }
 
 
-$title = "Contact | World Brain Technology";
+$title = "FrontEnd Class | World Brain Technology";
 require_once 'components/header.php';
 ?>
     <!-- Page Content-->
